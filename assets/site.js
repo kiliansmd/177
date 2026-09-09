@@ -23,8 +23,9 @@
   window.matchMedia('(min-width:951px)').addEventListener('change', e => { if(e.matches) setMenu(false); });
 
   const mobileAction = $('.mobile-action');
-  const heroAction = $('.hero .btn');
+  const heroAction = $('[data-viewport-hero]');
   if (mobileAction && heroAction && 'IntersectionObserver' in window) {
+    mobileAction.classList.add('is-hidden');
     new IntersectionObserver(entries => mobileAction.classList.toggle('is-hidden', entries[0].isIntersecting), {threshold:0}).observe(heroAction);
   }
 

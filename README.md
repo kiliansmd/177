@@ -40,7 +40,8 @@ Der lokale Server liefert echte 301-Weiterleitungen, eine eigene 404-Seite und e
 ## Bearbeiten und bauen
 
 - `site-src/build.py`: Seitenaufbau, deutsche Texte, Navigation, Tarife und Metadaten.
-- `assets/site.css`: gesamtes responsives Design.
+- `assets/site.css`: grundlegendes Design, Typografie und Animationen.
+- `assets/responsive.css`: Viewport-Höhen, mobile und Tablet-Layouts sowie Querformat-Anpassungen; wird zuletzt eingebunden.
 - `assets/site.js`: Menü, Teamfilter, Galerie, externe Medien und E-Mail-Vorbereitung.
 - `assets/motion.js`: progressive Lade-, Scroll- und Filteranimationen ohne externe Bibliothek.
 - `site-src/content.json`: verifizierte Fakten mit Quellen und offenen Sachfragen.
@@ -65,6 +66,8 @@ Die fertigen HTML-Seiten funktionieren ohne Build-Prozess auf einem statischen W
 - Galerie: tastaturbedienbarer Dialog mit Vor-/Zurücknavigation und Fokus-Rückgabe.
 - 360°-Tour und YouTube: Verbindung zum Anbieter erst nach ausdrücklichem Klick; Deaktivieren entfernt die Einbettung.
 - Mobile Navigation, Sprunglink, sichtbarer Tastaturfokus, beschriftete Formulare und animierte Übergänge.
+- Alle Hero-Bereiche füllen die verfügbare erste Bildschirmhöhe. Auf der Startseite gehören Hero und gelbe Faktenleiste zu einer gemeinsamen Fläche. Stabile mobile Viewport-Einheiten vermeiden Sprünge beim Ein-/Ausblenden der Browserleiste; bei vergrößertem Text darf der Inhalt natürlich weiterwachsen.
+- Die mobile Mitgliedschaftsleiste erscheint erst nach dem Hero. Unterseiten bieten einen direkten Sprung zum folgenden Inhalt; das mobile Menü bleibt auch im kurzen Querformat scrollbar.
 - Verfeinerte lokale Typografie: Oswald 700 für Haupttitel, Oswald 600 für Zwischenüberschriften und Namen, Lato 400/700 für Lesetext und Bedienung. Hauptschriften werden vorgeladen.
 - Gestaffelte Einstiege, einmalige Scroll-Reveals, Bild- und Karteninteraktionen sowie native Seitenübergänge in unterstützenden Browsern. Es gibt keine JavaScript-Scrollschleife, keinen künstlichen Ladebildschirm und keine verzögert abgefangenen Links.
 - Auf ausdrücklichen Wunsch sind sämtliche Reduced-Motion-Bedingungen entfernt. Ohne die Skripte bleiben die Inhalte sichtbar und die Seiten über gewöhnliche Links erreichbar.

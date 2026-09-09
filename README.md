@@ -39,9 +39,12 @@ Der lokale Server liefert echte 301-Weiterleitungen, eine eigene 404-Seite und e
 
 ## Bearbeiten und bauen
 
-- `site-src/build.py`: Seitenaufbau, deutsche Texte, Navigation, Tarife und Metadaten.
+- `site-src/build.py`: Seitenaufbau, deutsche Texte, Navigation und Tarife.
+- `site-src/metadata.py`: zentrale Open-Graph-/X-Cards- und JSON-LD-Metadaten aus den vorhandenen Studiofakten.
+- `site-src/social-card.html`: reproduzierbare 1200 × 630 px große Social-Karte mit unverändertem Originallogo und Originalfoto. Die fertige PNG-Datei liegt unter `assets/social/`.
 - `assets/site.css`: grundlegendes Design, Typografie und Animationen.
-- `assets/responsive.css`: Viewport-Höhen, mobile und Tablet-Layouts sowie Querformat-Anpassungen; wird zuletzt eingebunden.
+- `assets/responsive.css`: Viewport-Höhen, mobile und Tablet-Layouts sowie Querformat-Anpassungen.
+- `assets/ux.css`: abschließende Typografie, Interaktionsdetails, Anmeldeeinstieg und mobile Kostenübersicht; wird zuletzt eingebunden.
 - `assets/site.js`: Menü, Teamfilter, Galerie, externe Medien und E-Mail-Vorbereitung.
 - `assets/motion.js`: progressive Lade-, Scroll- und Filteranimationen ohne externe Bibliothek.
 - `assets/scroll.js`: sanfte Positionskorrektur nahe Abschnittsanfängen nach beendeten Touch-/Mausradgesten, ohne Eingaben abzufangen.
@@ -78,13 +81,23 @@ Die Scrollregeln einschließlich Touch, Abbruch, Verlauf und Browser-Fallback la
 - Gestaffelte Einstiege, einmalige Scroll-Reveals, Bild- und Karteninteraktionen sowie native Seitenübergänge in unterstützenden Browsern. Es gibt keine JavaScript-Scrollschleife, keinen künstlichen Ladebildschirm und keine verzögert abgefangenen Links.
 - Auf ausdrücklichen Wunsch sind sämtliche Reduced-Motion-Bedingungen entfernt. Ohne die Skripte bleiben die Inhalte sichtbar und die Seiten über gewöhnliche Links erreichbar.
 
+## Social-Vorschau und Metadaten
+
+Alle 34 Inhaltsseiten haben individuelle Titel und Beschreibungen, konsistente Canonicals, Open-Graph-Daten einschließlich Bildtyp, Bildmaßen und Alternativtext sowie `summary_large_image`-Cards. Die Social-Grafik wird nur von Vorschau-Crawlern geladen und erzeugt keine zusätzliche Bildanforderung beim gewöhnlichen Seitenbesuch. Ihre HTML/CSS-Quelle verwendet die lokalen Markenschriften, das unveränderte horizontale PNG-Logo und das vorhandene Studiofoto. Die bereitgestellte PNG-Datei ist 1200 × 630 px groß; ein normaler Website-Build muss sie nicht neu rendern. Bei grafischen Änderungen die Quelle im Browser mit exakt 1200 × 630 px öffnen, das Laden der lokalen Schriften und Bilder abwarten und einen Viewport-Screenshot als neue versionierte PNG-Datei exportieren. Den Dateipfad anschließend in `metadata.py` aktualisieren.
+
+JSON-LD verbindet `WebSite`, `ExerciseGym`, die jeweilige Seite, sichtbare Breadcrumbs und die Social-Grafik. Profilseiten enthalten die vorhandenen Namen, Rollen und Fotos als `Person`; Kontakt-, Studio-, Team- und Galerieseiten erhalten passende Seitentypen. Es werden keine Bewertungen, Koordinaten, Auszeichnungen oder zusätzlichen Geschäftsfakten erfunden. Öffnungszeiten enthalten den vorhandenen Feiertagshinweis. Originale Touch- und Browsericons sowie ein Manifest vervollständigen die Geräte-Metadaten.
+
+Die Implementierung folgt dem [Open Graph Protocol](https://ogp.me/) und verwendet die dokumentierten [LocalBusiness-Daten](https://developers.google.com/search/docs/appearance/structured-data/local-business). **Noindex bleibt ausdrücklich aktiv:** Diese Metadaten ermöglichen saubere Linkvorschauen und bereiten die Seiten technisch vor; sie schalten keine Suchmaschinenindexierung frei.
+
+Der Anmeldeeinstieg hat einen deutlich sichtbaren Tarif-Button. Mobil lassen sich Laufzeit, E-Band-Gebühr, Startdatum und Mindestbetrag direkt in der Übersicht aufklappen. Eingabefehler sind mit ihren Feldern verbunden und verschwinden beim Bearbeiten gezielt. Ein fehlgeschlagener Verbindungsaufbau bietet nach spätestens zwölf Sekunden einen Wiederholungsbutton und einen direkten Telefonkontakt; Auswahl und Eingaben bleiben erhalten. Das Bearbeiten einer vorbereiteten Kontaktanfrage verwirft deren veraltete E-Mail-Vorschau.
+
 ## Veröffentlichung
 
 Die Fassung ist für die öffentliche Vercel-Vorschau eingerichtet; der funktionale Status der Anmeldung ist oben beschrieben.
 
-Für einen Produktivserver werden die erzeugten HTML-Seiten, `assets/`, die verbliebenen Logo-/Schriftdateien in `wp-content/`, `robots.txt`, `sitemap.xml` und `404.html` benötigt. `site-src/` und diese Dokumentation müssen nicht öffentlich ausgeliefert werden. Die Weiterleitungen aus `redirects.json` auf dem gewählten Server als HTTP 301 konfigurieren; die mitgelieferten Weiterleitungs-HTML-Seiten dienen zusätzlich als statischer Fallback. Eine unbekannte Adresse soll HTTP 404 mit `404.html` liefern.
+Für einen Produktivserver werden die erzeugten HTML-Seiten, `assets/`, die verbliebenen Logo-/Schriftdateien in `wp-content/`, `robots.txt`, `sitemap.xml`, `site.webmanifest` und `404.html` benötigt. `site-src/` und diese Dokumentation müssen nicht öffentlich ausgeliefert werden. Die Weiterleitungen aus `redirects.json` auf dem gewählten Server als HTTP 301 konfigurieren; die mitgelieferten Weiterleitungs-HTML-Seiten dienen zusätzlich als statischer Fallback. Eine unbekannte Adresse soll HTTP 404 mit `404.html` liefern.
 
-Die kanonische Domain ist `https://fitness-studio-rheinbach.de`. Bei anderer Domain vor dem Build `SITE_URL` setzen. Noindex wird in dieser Veröffentlichung bewusst auch auf Vercel gesetzt.
+Die kanonische Domain ist `https://177.meindigitalerbetrieb.de`. Vercel übernimmt seine konfigurierte Produktionsdomain beim Export. Bei anderer Domain vor dem Build `SITE_URL` setzen. Noindex wird in dieser Veröffentlichung bewusst auch auf Vercel gesetzt.
 
 Vor dem Livegang: aktuelle Preise und Ansprechpartner vom Betreiber bestätigen lassen; Datenschutzhinweise mit den tatsächlich eingesetzten Hosting-/E-Mail-Anbietern und deren Speicherfristen abgleichen. Impressum und Datenschutzhinweise sind ein überarbeiteter Entwurf, keine rechtliche Freigabe. Für den Livebetrieb der Mitgliedschaft müssen Vertragsunterlagen, SEPA-Angaben und ein SMTP-Absender konfiguriert werden. Reines statisches Hosting unterstützt diese Anmeldung nicht.
 

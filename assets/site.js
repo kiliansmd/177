@@ -19,6 +19,9 @@
   document.addEventListener('click', (event) => {
     if (toggle?.getAttribute('aria-expanded') === 'true' && !event.target.closest('.site-header')) setMenu(false);
   });
+  document.addEventListener('focusin', (event) => {
+    if (toggle?.getAttribute('aria-expanded') === 'true' && !event.target.closest('.site-header')) setMenu(false);
+  });
   $$('a', menu || document).forEach(link => link.addEventListener('click', () => setMenu(false)));
   window.matchMedia('(min-width:951px)').addEventListener('change', e => { if(e.matches) setMenu(false); });
 
@@ -121,6 +124,14 @@
       }
     }
     let preparedText = '';
+    form.addEventListener('input', () => {
+      // A prepared email must never silently send an earlier version of edited fields.
+      if (!$('#prepared').hidden) {
+        $('#prepared').hidden = true;
+        $('#email-open').href = 'mailto:info@performance-gym.de';
+        preparedText = '';
+      }
+    });
     form.addEventListener('submit', event => {
       event.preventDefault();
       if(!form.reportValidity()) return;

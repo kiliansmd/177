@@ -3,7 +3,7 @@
  const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
  const form=$('#membership-form'), service=$('#service-form');
  if(!form&&!service)return;
- let config,step=0,furthest=0,busy=false;
+ let config,step=0,furthest=0,busy=false,connecting=false,initialized=false;
  const idempotency=crypto.randomUUID();
  const eur=n=>new Intl.NumberFormat('de-DE',{style:'currency',currency:'EUR'}).format(n/100);
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -17,7 +17,7 @@
   for(const [name,text]of Object.entries(fields)){
    const input=(form||service).elements[name],label=$('#error-'+name);
    if(label)label.textContent=text;
-   if(input?.setAttribute){input.setAttribute('aria-invalid','true');if(label)input.setAttribute('aria-describedby',label.id);first??=input;}
+   if(input?.setAttribute){input.setAttribute('aria-invalid','true');if(label)input.setAttribute('aria-describedby',[...new Set([...(input.getAttribute('aria-describedby')||'').split(' ').filter(Boolean),label.id])].join(' '));first??=input;}
   }
   if(first){const section=first.closest('[data-step]');if(section)setStep(Number(section.dataset.step));first.focus();}
   else $('#join-error').scrollIntoView({behavior:'smooth',block:'center'});
@@ -71,7 +71,16 @@
  const validate=()=>{
   clearErrors();const fields={};
   const root=form?$(`.join-step[data-step="${step}"]`):service;
-  root.querySelectorAll('input,select,textarea').forEach(input=>{if(!input.checkValidity())fields[input.name]=input.validity.valueMissing?'Bitte ausfüllen.':'Bitte die Eingabe prüfen.';});
+  root.querySelectorAll('input,select,textarea').forEach(input=>{
+   if(input.required&&!input.value.trim())fields[input.name]='Bitte ausfüllen.';
+   else if(!input.checkValidity()){
+    const validity=input.validity;
+    fields[input.name]=validity.valueMissing?'Bitte ausfüllen.':
+     validity.typeMismatch&&input.type==='email'?'Bitte eine vollständige E-Mail-Adresse eingeben.':
+     validity.rangeUnderflow&&input.type==='date'?`Bitte ein Datum ab ${dateText(input.min)} wählen.`:
+     validity.rangeOverflow&&input.type==='date'?`Bitte ein Datum bis ${dateText(input.max)} wählen.`:'Bitte die Eingabe prüfen.';
+   }
+  });
   if(form&&step===1&&val('birthdate')){
    const born=new Date(val('birthdate')+'T12:00:00'),today=new Date(config.today+'T12:00:00');let age=today.getFullYear()-born.getFullYear();if(today.getMonth()<born.getMonth()||(today.getMonth()===born.getMonth()&&today.getDate()<born.getDate()))age--;
    if(age<18||age>110)fields.birthdate='Online ab 18. Für eine Anmeldung unter 18 hilft dir unser Team im Studio.';
@@ -106,22 +115,42 @@
   finally{busy=false;controls.forEach(([element,disabled])=>element.disabled=disabled);button.textContent=original;(form||service).removeAttribute('aria-busy');}
  };
  (form||service).addEventListener('submit',submit);
+ // Clear only the edited error; keep hints and the other fields' feedback intact.
+ (form||service).addEventListener('input',event=>{
+  const input=event.target;
+  if(input.getAttribute('aria-invalid')!=='true')return;
+  input.removeAttribute('aria-invalid');const label=$('#error-'+input.name);if(label)label.textContent='';
+  if(!(form||service).querySelector('[aria-invalid="true"]'))$('#join-error').hidden=true;
+ });
  if(form){
+  const costs=$('#summary-breakdown'),compact=matchMedia('(max-width:950px)');
+  costs.open=!compact.matches;
+  compact.addEventListener('change',event=>costs.open=!event.matches);
   $('#join-next').addEventListener('click',()=>{if(validate())setStep(step+1);});$('#join-back').addEventListener('click',()=>{clearErrors();setStep(step-1);});
   $$('[data-step-link]').forEach(button=>button.addEventListener('click',()=>{const next=Number(button.dataset.stepLink);if(next<=step||validate())setStep(next);}));
   form.addEventListener('change',()=>{if(config)summary();});
   $('#iban').addEventListener('blur',()=>{$('#iban').value=val('iban').replace(/\s/g,'').toUpperCase().match(/.{1,4}/g)?.join(' ')||'';});
   $('#preview-contract').addEventListener('click',async()=>{const button=$('#preview-contract');button.disabled=true;try{download(await api('preview',payload(),true));}catch(error){errors(error.error||'Die PDF konnte nicht erstellt werden.',error.fields);}finally{button.disabled=false;}});
  }
- fetch('/api/membership/config',{cache:'no-store'}).then(async response=>{if(!response.ok)throw Error();return response.json();}).then(data=>{
+ const connect=()=>{
+ if(connecting)return;
+ connecting=true;$('#join-retry').disabled=true;$('#join-mode').textContent='Verbindung wird hergestellt …';
+ return fetch('/api/membership/config',{cache:'no-store',signal:AbortSignal.timeout(12000)}).then(async response=>{if(!response.ok)throw Error();return response.json();}).then(data=>{
   config=data;const live=config.mode==='live';$('#join-mode').textContent=config.delivery==='browser'?'Öffentliche Demo · Bitte nur Testdaten verwenden. Kein Vertrag, keine Abbuchung, keine Speicherung der Anmeldung und kein E-Mail-Versand.':live?'':'Lokale Vorschau · Bitte nur Testdaten verwenden. Es entstehen kein Vertrag, keine Abbuchung und kein externer E-Mail-Versand.';
+  $('#join-connection').hidden=true;
   if(form){
-   const incoming=new URLSearchParams(location.search).get('tarif');if(config.plans.some(p=>p.id===incoming))form.elements.plan.value=incoming;
-   $('#start_date').min=config.today;$('#start_date').max=config.latest_start;$('#start_date').value=config.today;
+   $('#join-intro-note').textContent=live?'Vier Schritte · Kein Benutzerkonto nötig':config.delivery==='browser'?'Öffentliche Demo · Bitte nur Testdaten verwenden':'Lokale Vorschau · Bitte nur Testdaten verwenden';
+   const incoming=new URLSearchParams(location.search).get('tarif');if(!initialized&&config.plans.some(p=>p.id===incoming))form.elements.plan.value=incoming;
+   $('#start_date').min=config.today;$('#start_date').max=config.latest_start;if(!val('start_date'))$('#start_date').value=config.today;
    $('#birthdate').max=config.today;$('#sepa-text').textContent=config.sepa_text;$('#creditor-id').textContent=config.creditor_id;$('#billing-notice').textContent=config.billing_notice;$('#early-start-text').textContent=config.early_start_text;
    if(live){$('#sepa-label').textContent='Ich erteile das oben aufgeführte SEPA-Lastschriftmandat.';$('#terms-label').textContent='Ich akzeptiere die verlinkten Vertragsbedingungen und habe die Widerrufsinformation zur Kenntnis genommen.';$('#iban-hint').textContent='Deine IBAN wird geprüft und verschlüsselt gespeichert.';$('#join-submit').textContent='Zahlungspflichtig bestellen';}
    $('#legal-documents').innerHTML=config.documents.length?config.documents.map(key=>`<a href="/api/membership/document/${key}" target="_blank" rel="noopener">${key==='contract_terms_pdf'?'Vertragsbedingungen / AGB':'Widerrufsinformation'} als PDF ↓</a>`).join(''):'Die freigegebenen Vertragsbedingungen und Widerrufsinformationen werden vor dem Livegang ergänzt. Diese Vorschau ist kein verbindliches Vertragsangebot.';
    $('#join-next').disabled=false;summary();
   }else{if(config.delivery==='browser'){const intro=$('.page-head .lead');if(intro)intro.textContent='Teste hier die digitale Erklärung. Du erhältst eine PDF-Vorschau; es wird nichts an das Studio übermittelt.';$('#service-success h2').textContent='Deine Testbestätigung ist bereit.';}$('#service-submit').disabled=false;if(!live)$('#service-submit').textContent=val('kind')==='withdrawal'?'Test-Widerruf bestätigen':'Test-Kündigung bestätigen';}
- }).catch(()=>{ $('#join-mode').textContent='Die digitale Anmeldung ist momentan nicht erreichbar. Bitte kontaktiere das Studio unter 02226 91 11 999.'; });
+  initialized=true;
+ }).catch(()=>{ $('#join-mode').textContent='Die Verbindung konnte nicht hergestellt werden. Versuche es erneut oder sprich direkt mit unserem Team. Deine bisherigen Eingaben bleiben erhalten.';$('#join-connection').hidden=false;
+ }).finally(()=>{connecting=false;$('#join-retry').disabled=false;});
+ };
+ $('#join-retry').addEventListener('click',()=>connect()?.then(()=>{if(config)(form?$('#join-next'):$('#service-submit')).focus({preventScroll:true});}));
+ connect();
 })();

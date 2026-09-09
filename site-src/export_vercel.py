@@ -13,7 +13,7 @@ public.mkdir()
 manifest = json.loads((ROOT/'site-src/build-manifest.json').read_text())
 files = {p['file'] for p in manifest['pages'].values()}
 files.update(route.strip('/')+'/index.html' for route in manifest['redirects'])
-files.update(['index.html', '404.html', 'robots.txt', 'sitemap.xml'])
+files.update(['index.html', '404.html', 'robots.txt', 'sitemap.xml', 'site.webmanifest'])
 for rel in files:
     target = public/rel
     target.parent.mkdir(parents=True, exist_ok=True)

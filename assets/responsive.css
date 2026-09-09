@@ -1,7 +1,8 @@
 /* Viewport composition. Content can grow when text zoom or short screens need room. */
 :root{--screen:100vh;--topbar-h:32px;--header-h:88px;--chrome:calc(var(--topbar-h) + var(--header-h));--hero-space:calc(var(--screen) - var(--chrome));--gutter:clamp(24px,3.75vw,64px)}
 @supports(height:100svh){:root{--screen:100svh}}
-html{scroll-padding-top:calc(var(--header-h) + 20px)}
+html{scroll-padding-top:calc(var(--header-h) + 20px);overscroll-behavior-y:none;scrollbar-gutter:stable}
+textarea,.prepared pre,.photo-dialog{overscroll-behavior-y:contain}
 .topline{height:var(--topbar-h)}
 .topline .wrap{height:100%;padding-block:0;align-items:center;line-height:1.4}
 .site-header{height:var(--header-h)}
@@ -55,7 +56,7 @@ main,section,.intro-grid>*,.feature-row>*,.contact-layout>*,.visit-box>*,.price-
 .empty-page{min-height:var(--hero-space)}
 .main-nav.is-open{max-height:calc(var(--screen) - var(--header-h));overflow-y:auto;overscroll-behavior:contain}
 .mobile-action.is-hidden{display:none}
-.join-main,.join-success{scroll-margin-top:calc(var(--header-h) + 20px)}
+.join-main,.join-success{scroll-margin-top:0}
 .join-summary{top:calc(var(--header-h) + 24px)}
 @media(min-width:651px) and (max-width:1100px){
  .training-grid,.plan-grid{gap:18px}

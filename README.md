@@ -44,6 +44,7 @@ Der lokale Server liefert echte 301-Weiterleitungen, eine eigene 404-Seite und e
 - `assets/responsive.css`: Viewport-Höhen, mobile und Tablet-Layouts sowie Querformat-Anpassungen; wird zuletzt eingebunden.
 - `assets/site.js`: Menü, Teamfilter, Galerie, externe Medien und E-Mail-Vorbereitung.
 - `assets/motion.js`: progressive Lade-, Scroll- und Filteranimationen ohne externe Bibliothek.
+- `assets/scroll.js`: sanfte Positionskorrektur nahe Abschnittsanfängen nach beendeten Touch-/Mausradgesten, ohne Eingaben abzufangen.
 - `site-src/content.json`: verifizierte Fakten mit Quellen und offenen Sachfragen.
 - `site-src/assets.json`: Zuordnung der echten Studiobilder und Teamprofile.
 - `site-src/legal.json`: auf die tatsächlichen Datenflüsse angepasster Rechtstextentwurf.
@@ -59,6 +60,8 @@ Der Build funktioniert mit den beiliegenden Bildderivaten ohne Zugriff auf den u
 
 Die fertigen HTML-Seiten funktionieren ohne Build-Prozess auf einem statischen Webserver. Eigene CSS-, JavaScript-, Foto- und Schriftdateien sind lokal. Der Instagram-Feed lädt seine Plattform und Medien von Elfsight nach, sobald sein Bereich näher rückt. Die eigene Website verwendet kein Frontend-Framework und keine extern geladenen Schriften.
 
+Die Scrollregeln einschließlich Touch, Abbruch, Verlauf und Browser-Fallback lassen sich ohne zusätzliche Pakete mit `node --test site-src/test_scroll.mjs` prüfen. Technische Grundlage: [Scrollende](https://developer.mozilla.org/en-US/docs/Web/API/Document/scrollend_event) und [native Scrollgrenzen](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overscroll-behavior).
+
 ## Funktionen
 
 - Kontakt: Pflichtfeldprüfung, thematisch vorausgefüllte Anfrage, Vorschautext, E-Mail-Link und Kopierfunktion. Der Besucher verschickt die Nachricht in seinem eigenen E-Mail-Programm. Die neue digitale Mitgliedschaft hat einen separaten PDF-/SMTP-Backendpfad; derzeit werden nur lokale Testnachrichten erzeugt.
@@ -68,6 +71,9 @@ Die fertigen HTML-Seiten funktionieren ohne Build-Prozess auf einem statischen W
 - Mobile Navigation, Sprunglink, sichtbarer Tastaturfokus, beschriftete Formulare und animierte Übergänge.
 - Alle Hero-Bereiche füllen die verfügbare erste Bildschirmhöhe. Auf der Startseite gehören Hero und gelbe Faktenleiste zu einer gemeinsamen Fläche. Stabile mobile Viewport-Einheiten vermeiden Sprünge beim Ein-/Ausblenden der Browserleiste; bei vergrößertem Text darf der Inhalt natürlich weiterwachsen.
 - Die mobile Mitgliedschaftsleiste erscheint erst nach dem Hero. Unterseiten bieten einen direkten Sprung zum folgenden Inhalt; das mobile Menü bleibt auch im kurzen Querformat scrollbar.
+- Scrollgrenzen: natives `overscroll-behavior-y: none` verhindert elastisches Überziehen an den vertikalen Seitengrenzen in unterstützenden Browsern. Menü, Galerie und scrollbare Textfelder begrenzen die Weitergabe ihrer Scrollbewegungen.
+- Eine kleine Über-/Unterschreitung an Abschnittsanfängen wird nach Ende der Geste sanft korrigiert (je nach Bildschirmhöhe höchstens 20–42 px). Feine Bewegungen, das Verlassen eines Zielpunkts, Textauswahl, Tastatur, Zoom und direkte Sprunglinks bleiben frei. Checkout, Vertragsservice und Rechtstexte verwenden ausschließlich natives Scrollen. Neue Eingaben unterbrechen eine laufende Korrektur sofort.
+- Die Positionskorrektur verwendet `scrollend`; ältere Browser erhalten einen passiven 180-ms-Debounce. Keine eigene Scroll-Engine, keine dauerhaft laufende Animation und kein Verhindern von Wheel-/Touch-Events. Formularschritte berücksichtigen den Header-Abstand genau einmal.
 - Verfeinerte lokale Typografie: Oswald 700 für Haupttitel, Oswald 600 für Zwischenüberschriften und Namen, Lato 400/700 für Lesetext und Bedienung. Hauptschriften werden vorgeladen.
 - Gestaffelte Einstiege, einmalige Scroll-Reveals, Bild- und Karteninteraktionen sowie native Seitenübergänge in unterstützenden Browsern. Es gibt keine JavaScript-Scrollschleife, keinen künstlichen Ladebildschirm und keine verzögert abgefangenen Links.
 - Auf ausdrücklichen Wunsch sind sämtliche Reduced-Motion-Bedingungen entfernt. Ohne die Skripte bleiben die Inhalte sichtbar und die Seiten über gewöhnliche Links erreichbar.

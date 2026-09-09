@@ -26,7 +26,20 @@
   const heroAction = $('[data-viewport-hero]');
   if (mobileAction && heroAction && 'IntersectionObserver' in window) {
     mobileAction.classList.add('is-hidden');
-    new IntersectionObserver(entries => mobileAction.classList.toggle('is-hidden', entries[0].isIntersecting), {threshold:0}).observe(heroAction);
+    let observer, previousInset;
+    const observeHero = () => {
+      const inset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+      if (inset === previousInset) return;
+      previousInset = inset;
+      observer?.disconnect();
+      observer = new IntersectionObserver(entries => mobileAction.classList.toggle('is-hidden', entries[0].isIntersecting), {
+        // Edge contact still counts as intersecting; allow one pixel at the landing point.
+        threshold:0, rootMargin:`-${inset + 1}px 0px 0px 0px`
+      });
+      observer.observe(heroAction);
+    };
+    observeHero();
+    if ('ResizeObserver' in window) new ResizeObserver(observeHero).observe($('.site-header'));
   }
 
   const filterButtons = $$('[data-filter]');
@@ -66,7 +79,7 @@
   $('[data-photo-next]')?.addEventListener('click', () => showPhoto(photoIndex + 1));
   $('[data-photo-close]')?.addEventListener('click', () => photoDialog.close());
   photoDialog?.addEventListener('click', event => { if(event.target === photoDialog) { const r=photoDialog.getBoundingClientRect(); if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom) photoDialog.close(); } });
-  photoDialog?.addEventListener('close', () => { document.body.classList.remove('locked'); lastPhotoButton?.focus(); });
+  photoDialog?.addEventListener('close', () => { document.body.classList.remove('locked'); lastPhotoButton?.focus({preventScroll:true}); });
   photoDialog?.addEventListener('keydown', event => {
     if(event.key==='ArrowRight'){ event.preventDefault(); showPhoto(photoIndex+1); }
     if(event.key==='ArrowLeft'){ event.preventDefault(); showPhoto(photoIndex-1); }

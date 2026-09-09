@@ -3,7 +3,7 @@
  const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
  const form=$('#membership-form'), service=$('#service-form');
  if(!form&&!service)return;
- let config,step=0,furthest=0,busy=false,connecting=false,initialized=false;
+ let config,step=0,furthest=0,busy=false,connecting=false,initialized=false,tariffEdited=false;
  const idempotency=crypto.randomUUID();
  const eur=n=>new Intl.NumberFormat('de-DE',{style:'currency',currency:'EUR'}).format(n/100);
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -128,7 +128,8 @@
   compact.addEventListener('change',event=>costs.open=!event.matches);
   $('#join-next').addEventListener('click',()=>{if(validate())setStep(step+1);});$('#join-back').addEventListener('click',()=>{clearErrors();setStep(step-1);});
   $$('[data-step-link]').forEach(button=>button.addEventListener('click',()=>{const next=Number(button.dataset.stepLink);if(next<=step||validate())setStep(next);}));
-  form.addEventListener('change',()=>{if(config)summary();});
+  form.addEventListener('click',event=>{if(event.target.closest('.join-plan'))tariffEdited=true;});
+  form.addEventListener('change',event=>{if(event.target.name==='plan')tariffEdited=true;if(config)summary();});
   $('#iban').addEventListener('blur',()=>{$('#iban').value=val('iban').replace(/\s/g,'').toUpperCase().match(/.{1,4}/g)?.join(' ')||'';});
   $('#preview-contract').addEventListener('click',async()=>{const button=$('#preview-contract');button.disabled=true;try{download(await api('preview',payload(),true));}catch(error){errors(error.error||'Die PDF konnte nicht erstellt werden.',error.fields);}finally{button.disabled=false;}});
  }
@@ -140,7 +141,7 @@
   $('#join-connection').hidden=true;
   if(form){
    $('#join-intro-note').textContent=live?'Vier Schritte · Kein Benutzerkonto nötig':config.delivery==='browser'?'Öffentliche Demo · Bitte nur Testdaten verwenden':'Lokale Vorschau · Bitte nur Testdaten verwenden';
-   const incoming=new URLSearchParams(location.search).get('tarif');if(!initialized&&config.plans.some(p=>p.id===incoming))form.elements.plan.value=incoming;
+   const incoming=new URLSearchParams(location.search).get('tarif');if(!initialized&&!tariffEdited&&config.plans.some(p=>p.id===incoming))form.elements.plan.value=incoming;
    $('#start_date').min=config.today;$('#start_date').max=config.latest_start;if(!val('start_date'))$('#start_date').value=config.today;
    $('#birthdate').max=config.today;$('#sepa-text').textContent=config.sepa_text;$('#creditor-id').textContent=config.creditor_id;$('#billing-notice').textContent=config.billing_notice;$('#early-start-text').textContent=config.early_start_text;
    if(live){$('#sepa-label').textContent='Ich erteile das oben aufgeführte SEPA-Lastschriftmandat.';$('#terms-label').textContent='Ich akzeptiere die verlinkten Vertragsbedingungen und habe die Widerrufsinformation zur Kenntnis genommen.';$('#iban-hint').textContent='Deine IBAN wird geprüft und verschlüsselt gespeichert.';$('#join-submit').textContent='Zahlungspflichtig bestellen';}

@@ -1,0 +1,6 @@
+# Public preview: noindex is set on every page and HTTP response.
+# Crawling is allowed so crawlers can read the noindex directive.
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /site-src/

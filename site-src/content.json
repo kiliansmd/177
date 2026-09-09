@@ -1,0 +1,651 @@
+{
+  "as_of": "2026-09-09",
+  "scope": "Extraktion des vom Nutzer bereitgestellten Originals, abgeglichen mit den offiziellen Betreiberseiten. Dies ist keine Vertrags-, Register- oder Vollständigkeitsprüfung. Die Browserquelle zeigt teils ältere Crawldaten; keine telefonische Bestätigung. Keine Formulare oder Nachrichten gesendet.",
+  "sources": {
+    "prices": {
+      "title": "Preise & Aktionen – offizieller Betreiberauftritt",
+      "url": "https://fitness-studio-rheinbach.de/preise-aktionen/",
+      "original_file": "original-download/preise-aktionen/index.html",
+      "original_line": 36,
+      "retrieved": "2026-09-09",
+      "browser_crawl_label": "today",
+      "live_lines": "25–110"
+    },
+    "home": {
+      "title": "Performance Gym – offizielle Startseite",
+      "url": "https://fitness-studio-rheinbach.de/",
+      "original_file": "original-download/index.html",
+      "original_line": 36,
+      "retrieved": "2026-09-09",
+      "browser_crawl_label": "today",
+      "live_lines": "34–63"
+    },
+    "contact": {
+      "title": "Kontakt – offizieller Betreiberauftritt",
+      "url": "https://fitness-studio-rheinbach.de/contact/",
+      "original_file": "original-download/contact/index.html",
+      "original_line": 36,
+      "retrieved": "2026-09-09",
+      "browser_crawl_label": "2 days ago",
+      "live_lines": "30–47, 69–74"
+    },
+    "legal": {
+      "title": "Impressum – offizieller Betreiberauftritt",
+      "url": "https://fitness-studio-rheinbach.de/impressum/",
+      "original_file": "original-download/impressum/index.html",
+      "original_line": 36,
+      "retrieved": "2026-09-09",
+      "browser_crawl_label": "last week",
+      "live_lines": "21–59"
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung – Verantwortliche Stelle",
+      "url": "https://fitness-studio-rheinbach.de/datenschutzerklaerung/",
+      "original_file": "original-download/datenschutzerklaerung/index.html",
+      "original_line": 36,
+      "retrieved": "2026-09-09",
+      "browser_crawl_label": "last week",
+      "live_lines": "54–66"
+    },
+    "team": {
+      "title": "Team – offizieller Betreiberauftritt",
+      "url": "https://fitness-studio-rheinbach.de/unser-team/",
+      "original_file": "original-download/unser-team/index.html",
+      "original_line": 36,
+      "retrieved": "2026-09-09",
+      "browser_crawl_label": "last week",
+      "live_lines": "48–62"
+    },
+    "eu_odr": {
+      "title": "Europäische Kommission: ODR platform discontinued",
+      "url": "https://consumer-redress.ec.europa.eu/site-relocation_en",
+      "retrieved": "2026-09-09"
+    },
+    "ddg": {
+      "title": "Digitale-Dienste-Gesetz – § 5 Allgemeine Informationspflichten",
+      "url": "https://www.gesetze-im-internet.de/ddg/BJNR0950B0024.html",
+      "retrieved": "2026-09-09"
+    }
+  },
+  "facts": {
+    "brand": "17/7 Performance Gym",
+    "prices_valid_from": "2026-02-01",
+    "membership_plans": [
+      {
+        "id": "standard",
+        "label": "Standard",
+        "monthly_eur": "26.99",
+        "term_months": 12,
+        "payment": "monatlich zahlbar",
+        "cancellation_notice": null,
+        "shared_conditions": {
+          "access_method": "E-Band",
+          "e_band_one_off_eur": "19.99",
+          "joining_fee_eur": "0.00",
+          "free_parking": true,
+          "free_wifi": true,
+          "mineral_drinks_flatrate": {
+            "included_now": true,
+            "basis": "Aktuelle Aktion laut Betreiberseite; kein Enddatum genannt. Nicht als dauerhaft garantierte Leistung formulieren."
+          },
+          "billing": "monatlich",
+          "sources": [
+            "prices"
+          ]
+        },
+        "sources": [
+          "prices"
+        ],
+        "status": "original_and_official_page_agree"
+      },
+      {
+        "id": "starter",
+        "label": "Starter",
+        "monthly_eur": "36.99",
+        "term_months": 1,
+        "payment": "monatlich zahlbar",
+        "cancellation": "monatlich kündbar",
+        "cancellation_notice": null,
+        "shared_conditions": {
+          "access_method": "E-Band",
+          "e_band_one_off_eur": "19.99",
+          "joining_fee_eur": "0.00",
+          "free_parking": true,
+          "free_wifi": true,
+          "mineral_drinks_flatrate": {
+            "included_now": true,
+            "basis": "Aktuelle Aktion laut Betreiberseite; kein Enddatum genannt. Nicht als dauerhaft garantierte Leistung formulieren."
+          },
+          "billing": "monatlich",
+          "sources": [
+            "prices"
+          ]
+        },
+        "sources": [
+          "prices"
+        ],
+        "status": "original_and_official_page_agree"
+      },
+      {
+        "id": "corporate_club",
+        "label": "Firmen- & Vereinsfitness",
+        "monthly_eur": "20.00",
+        "term_months": 12,
+        "payment": "monatlich zahlbar",
+        "eligibility": "Firmenkunden oder Vereinsmitglieder",
+        "minimum_contracts": 5,
+        "shared_conditions": {
+          "access_method": "E-Band",
+          "e_band_one_off_eur": "19.99",
+          "joining_fee_eur": "0.00",
+          "free_parking": true,
+          "free_wifi": true,
+          "mineral_drinks_flatrate": {
+            "included_now": true,
+            "basis": "Aktuelle Aktion laut Betreiberseite; kein Enddatum genannt. Nicht als dauerhaft garantierte Leistung formulieren."
+          },
+          "billing": "monatlich",
+          "sources": [
+            "prices"
+          ]
+        },
+        "sources": [
+          "prices"
+        ],
+        "status": "original_and_official_page_agree"
+      }
+    ],
+    "youth": {
+      "minimum_training_age": 14,
+      "trial_under_18_requires_guardian_present": true,
+      "written_parental_consent_required": true,
+      "parental_consent_form_location": "im Gym",
+      "eligible_contracts": [
+        "monatlich kündbare Mitgliedschaft",
+        "12-Monatsvertrag"
+      ],
+      "starter_package_one_off_eur": "49.99",
+      "starter_package_includes": [
+        "Trainingsplan",
+        "Einweisung an den Geräten",
+        "Body-Analyse"
+      ],
+      "contract_signup": "Eltern müssen persönlich vor Ort den Vertrag, das SEPA-Mandat und die Einverständniserklärung unterschreiben.",
+      "fee_cumulation_note": "49,99 € Jugend-Starterpaket und 19,99 € E-Band stehen in getrennten Abschnitten. Ein Gesamtstartbetrag für Jugendliche wird nicht ausdrücklich genannt; keine unbestätigte Summe oder Ausnahme ergänzen.",
+      "sources": [
+        "prices"
+      ]
+    },
+    "security_workers": {
+      "monthly_eur": "20.00",
+      "eligible_groups": [
+        "Bundeswehr",
+        "Bundespolizei",
+        "Feuerwehr",
+        "Justizvollzugsbeamte",
+        "Polizei",
+        "Rettungsdienst",
+        "Zollmitarbeiter"
+      ],
+      "also_existing_contracts": true,
+      "term_months": null,
+      "eligibility_proof": null,
+      "extra_fees": null,
+      "contact_person": "Guido",
+      "scope_note": "Keine pauschale Ermäßigung für alle Beschäftigten/Angestellten, Studierende oder Auszubildende belegt. Firmen-/Vereinskonditionen sind ein eigener Tarif.",
+      "sources": [
+        "prices"
+      ]
+    },
+    "trial": {
+      "appointment_required": false,
+      "bring": [
+        "Personalausweis",
+        "Handtuch"
+      ],
+      "minimum_training_age": 14,
+      "under_18_guardian_present": true,
+      "price_eur": null,
+      "duration_minutes": null,
+      "trainer_supervision_guaranteed": null,
+      "registration_required": null,
+      "editorial_guardrail": "Kein kostenloses Probetraining, keine garantierte persönliche Betreuung und keine Dauer erfinden. Kein Buchungszwang: ohne Termin ist ausdrücklich erlaubt.",
+      "sources": [
+        "home",
+        "prices"
+      ]
+    },
+    "opening_hours": {
+      "regular": [
+        {
+          "days": [
+            "Mo",
+            "Di",
+            "Mi",
+            "Do",
+            "Fr",
+            "Sa",
+            "So"
+          ],
+          "opens": "06:00",
+          "closes": "22:00"
+        }
+      ],
+      "holiday_note": "An gesetzlichen Feiertagen können die Öffnungszeiten abweichen.",
+      "home_exceptions": [
+        "Heiligabend",
+        "Weihnachten",
+        "Silvester",
+        "Neujahr"
+      ],
+      "home_claim_365_days": true,
+      "staffed_hours": null,
+      "editorial_guardrail": "06–22 Uhr sind 16 Stunden; Markenname 17/7 nicht in 17 tägliche Öffnungsstunden oder 24/7 umdeuten. 365-Tage-Claim nur mit Feiertagsvorbehalt.",
+      "sources": [
+        "contact",
+        "home"
+      ]
+    },
+    "contact": {
+      "telephone_display": "02226 91 11 999",
+      "telephone_e164": "+4922269111999",
+      "fax_display": "02226 91 11 993",
+      "fax_e164": "+4922269111993",
+      "email": "info@performance-gym.de",
+      "visiting_address": {
+        "street": "Industriestraße 32 a–e",
+        "postal_code": "53359",
+        "city": "Rheinbach"
+      },
+      "registered_address_as_stated": {
+        "street": "Industriestr. 32",
+        "postal_code": "53359",
+        "city": "Rheinbach"
+      },
+      "free_parking": true,
+      "sources": [
+        "contact",
+        "legal",
+        "prices"
+      ]
+    },
+    "business": {
+      "legal_entity_as_stated": "17/7 performance-gym Fitness GmbH Rheinbach",
+      "legal_form": "GmbH",
+      "managing_director": "Heinz-Willi Brauweiler",
+      "studio_manager": "Guido Leffler",
+      "owner_or_shareholder": null,
+      "registry_number_as_stated": "23728",
+      "registry_type_prefix": null,
+      "registry_court": "Amtsgericht Bonn",
+      "vat_id": "DE318693247",
+      "data_controller_as_stated": "17/7 performance-gym Fitness GmbH Rheinbach",
+      "dispute_resolution_statement_as_stated": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
+      "image_credit_as_stated": "Bildquelle der Slidergrafik „Spezialangebot Sicherheitskräfte“: Pixabay.com",
+      "editorial_guardrail": "Geschäftsführer ist keine verifizierte Inhaber-/Gesellschafterangabe. Registerpräfix HRB nicht ungeprüft hinzufügen. Keine aktuelle Handelsregisterabfrage durchgeführt.",
+      "sources": [
+        "legal",
+        "privacy",
+        "team"
+      ]
+    },
+    "training": {
+      "verified_facilities": [
+        "Kraftgeräte",
+        "Laufbänder",
+        "Crosstrainer",
+        "Ergometer",
+        "funktionelles Training",
+        "zwei Freihantelbereiche"
+      ],
+      "homepage_area_sqm": 1200,
+      "area_conflict_sqm": 1650,
+      "published_class_schedule": null,
+      "editorial_guardrail": "Flächenangabe wegen widersprüchlicher Alttexte vorläufig nicht als zentrales Verkaufsargument verwenden. Fitnesslexikon ist kein Nachweis für Kurse.",
+      "sources": [
+        "home"
+      ]
+    }
+  },
+  "draft_copy": {
+    "hero": {
+      "eyebrow": "Fitness in Rheinbach",
+      "headline": "Dein Training. Dein Rhythmus.",
+      "body": "Kraftgeräte, Cardio und zwei Freihantelbereiche. Trainiere im Performance Gym – täglich von 06:00 bis 22:00 Uhr.",
+      "support": "An gesetzlichen Feiertagen können die Öffnungszeiten abweichen.",
+      "primary_cta": "Probetraining entdecken",
+      "secondary_cta": "Mitgliedschaften ansehen",
+      "sources": [
+        "home",
+        "contact"
+      ]
+    },
+    "trial": {
+      "headline": "Lerne dein Gym kennen.",
+      "body": "Für dein Probetraining brauchst du keinen Termin. Bring deinen Personalausweis und ein Handtuch mit.",
+      "minor_note": "Unter 18? Komm bitte mit einem Erziehungsberechtigten. Training ist ab 14 Jahren möglich.",
+      "primary_cta": "So findest du uns",
+      "secondary_cta": "Fragen zum Probetraining",
+      "sources": [
+        "home",
+        "prices"
+      ]
+    },
+    "prices": {
+      "headline": "Wähle, was zu deinem Alltag passt.",
+      "intro": "12 Monate planen oder monatlich kündbar bleiben: Entdecke unsere Mitgliedschaften.",
+      "date_note": "Preise gültig seit 01.02.2026.",
+      "cards": [
+        {
+          "label": "Standard",
+          "price": "26,99 €",
+          "unit": "pro Monat",
+          "description": "12 Monate Laufzeit · monatlich zahlbar",
+          "fee_note": "Zuzüglich einmalig 19,99 € für das E-Band.",
+          "cta": "Standard anfragen"
+        },
+        {
+          "label": "Starter",
+          "price": "36,99 €",
+          "unit": "pro Monat",
+          "description": "1 Monat Laufzeit · monatlich kündbar und zahlbar",
+          "fee_note": "Zuzüglich einmalig 19,99 € für das E-Band.",
+          "cta": "Starter anfragen"
+        },
+        {
+          "label": "Firmen- & Vereinsfitness",
+          "price": "20,00 €",
+          "unit": "pro Monat",
+          "description": "12 Monate Laufzeit · monatlich zahlbar",
+          "eligibility_note": "Für Firmenkunden und Vereinsmitglieder ab fünf Verträgen.",
+          "fee_note": "Zuzüglich einmalig 19,99 € für das E-Band.",
+          "cta": "Firmen- & Vereinsfitness anfragen"
+        }
+      ],
+      "shared_features": [
+        "Keine Aufnahmegebühr",
+        "Kostenfrei parken",
+        "Kostenfreies WLAN"
+      ],
+      "drinks_note": "Die Mineralgetränke-Flatrate ist aktuell im Rahmen einer Aktion enthalten.",
+      "youth_note": "Für Jugendliche ist ein Starterpaket für einmalig 49,99 € vorgesehen. Es umfasst Trainingsplan, Geräteeinweisung und Body-Analyse. Die Voraussetzungen findest du in den Fragen und Antworten.",
+      "sources": [
+        "prices"
+      ]
+    },
+    "security_offer": {
+      "headline": "Fitness für Sicherheitskräfte.",
+      "body": "20 € pro Monat für Bundeswehr, Bundespolizei, Feuerwehr, Justizvollzugsbeamte, Polizei, Rettungsdienst und Zollmitarbeiter. Das Angebot gilt auch für bestehende Verträge.",
+      "cta": "Konditionen anfragen",
+      "contact_note": "Infos telefonisch, per E-Mail oder bei Guido im Gym.",
+      "sources": [
+        "prices"
+      ]
+    },
+    "faq": [
+      {
+        "question": "Brauche ich einen Termin fürs Probetraining?",
+        "answer": "Nein. Für dein Probetraining brauchst du keinen Termin. Bring bitte deinen Personalausweis und ein Handtuch mit.",
+        "sources": [
+          "home"
+        ]
+      },
+      {
+        "question": "Wann kann ich trainieren?",
+        "answer": "Wir haben regulär täglich von 06:00 bis 22:00 Uhr geöffnet. An gesetzlichen Feiertagen können die Zeiten abweichen.",
+        "sources": [
+          "contact"
+        ]
+      },
+      {
+        "question": "Ab welchem Alter kann ich trainieren?",
+        "answer": "Training ist ab 14 Jahren möglich. Für ein Probetraining müssen Jugendliche unter 18 Jahren von einem Erziehungsberechtigten begleitet werden.",
+        "sources": [
+          "prices"
+        ]
+      },
+      {
+        "question": "Was gilt für eine Mitgliedschaft unter 18 Jahren?",
+        "answer": "Du brauchst das schriftliche Einverständnis deiner Eltern; das Formblatt erhältst du im Gym. Deine Eltern müssen beim Vertragsabschluss vor Ort den Vertrag, das SEPA-Mandat und die Einverständniserklärung unterschreiben. Möglich sind eine monatlich kündbare Mitgliedschaft oder ein 12-Monatsvertrag. Das einmalige Starterpaket kostet 49,99 € und enthält Trainingsplan, Geräteeinweisung und Body-Analyse.",
+        "sources": [
+          "prices"
+        ]
+      },
+      {
+        "question": "Welche Mitgliedschaft ist monatlich kündbar?",
+        "answer": "Der Starter-Tarif kostet 36,99 € pro Monat und ist monatlich kündbar sowie zahlbar. Das E-Band kostet zusätzlich einmalig 19,99 €.",
+        "sources": [
+          "prices"
+        ]
+      },
+      {
+        "question": "Welche Zusatzkosten sind ausgewiesen?",
+        "answer": "Bei Standard, Starter sowie Firmen- und Vereinsfitness fallen einmalig 19,99 € für das E-Band an. Eine Aufnahmegebühr wird nicht berechnet. Für Jugendliche ist zusätzlich ein Starterpaket ausgewiesen; die Bedingungen findest du bei den Informationen für unter 18-Jährige.",
+        "sources": [
+          "prices"
+        ]
+      },
+      {
+        "question": "Gibt es einen Tarif für Firmen oder Vereine?",
+        "answer": "Ja. Firmenkunden und Vereinsmitglieder können ab fünf Verträgen für 20 € pro Monat trainieren. Die Laufzeit beträgt zwölf Monate, die Zahlung erfolgt monatlich. Das E-Band kostet zusätzlich einmalig 19,99 €.",
+        "sources": [
+          "prices"
+        ]
+      },
+      {
+        "question": "Kann ich am Gym parken?",
+        "answer": "Ja, kostenfreies Parken gehört zu den aufgeführten Leistungen der Mitgliedschaften.",
+        "sources": [
+          "prices"
+        ]
+      }
+    ],
+    "contact": {
+      "headline": "Wir sehen uns in Rheinbach.",
+      "address": "Industriestraße 32 a–e, 53359 Rheinbach",
+      "hours": "Montag bis Sonntag · 06:00–22:00 Uhr",
+      "holiday_note": "An gesetzlichen Feiertagen können die Zeiten abweichen.",
+      "telephone": "02226 91 11 999",
+      "email": "info@performance-gym.de",
+      "primary_cta": "Anrufen",
+      "secondary_cta": "E-Mail schreiben",
+      "sources": [
+        "contact"
+      ]
+    }
+  },
+  "recommended_ia": [
+    {
+      "page": "Startseite",
+      "sections": [
+        "Hero mit Probetraining/Preise",
+        "Training und Ausstattung",
+        "Gym-Bilder",
+        "Mitgliedschaften kompakt",
+        "Probetraining",
+        "Team-Vorschau",
+        "Kontakt und Öffnungszeiten"
+      ]
+    },
+    {
+      "page": "Preise",
+      "sections": [
+        "Drei klar vergleichbare Tarife",
+        "Gebühren und Leistungen",
+        "Sicherheitskräfte",
+        "Jugendliche",
+        "FAQ",
+        "Kontakt-CTA"
+      ]
+    },
+    {
+      "page": "Das Gym",
+      "sections": [
+        "Trainingsbereiche",
+        "Galerie nach Hallen",
+        "Team mit belegten Rollen",
+        "Kontakt"
+      ]
+    },
+    {
+      "page": "Probetraining",
+      "sections": [
+        "Ohne Termin starten",
+        "Mitbringen",
+        "Minderjährige",
+        "Öffnungszeiten und Anfahrt",
+        "Fragen per Telefon/E-Mail"
+      ]
+    },
+    {
+      "page": "Kontakt",
+      "sections": [
+        "Anruf/E-Mail/Adresse",
+        "Öffnungszeiten",
+        "Anfahrt",
+        "Nur tatsächlich funktionierende Anfragefunktion"
+      ]
+    },
+    {
+      "page": "Footer",
+      "sections": [
+        "Impressum",
+        "Datenschutz",
+        "Kontakt"
+      ]
+    }
+  ],
+  "conflicts_and_unknowns": [
+    {
+      "id": "expired_summer_sale",
+      "finding": "Summer-Sale endete laut Original und offizieller Seite am 31.08.2026.",
+      "action": "Entfällt zum Prüfdatum 09.09.2026; keine Restlaufzeit/Countdown beibehalten.",
+      "sources": [
+        "prices"
+      ]
+    },
+    {
+      "id": "old_19_99_meta",
+      "finding": "Homepage-Titel und Preisseite nennen Standard 26,99 €; Homepage-Meta-Description und Schema nennen noch 19,99 €.",
+      "action": "26,99 € aus der datierten Preistabelle für Standard verwenden. 19,99 € ist dort nur die einmalige E-Band-Gebühr.",
+      "sources": [
+        "home",
+        "prices"
+      ]
+    },
+    {
+      "id": "hours_17_versus_16",
+      "finding": "Marke/Preis-Bullet sagt 17/7, aktuelle konkrete Zeiten sind täglich 06–22 Uhr; Lexikon teils 17 Stunden.",
+      "action": "Konkrete Öffnungszeiten mit Feiertagsvorbehalt nennen.",
+      "sources": [
+        "home",
+        "contact",
+        "prices"
+      ]
+    },
+    {
+      "id": "trial_price",
+      "finding": "Kein Preis oder Gratisversprechen für Probetraining auffindbar.",
+      "action": "Nur ohne Termin nennen; nicht kostenlos/gratis, keine erfundene Dauer.",
+      "sources": [
+        "home",
+        "prices"
+      ]
+    },
+    {
+      "id": "switch_deal",
+      "finding": "Weiterhin veröffentlicht: bis 154,99 € Ersparnis, setzt sich laut Alttext aus 49,99 € Aufnahmegebühr, 75 € für drei Monate und 30 € Getränken zusammen. Reguläre Tarife haben keine Aufnahmegebühr und Getränke aktuell inklusive; drei Standardmonate wären 80,97 €.",
+      "action": "Nicht als aktuelle garantierte Ersparnis wiederverwenden. Bei Bedarf neutral zur individuellen Wechselberatung führen; keine unbestätigte Aktion erfinden.",
+      "sources": [
+        "prices"
+      ]
+    },
+    {
+      "id": "security_terms",
+      "finding": "Sicherheitskräftepreis 20 € auch für Bestandsverträge; Laufzeit, Nachweis und Zusatzgebühren fehlen für dieses Sonderangebot.",
+      "action": "Anfrage-CTA statt sofort verbindlichem Vertragsabschluss oder erfundenen Detailkonditionen.",
+      "sources": [
+        "prices"
+      ]
+    },
+    {
+      "id": "staff_discount",
+      "finding": "Kein allgemeiner Beschäftigten-, Studenten-, Azubi- oder Seniorenrabatt ausgewiesen.",
+      "action": "Nur tatsächlich benannte Gruppen und Firmen-/Vereinstarif nennen.",
+      "sources": [
+        "prices"
+      ]
+    },
+    {
+      "id": "trial_and_youth_fees",
+      "finding": "Jugend-Starterpaket 49,99 € und E-Band 19,99 € in getrennten Textabschnitten; Paket- und E-Band-Verrechnung nicht erläutert.",
+      "action": "Beide ausgewiesenen Positionen transparent nennen, keinen unbestätigten Gesamtstartbetrag oder Einschluss behaupten.",
+      "sources": [
+        "prices"
+      ]
+    },
+    {
+      "id": "phone_typo",
+      "finding": "Abschließender Wechseldeal-Link lautet verkürzt 02226 91 11 99.",
+      "action": "Konsistent 02226 91 11 999 aus Kontakt/Impressum verwenden.",
+      "sources": [
+        "prices",
+        "contact",
+        "legal"
+      ]
+    },
+    {
+      "id": "addresses",
+      "finding": "Kontakt nennt Standort Industriestraße 32 a-e; Header/Impressum/Datenschutz Industriestr. 32.",
+      "action": "Besuchsadresse mit a–e, Anbieteranschrift unverändert als 32; keine zwei Standorte erfinden.",
+      "sources": [
+        "contact",
+        "legal",
+        "privacy"
+      ]
+    },
+    {
+      "id": "entity_registry_owner",
+      "finding": "Impressum nennt Firma, Geschäftsführer und Nummer 23728 ohne Registerpräfix. Keine aktuelle Eigentümer-/Gesellschafterinformation.",
+      "action": "Keine Inhaberbehauptung und kein ungeprüft ergänztes HRB.",
+      "sources": [
+        "legal",
+        "team"
+      ]
+    },
+    {
+      "id": "legal_old_references",
+      "finding": "Altes Impressum bezieht sich auf TMG und behauptet eine verfügbare EU-OS-Plattform. Aktuelle Informationspflichten stehen in §5 DDG; die EU-Kommission bestätigt Schließung der OS-Plattform zum 20.07.2025.",
+      "action": "Alte Rechtsbausteine nicht blind übernehmen. Geschäftsdaten erhalten; OS-Verfügbarkeitsbehauptung entfernen. Für neue Website technische Datenschutzaussagen an tatsächlich implementierte Dienste anpassen.",
+      "sources": [
+        "legal",
+        "eu_odr",
+        "ddg"
+      ]
+    },
+    {
+      "id": "privacy_actual_stack",
+      "finding": "Alte Datenschutzerklärung enthält unter anderem PayPal, Newsletter, Registrierung, Twitter und Maps. Der Neubau kann andere Dienste/Funktionen verwenden.",
+      "action": "Nicht automatisch behaupten, dass nicht implementierte Dienste genutzt werden. Neue Funktions- und Dienstliste mit Datenschutztext abstimmen.",
+      "sources": [
+        "privacy"
+      ]
+    },
+    {
+      "id": "area_and_classes",
+      "finding": "Homepage-Intro 1.200 qm, Lexikon mehrfach 1.650 qm; kein konkreter Kursplan.",
+      "action": "Flächengröße vorläufig weglassen; aus Lexikonbegriffen keine Kurse oder Kurszeiten ableiten.",
+      "sources": [
+        "home"
+      ]
+    },
+    {
+      "id": "contract_details",
+      "finding": "Keine vollständigen AGB, genaue Kündigungsfrist, Verlängerung, MwSt.-Formulierung, weitere Jahres-/Servicegebühren oder Erstattungsbedingungen in den geprüften Preisabschnitten ausgewiesen.",
+      "action": "Keine fehlenden Konditionen ergänzen, insbesondere nicht keine weiteren Kosten, jederzeit kündbar oder Preisgarantie behaupten.",
+      "sources": [
+        "prices"
+      ]
+    }
+  ]
+}

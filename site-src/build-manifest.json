@@ -1,0 +1,189 @@
+{
+  "pages": {
+    "/": {
+      "title": "Performance Gym Rheinbach | Dein persönliches Warehouse Gym",
+      "description": "Krafttraining, Cardio und Functional Training im inhabergeführten Performance Gym Rheinbach. Probetraining ohne Termin. Standard ab 26,99 € pro Monat.",
+      "file": "index.html"
+    },
+    "/training/": {
+      "title": "Training & Ausstattung | Performance Gym Rheinbach",
+      "description": "Kraftgeräte, zwei Freihantelbereiche, Cardio und Functional Training: Entdecke die Trainingsmöglichkeiten im Performance Gym Rheinbach.",
+      "file": "training/index.html"
+    },
+    "/studio/": {
+      "title": "Das Gym & Galerie | Performance Gym Rheinbach",
+      "description": "Entdecke das persönliche Warehouse Gym in Rheinbach. Echte Studiofotos, Kraft- und Cardiobereiche, 360°-Tour und Informationen zur Anfahrt.",
+      "file": "studio/index.html"
+    },
+    "/preise-aktionen/": {
+      "title": "Preise & Mitgliedschaften | Performance Gym Rheinbach",
+      "description": "Standard 26,99 €, Starter 36,99 €, Firmen- & Vereinsfitness 20 € pro Monat. Vergleiche Laufzeiten, E-Band-Gebühr und Konditionen.",
+      "file": "preise-aktionen/index.html"
+    },
+    "/probetraining/": {
+      "title": "Probetraining ohne Termin | Performance Gym Rheinbach",
+      "description": "Lerne das Performance Gym Rheinbach ohne Termin kennen. Bring Personalausweis und Handtuch mit. Alle Infos zu Öffnungszeiten, Anfahrt und unter 18.",
+      "file": "probetraining/index.html"
+    },
+    "/unser-team/": {
+      "title": "Unser Team | Performance Gym Rheinbach",
+      "description": "Lerne Studioleitung, Mitarbeiter und Personal Trainer im 17/7 Performance Gym Rheinbach kennen. Alle Teammitglieder und Profile im Überblick.",
+      "file": "unser-team/index.html"
+    },
+    "/staff-member/thomas-rossbroich/": {
+      "title": "Thomas „Toto“ Roßbroich | Performance Gym Rheinbach",
+      "description": "Thomas „Toto“ Roßbroich – Personal Trainer im Performance Gym Rheinbach. Lerne unser Team kennen und nimm Kontakt auf.",
+      "file": "staff-member/thomas-rossbroich/index.html"
+    },
+    "/staff-member/beatrice-ulonska/": {
+      "title": "Beatrice Ulonska | Performance Gym Rheinbach",
+      "description": "Beatrice Ulonska – Personal Trainer im Performance Gym Rheinbach. Lerne unser Team kennen und nimm Kontakt auf.",
+      "file": "staff-member/beatrice-ulonska/index.html"
+    },
+    "/staff-member/oliver-franzen/": {
+      "title": "Oliver Franzen | Performance Gym Rheinbach",
+      "description": "Oliver Franzen – Personal Trainer im Performance Gym Rheinbach. Lerne unser Team kennen und nimm Kontakt auf.",
+      "file": "staff-member/oliver-franzen/index.html"
+    },
+    "/staff-member/guido-leffler/": {
+      "title": "Guido Leffler | Performance Gym Rheinbach",
+      "description": "Guido Leffler – Studioleiter im Performance Gym Rheinbach. Lerne unser Team kennen und nimm Kontakt auf.",
+      "file": "staff-member/guido-leffler/index.html"
+    },
+    "/staff-member/heinz-willi-brauweiler/": {
+      "title": "Heinz-Willi Brauweiler | Performance Gym Rheinbach",
+      "description": "Heinz-Willi Brauweiler – Geschäftsführer im Performance Gym Rheinbach. Lerne unser Team kennen und nimm Kontakt auf.",
+      "file": "staff-member/heinz-willi-brauweiler/index.html"
+    },
+    "/staff-member/jan/": {
+      "title": "Jan | Performance Gym Rheinbach",
+      "description": "Jan – Mitarbeiter im Performance Gym Rheinbach. Lerne unser Team kennen und nimm Kontakt auf.",
+      "file": "staff-member/jan/index.html"
+    },
+    "/staff-member/leo/": {
+      "title": "Leo | Performance Gym Rheinbach",
+      "description": "Leo – Mitarbeiter im Performance Gym Rheinbach. Lerne unser Team kennen und nimm Kontakt auf.",
+      "file": "staff-member/leo/index.html"
+    },
+    "/staff-member/kevin/": {
+      "title": "Kevin | Performance Gym Rheinbach",
+      "description": "Kevin – Mitarbeiter im Performance Gym Rheinbach. Lerne unser Team kennen und nimm Kontakt auf.",
+      "file": "staff-member/kevin/index.html"
+    },
+    "/staff-member/jannik/": {
+      "title": "Jannik | Performance Gym Rheinbach",
+      "description": "Jannik – Mitarbeiter im Performance Gym Rheinbach. Lerne unser Team kennen und nimm Kontakt auf.",
+      "file": "staff-member/jannik/index.html"
+    },
+    "/staff-member/thomas/": {
+      "title": "Thomas | Performance Gym Rheinbach",
+      "description": "Thomas – Mitarbeiter im Performance Gym Rheinbach. Lerne unser Team kennen und nimm Kontakt auf.",
+      "file": "staff-member/thomas/index.html"
+    },
+    "/staff-member/florian/": {
+      "title": "Florian | Performance Gym Rheinbach",
+      "description": "Florian – Mitarbeiter im Performance Gym Rheinbach. Lerne unser Team kennen und nimm Kontakt auf.",
+      "file": "staff-member/florian/index.html"
+    },
+    "/staff-member/maike/": {
+      "title": "Maike | Performance Gym Rheinbach",
+      "description": "Maike – Mitarbeiterin im Performance Gym Rheinbach. Lerne unser Team kennen und nimm Kontakt auf.",
+      "file": "staff-member/maike/index.html"
+    },
+    "/staff-member/umut/": {
+      "title": "Umut | Performance Gym Rheinbach",
+      "description": "Umut – Mitarbeiter im Performance Gym Rheinbach. Lerne unser Team kennen und nimm Kontakt auf.",
+      "file": "staff-member/umut/index.html"
+    },
+    "/staff-member/nick/": {
+      "title": "Nick | Performance Gym Rheinbach",
+      "description": "Nick – Mitarbeiter im Performance Gym Rheinbach. Lerne unser Team kennen und nimm Kontakt auf.",
+      "file": "staff-member/nick/index.html"
+    },
+    "/staff-member/calogero/": {
+      "title": "Calogero | Performance Gym Rheinbach",
+      "description": "Calogero – Mitarbeiter im Performance Gym Rheinbach. Lerne unser Team kennen und nimm Kontakt auf.",
+      "file": "staff-member/calogero/index.html"
+    },
+    "/staff-member/emerson/": {
+      "title": "Emerson | Performance Gym Rheinbach",
+      "description": "Emerson – Mitarbeiter im Performance Gym Rheinbach. Lerne unser Team kennen und nimm Kontakt auf.",
+      "file": "staff-member/emerson/index.html"
+    },
+    "/staff-member/aron/": {
+      "title": "Aron | Performance Gym Rheinbach",
+      "description": "Aron – Mitarbeiter im Performance Gym Rheinbach. Lerne unser Team kennen und nimm Kontakt auf.",
+      "file": "staff-member/aron/index.html"
+    },
+    "/contact/": {
+      "title": "Kontakt & Anfahrt | Performance Gym Rheinbach",
+      "description": "Kontakt zum Performance Gym: Industriestraße 32 a–e, 53359 Rheinbach. Telefon 02226 91 11 999. Regulär täglich 06–22 Uhr geöffnet.",
+      "file": "contact/index.html"
+    },
+    "/360-tour/": {
+      "title": "360°-Rundgang | Performance Gym Rheinbach",
+      "description": "Schau dich im Performance Gym Rheinbach um. Starte den extern bereitgestellten 360°-Rundgang oder entdecke die lokalen Studiofotos.",
+      "file": "360-tour/index.html"
+    },
+    "/gallery/halle-1/": {
+      "title": "Halle 1 | Studiogalerie Performance Gym Rheinbach",
+      "description": "Echte Einblicke in Halle 1 des Performance Gym Rheinbach. Entdecke die Trainingsbereiche in unserer Galerie.",
+      "file": "gallery/halle-1/index.html"
+    },
+    "/gallery/halle-2/": {
+      "title": "Halle 2 | Studiogalerie Performance Gym Rheinbach",
+      "description": "Echte Einblicke in Halle 2 des Performance Gym Rheinbach. Entdecke die Trainingsbereiche in unserer Galerie.",
+      "file": "gallery/halle-2/index.html"
+    },
+    "/gallery/halle-3/": {
+      "title": "Halle 3 | Studiogalerie Performance Gym Rheinbach",
+      "description": "Echte Einblicke in Halle 3 des Performance Gym Rheinbach. Entdecke die Trainingsbereiche in unserer Galerie.",
+      "file": "gallery/halle-3/index.html"
+    },
+    "/impressum/": {
+      "title": "Impressum | Performance Gym Rheinbach",
+      "description": "Anbieterkennzeichnung und Kontaktdaten der 17/7 performance-gym Fitness GmbH Rheinbach.",
+      "file": "impressum/index.html"
+    },
+    "/datenschutzerklaerung/": {
+      "title": "Datenschutz | Performance Gym Rheinbach",
+      "description": "Informationen zum Datenschutz, zur Kontaktaufnahme und zum Laden externer Medien auf dieser Website.",
+      "file": "datenschutzerklaerung/index.html"
+    },
+    "/mitglied-werden/": {
+      "title": "Mitglied werden | Performance Gym Rheinbach",
+      "description": "Wähle deinen Tarif und melde dich digital im Performance Gym Rheinbach an. Transparente Kosten, geführte Anmeldung und PDF-Vertrag.",
+      "file": "mitglied-werden/index.html"
+    },
+    "/kuendigen/": {
+      "title": "Verträge hier kündigen | Performance Gym Rheinbach",
+      "description": "Erklärung zur Kündigung deiner Mitgliedschaft online abgeben und eine Eingangsbestätigung erhalten.",
+      "file": "kuendigen/index.html"
+    },
+    "/widerrufen/": {
+      "title": "Vertrag widerrufen | Performance Gym Rheinbach",
+      "description": "Erklärung zur Widerruf deiner Mitgliedschaft online abgeben und eine Eingangsbestätigung erhalten.",
+      "file": "widerrufen/index.html"
+    },
+    "/404/": {
+      "title": "Seite nicht gefunden | Performance Gym Rheinbach",
+      "description": "Diese Seite wurde nicht gefunden. Finde zurück zum Performance Gym Rheinbach.",
+      "file": "404/index.html"
+    }
+  },
+  "redirects": {
+    "/gallery/gallerie/": "/studio/",
+    "/preise/": "/preise-aktionen/",
+    "/kontakt/": "/contact/",
+    "/team/": "/unser-team/",
+    "/gallery/etiam-nec-scelerisque/": "/studio/",
+    "/gallery/lorem-ipsum/": "/studio/",
+    "/gallery/morbi-non-pellentesque/": "/studio/",
+    "/gallery/nam-ac-ante-vitae/": "/studio/",
+    "/gallery/nullam-interdum/": "/studio/",
+    "/gallery/nullam-varius-dui/": "/studio/",
+    "/gallery/proin-molestie-dui/": "/studio/",
+    "/gallery/proin-nulla-augue/": "/studio/"
+  },
+  "source_facts_date": "2026-09-09"
+}

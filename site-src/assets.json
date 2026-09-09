@@ -1,0 +1,723 @@
+{
+  "source_root": "original-download",
+  "asset_paths_relative_to_source_root": true,
+  "method": "Dateien/HTML gelesen; 38 lokale Gym-/Außenfotos als Kontaktbogen betrachtet, zwei Hero-Kandidaten zusätzlich groß betrachtet. Teamzuordnung über vorhandene Profil-/Übersichtslinks und alt-Texte, keine biometrische Zuordnung. Team-Kontaktbogen aller 17 zugeordneten Assets ebenfalls visuell geprüft.",
+  "hero": {
+    "path": "wp-content/uploads/2019/08/09_17-7-1024x768.jpg",
+    "absolute_path": "original-download/wp-content/uploads/2019/08/09_17-7-1024x768.jpg",
+    "exists": true,
+    "bytes": 136832,
+    "width": 1024,
+    "height": 768,
+    "mode": "RGB",
+    "title": "Functional- und Langhantelbereich",
+    "alt": "Blick in die Trainingshalle mit mehreren Rigs, Langhanteln und freier Trainingsfläche.",
+    "recommendation": "Bester vorhandener authentischer Warehouse-Trainingshallen-Hero: große Rigs, Betonstruktur, freie Fläche; keine Rezeption, keine eingebrannte Werbetextgrafik.",
+    "desktop_crop": "16:9 oder 21:9, object-position:50% 48%; Bild mit dunkler seitlicher Textfläche/Gradient kombinieren, Equipment möglichst sichtbar lassen.",
+    "mobile_crop": "4:5 oder 3:4, object-position:56% 50%; zentrale Rig-Reihe priorisieren.",
+    "resolution_note": "Originaldatei nur 1024x768; im Mitschnitt kein höher aufgelöstes Pendant gefunden. Nicht als schärferes 4K-Original ausgeben."
+  },
+  "hero_alternatives": [
+    {
+      "path": "wp-content/uploads/2019/08/08_17-7-1024x768.jpg",
+      "absolute_path": "original-download/wp-content/uploads/2019/08/08_17-7-1024x768.jpg",
+      "exists": true,
+      "bytes": 147231,
+      "width": 1024,
+      "height": 768,
+      "mode": "RGB",
+      "title": "Freihantelbereich",
+      "alt": "Hantelbänke, Kurzhantelreihen und Kraftgeräte in der hohen Studiohalle.",
+      "recommendation": "Sehr guter Freihantelbereich-Hero; leichte sichtbare Emporenbrüstung rechts unten beim Crop beachten."
+    },
+    {
+      "path": "wp-content/uploads/2019/08/06_17-7-1024x768.jpg",
+      "absolute_path": "original-download/wp-content/uploads/2019/08/06_17-7-1024x768.jpg",
+      "exists": true,
+      "bytes": 143292,
+      "width": 1024,
+      "height": 768,
+      "mode": "RGB",
+      "title": "Gerätetraining",
+      "alt": "Weiter Blick über zahlreiche Kraftgeräte in der Trainingshalle.",
+      "recommendation": "Weiter Hallenblick mit Gerätevielfalt; alternative Atmosphäre."
+    }
+  ],
+  "gallery": [
+    {
+      "path": "wp-content/uploads/2019/08/09_17-7-1024x768.jpg",
+      "absolute_path": "original-download/wp-content/uploads/2019/08/09_17-7-1024x768.jpg",
+      "exists": true,
+      "bytes": 136832,
+      "width": 1024,
+      "height": 768,
+      "mode": "RGB",
+      "title": "Functional- und Langhantelbereich",
+      "alt": "Blick in die Trainingshalle mit mehreren Rigs, Langhanteln und freier Trainingsfläche."
+    },
+    {
+      "path": "wp-content/uploads/2019/08/08_17-7-1024x768.jpg",
+      "absolute_path": "original-download/wp-content/uploads/2019/08/08_17-7-1024x768.jpg",
+      "exists": true,
+      "bytes": 147231,
+      "width": 1024,
+      "height": 768,
+      "mode": "RGB",
+      "title": "Freihantelbereich",
+      "alt": "Hantelbänke, Kurzhantelreihen und Kraftgeräte in der hohen Studiohalle."
+    },
+    {
+      "path": "wp-content/uploads/2019/08/06_17-7-1024x768.jpg",
+      "absolute_path": "original-download/wp-content/uploads/2019/08/06_17-7-1024x768.jpg",
+      "exists": true,
+      "bytes": 143292,
+      "width": 1024,
+      "height": 768,
+      "mode": "RGB",
+      "title": "Gerätetraining",
+      "alt": "Weiter Blick über zahlreiche Kraftgeräte in der Trainingshalle."
+    },
+    {
+      "path": "wp-content/uploads/2019/08/16_17-7-1024x768.jpg",
+      "absolute_path": "original-download/wp-content/uploads/2019/08/16_17-7-1024x768.jpg",
+      "exists": true,
+      "bytes": 115059,
+      "width": 1024,
+      "height": 768,
+      "mode": "RGB",
+      "title": "Training auf der Empore",
+      "alt": "Trainingsfläche mit Holzboden und Geräten unter sichtbaren Stahlträgern."
+    },
+    {
+      "path": "wp-content/uploads/2019/08/14_17-7-1024x768.jpg",
+      "absolute_path": "original-download/wp-content/uploads/2019/08/14_17-7-1024x768.jpg",
+      "exists": true,
+      "bytes": 121301,
+      "width": 1024,
+      "height": 768,
+      "mode": "RGB",
+      "title": "Maschinen und Geräte",
+      "alt": "Kraftgeräte und Trainingsstationen von der Galerie aus gesehen."
+    },
+    {
+      "path": "wp-content/uploads/2015/02/61031077_397987577593961_8835939963548729344_o-1024x819.jpg",
+      "absolute_path": "original-download/wp-content/uploads/2015/02/61031077_397987577593961_8835939963548729344_o-1024x819.jpg",
+      "exists": true,
+      "bytes": 141524,
+      "width": 1024,
+      "height": 819,
+      "mode": "RGB",
+      "title": "Langhantelstationen",
+      "alt": "Nahaufnahme von Racks mit Hantelscheiben und Langhanteln."
+    },
+    {
+      "path": "wp-content/uploads/2019/08/61380776_397990110927041_2523208117198520320_o-1024x819.jpg",
+      "absolute_path": "original-download/wp-content/uploads/2019/08/61380776_397990110927041_2523208117198520320_o-1024x819.jpg",
+      "exists": true,
+      "bytes": 109187,
+      "width": 1024,
+      "height": 819,
+      "mode": "RGB",
+      "title": "Cardiotraining",
+      "alt": "Laufbänder für das Ausdauertraining."
+    },
+    {
+      "path": "wp-content/uploads/2019/08/61795831_397986574260728_7264553138093293568_o-1024x819.jpg",
+      "absolute_path": "original-download/wp-content/uploads/2019/08/61795831_397986574260728_7264553138093293568_o-1024x819.jpg",
+      "exists": true,
+      "bytes": 134678,
+      "width": 1024,
+      "height": 819,
+      "mode": "RGB",
+      "title": "Ausdauergeräte",
+      "alt": "Crosstrainer und Ergometer in einer Reihe."
+    },
+    {
+      "path": "wp-content/uploads/2019/08/DSC00938-1024x683.jpg",
+      "absolute_path": "original-download/wp-content/uploads/2019/08/DSC00938-1024x683.jpg",
+      "exists": true,
+      "bytes": 173837,
+      "width": 1024,
+      "height": 683,
+      "mode": "RGB",
+      "title": "Geführtes Krafttraining",
+      "alt": "Blick durch den Bereich mit geführten Kraftgeräten."
+    },
+    {
+      "path": "wp-content/uploads/2019/08/Bild_1-1024x678.jpg",
+      "absolute_path": "original-download/wp-content/uploads/2019/08/Bild_1-1024x678.jpg",
+      "exists": true,
+      "bytes": 137830,
+      "width": 1024,
+      "height": 678,
+      "mode": "RGB",
+      "title": "Studioeingang",
+      "alt": "Außenansicht des 17/7 Performance Gym mit Eingang und Sitzbereich."
+    }
+  ],
+  "team": [
+    {
+      "name": "Thomas „Toto“ Roßbroich",
+      "role": "Personal Trainer",
+      "slug": "thomas-rossbroich",
+      "category": "personal-trainers",
+      "source_page": "staff-member/thomas-rossbroich/index.html",
+      "asset": {
+        "path": "wp-content/uploads/2020/10/Toto-Trainer-scaled.jpg",
+        "absolute_path": "original-download/wp-content/uploads/2020/10/Toto-Trainer-scaled.jpg",
+        "exists": true,
+        "bytes": 346243,
+        "width": 2416,
+        "height": 2560,
+        "mode": "RGB"
+      },
+      "original_profile_image_url": "../../wp-content/uploads/2020/10/Toto-Trainer-scaled.jpg",
+      "asset_note": null,
+      "overview_excerpt": "\"Das Geheimnis des Erfolgs ist anzufangen!\" Gerne unterstütze ich dabei, Schritt-für-Schritt auf dem Weg zu Deinem Traumbody.",
+      "original_profile_text": "",
+      "original_profile_paragraphs": [],
+      "recommended_object_position": "50% 65%"
+    },
+    {
+      "name": "Beatrice Ulonska",
+      "role": "Personal Trainer",
+      "slug": "beatrice-ulonska",
+      "category": "personal-trainers",
+      "source_page": "staff-member/beatrice-ulonska/index.html",
+      "asset": {
+        "path": "wp-content/uploads/2020/10/Bea-e1602021371986.jpg",
+        "absolute_path": "original-download/wp-content/uploads/2020/10/Bea-e1602021371986.jpg",
+        "exists": true,
+        "bytes": 238931,
+        "width": 1998,
+        "height": 1379,
+        "mode": "RGB"
+      },
+      "original_profile_image_url": "../../wp-content/uploads/2020/10/Bea-e1602021371986.jpg",
+      "asset_note": null,
+      "overview_excerpt": "Sport ist meine Leidenschaft – Gemeinsam gehen wir den Weg zu Deinem sportlichen Ziel!",
+      "original_profile_text": "",
+      "original_profile_paragraphs": [],
+      "recommended_object_position": "50% 50%"
+    },
+    {
+      "name": "Oliver Franzen",
+      "role": "Personal Trainer",
+      "slug": "oliver-franzen",
+      "category": "personal-trainers",
+      "source_page": "staff-member/oliver-franzen/index.html",
+      "asset": {
+        "path": "wp-content/uploads/2018/06/Trainer-Franzen.png",
+        "absolute_path": "original-download/wp-content/uploads/2018/06/Trainer-Franzen.png",
+        "exists": true,
+        "bytes": 95269,
+        "width": 270,
+        "height": 270,
+        "mode": "RGBA"
+      },
+      "original_profile_image_url": "https://fitnessstudio-rheinbach.de/wp-content/uploads/2015/02/oliver-neu.png",
+      "asset_note": "Originalprofil verweist auf externes oliver-neu.png ohne lokale Datei; lokales Testimonialbild mit alt=\"Oliver Franzen\" als belegter Ersatz. 270x270-PNG mit bereits eingebauter gelber Raute und schwarzem Hintergrund; nicht stark vergrößern.",
+      "overview_excerpt": "Take care of your body. It's the only place you have to live.",
+      "original_profile_text": "EVO Personal Training\n\nGründer & Inhaber (EVO Personal Training) – Strength & Athletic Performance Coach – Mobility & Movement Expert\n\nPREMIUM PERSONAL TRAINER\n\nÜber mich\n\nAusbildung\n\nEr ist Mitbegründer und Inhaber von EVO Personal Training und seit 2011 zertifiziertes Mitglied im PREMIUM PERSONAL TRAINER CLUB.\n\nMit mehr als 10 Jahren Berufserfahrung und mittlerweile weit über 10.000 Personal Trainings gehört Oliver Franzen zu einem der erfahrensten Coaches in der gesamten Region.\n\nSein Ziel ist es, dich körperlich und mental leistungsfähiger zu machen.\n\nMit Leidenschaft motiviert er dich daher deine Komfortzone zu verlassen, dich stetig zu verbessern und deine Grenzen zu verschieben.\n\nEgal ob sportliche oder alltägliche Leistungsfähigkeit oder Figurziele, er setzt all sein Wissen und seine Erfahrung ein, um dich zu begeistern und zum Erfolg zu führen!\n\nAls Bewegungsexperte in unterschiedlichen Bereichen leitet er außerdem Workshops zu diversen Themen im Kraft- und Bewegungsbereich und vermittelt sein Wissens an andere Trainer und Interessierte.\n\nSeine detaillierten und individuellen Trainings- und Ernährungsprogramme zielen darauf ab, dich jederzeit leistungsfähig, in höchstem Maße aufmerksam und aufnahmefähig zu machen.\n\nStrukturierte Planung und regelmäßige individuelle Anpassung gewährleisten konstanten Fortschritt und verhelfen Sportlern, wie auch Alltagsathleten zu mehr Energie und besserer Performance.\n\nZu seinem Programm gehört nicht nur die Trainingsplanung, sondern auch die YPSI Hautfaltenmessung (deine persönliche Biosignatur – wie es auch genannt wird) und die Optimierung von Schlaf, Lifestyle, Ernährung und Supplements.\n\nSo hat er bereits viele zufriedenen Klienten auch aus Rheinbach und Umgebung zu ihrer Zufriedenheit unterstützt und ihnen zum Erfolg verholfen.\n\nDu wünschst dir mehr Kraft, mentalen Fokus, einen athletischeren Körper, bessere Leistung in deinem Sport oder im Alltag und möchtest Verletzungen vorbeugen?\n\nDu trainierst schon länger, doch du siehst keinen Fortschritt?\n\nDu wünschst dir optimale Ergebnisse bei Muskelaufbau, Fettabbau, Kraftsteigerung, du bist motiviert und hast eine hohe Leistungsbereitschaft?\n\nDann bist du bei Oliver Franzen genau richtig!\n\nSein erfolgsorientiertes System und das von EVO Personal Training ermöglicht dir den Weg zu konstantem, messbaren und nachhaltigem Erfolg!\n\nOliver Franzen bringt dich zu deiner persönlichen Bestform!\n\nStudium der Sportwissenschaften an der DSHS Köln\n\nA-Lizenz (Your Personal Strength Institut)\n\nsowie über 30 Fortbildungen und Konsultationen im Bereich Krafttraining, Hautfaltenmessung, Nährstoffe und Hormone etc. bei international führenden Coaches wie Charles Poliquin, Wolfgang Unsöld, Daniel Knebel, etc.\n\nDSHS Personal Trainer\n\nKettlebell Level 2 Instructor\n\nJoint Mobility Expert Level 2 (Steve Maxwell)\n\nZertifizierter Functional Movement Screen Experte Level 2 (Bewegungsscreening)\n\nAerobis Master Instructor (Schlingentraining)\n\nProgressive Calisthenics Instructor\n\nPrimal Move und Animal Flow Instructor (Bewegungsflows für Stabilität, Beweglichkeit & Ausdauer)\n\nGolf Physio Trainer\n\nErnährungstrainer und Berater für Sporternährung\n\nTrigger Point Performance Trainer\n\nSportphysiotherapie Fortbildung – Qualifizierung über die Weiterbildung der Deutschen Sporthochschule Köln\n\nweitere Fortbildungen im Bereich Functional Training, Fitnessboxen etc.",
+      "original_profile_paragraphs": [
+        "EVO Personal Training",
+        "Gründer & Inhaber (EVO Personal Training) – Strength & Athletic Performance Coach – Mobility & Movement Expert",
+        "PREMIUM PERSONAL TRAINER",
+        "Über mich",
+        "Ausbildung",
+        "Er ist Mitbegründer und Inhaber von EVO Personal Training und seit 2011 zertifiziertes Mitglied im PREMIUM PERSONAL TRAINER CLUB.",
+        "Mit mehr als 10 Jahren Berufserfahrung und mittlerweile weit über 10.000 Personal Trainings gehört Oliver Franzen zu einem der erfahrensten Coaches in der gesamten Region.",
+        "Sein Ziel ist es, dich körperlich und mental leistungsfähiger zu machen.",
+        "Mit Leidenschaft motiviert er dich daher deine Komfortzone zu verlassen, dich stetig zu verbessern und deine Grenzen zu verschieben.",
+        "Egal ob sportliche oder alltägliche Leistungsfähigkeit oder Figurziele, er setzt all sein Wissen und seine Erfahrung ein, um dich zu begeistern und zum Erfolg zu führen!",
+        "Als Bewegungsexperte in unterschiedlichen Bereichen leitet er außerdem Workshops zu diversen Themen im Kraft- und Bewegungsbereich und vermittelt sein Wissens an andere Trainer und Interessierte.",
+        "Seine detaillierten und individuellen Trainings- und Ernährungsprogramme zielen darauf ab, dich jederzeit leistungsfähig, in höchstem Maße aufmerksam und aufnahmefähig zu machen.",
+        "Strukturierte Planung und regelmäßige individuelle Anpassung gewährleisten konstanten Fortschritt und verhelfen Sportlern, wie auch Alltagsathleten zu mehr Energie und besserer Performance.",
+        "Zu seinem Programm gehört nicht nur die Trainingsplanung, sondern auch die YPSI Hautfaltenmessung (deine persönliche Biosignatur – wie es auch genannt wird) und die Optimierung von Schlaf, Lifestyle, Ernährung und Supplements.",
+        "So hat er bereits viele zufriedenen Klienten auch aus Rheinbach und Umgebung zu ihrer Zufriedenheit unterstützt und ihnen zum Erfolg verholfen.",
+        "Du wünschst dir mehr Kraft, mentalen Fokus, einen athletischeren Körper, bessere Leistung in deinem Sport oder im Alltag und möchtest Verletzungen vorbeugen?",
+        "Du trainierst schon länger, doch du siehst keinen Fortschritt?",
+        "Du wünschst dir optimale Ergebnisse bei Muskelaufbau, Fettabbau, Kraftsteigerung, du bist motiviert und hast eine hohe Leistungsbereitschaft?",
+        "Dann bist du bei Oliver Franzen genau richtig!",
+        "Sein erfolgsorientiertes System und das von EVO Personal Training ermöglicht dir den Weg zu konstantem, messbaren und nachhaltigem Erfolg!",
+        "Oliver Franzen bringt dich zu deiner persönlichen Bestform!",
+        "Studium der Sportwissenschaften an der DSHS Köln",
+        "A-Lizenz (Your Personal Strength Institut)",
+        "sowie über 30 Fortbildungen und Konsultationen im Bereich Krafttraining, Hautfaltenmessung, Nährstoffe und Hormone etc. bei international führenden Coaches wie Charles Poliquin, Wolfgang Unsöld, Daniel Knebel, etc.",
+        "DSHS Personal Trainer",
+        "Kettlebell Level 2 Instructor",
+        "Joint Mobility Expert Level 2 (Steve Maxwell)",
+        "Zertifizierter Functional Movement Screen Experte Level 2 (Bewegungsscreening)",
+        "Aerobis Master Instructor (Schlingentraining)",
+        "Progressive Calisthenics Instructor",
+        "Primal Move und Animal Flow Instructor (Bewegungsflows für Stabilität, Beweglichkeit & Ausdauer)",
+        "Golf Physio Trainer",
+        "Ernährungstrainer und Berater für Sporternährung",
+        "Trigger Point Performance Trainer",
+        "Sportphysiotherapie Fortbildung – Qualifizierung über die Weiterbildung der Deutschen Sporthochschule Köln",
+        "weitere Fortbildungen im Bereich Functional Training, Fitnessboxen etc."
+      ],
+      "recommended_object_position": "50% 50%"
+    },
+    {
+      "name": "Guido Leffler",
+      "role": "Studioleiter",
+      "slug": "guido-leffler",
+      "category": "managers",
+      "source_page": "staff-member/guido-leffler/index.html",
+      "asset": {
+        "path": "wp-content/uploads/2024/09/Guido-Studioleiter-scaled.jpg",
+        "absolute_path": "original-download/wp-content/uploads/2024/09/Guido-Studioleiter-scaled.jpg",
+        "exists": true,
+        "bytes": 312348,
+        "width": 2416,
+        "height": 2560,
+        "mode": "RGB"
+      },
+      "original_profile_image_url": "../../wp-content/uploads/2024/09/Guido-Studioleiter-scaled.jpg",
+      "asset_note": null,
+      "overview_excerpt": "",
+      "original_profile_text": "Studioleitung",
+      "original_profile_paragraphs": [
+        "Studioleitung"
+      ],
+      "recommended_object_position": "50% 65%"
+    },
+    {
+      "name": "Heinz-Willi Brauweiler",
+      "role": "Geschäftsführer",
+      "slug": "heinz-willi-brauweiler",
+      "category": "managers",
+      "source_page": "staff-member/heinz-willi-brauweiler/index.html",
+      "asset": {
+        "path": "wp-content/uploads/2024/09/Willi-GF-scaled.jpg",
+        "absolute_path": "original-download/wp-content/uploads/2024/09/Willi-GF-scaled.jpg",
+        "exists": true,
+        "bytes": 332088,
+        "width": 2416,
+        "height": 2560,
+        "mode": "RGB"
+      },
+      "original_profile_image_url": "../../wp-content/uploads/2024/09/Willi-GF-scaled.jpg",
+      "asset_note": null,
+      "overview_excerpt": "",
+      "original_profile_text": "Geschäftsführer",
+      "original_profile_paragraphs": [
+        "Geschäftsführer"
+      ],
+      "recommended_object_position": "50% 65%"
+    },
+    {
+      "name": "Jan",
+      "role": "Mitarbeiter",
+      "slug": "jan",
+      "category": "mitarbeiter",
+      "source_page": "staff-member/jan/index.html",
+      "asset": {
+        "path": "wp-content/uploads/2024/09/Jan-Trainer-scaled.jpg",
+        "absolute_path": "original-download/wp-content/uploads/2024/09/Jan-Trainer-scaled.jpg",
+        "exists": true,
+        "bytes": 321187,
+        "width": 2416,
+        "height": 2560,
+        "mode": "RGB"
+      },
+      "original_profile_image_url": "../../wp-content/uploads/2024/09/Jan-Trainer-scaled.jpg",
+      "asset_note": null,
+      "overview_excerpt": "",
+      "original_profile_text": "Mitarbeiter",
+      "original_profile_paragraphs": [
+        "Mitarbeiter"
+      ],
+      "recommended_object_position": "50% 65%"
+    },
+    {
+      "name": "Leo",
+      "role": "Mitarbeiter",
+      "slug": "leo",
+      "category": "mitarbeiter",
+      "source_page": "staff-member/leo/index.html",
+      "asset": {
+        "path": "wp-content/uploads/2024/09/Leo-Trainer-scaled.jpg",
+        "absolute_path": "original-download/wp-content/uploads/2024/09/Leo-Trainer-scaled.jpg",
+        "exists": true,
+        "bytes": 316840,
+        "width": 2416,
+        "height": 2560,
+        "mode": "RGB"
+      },
+      "original_profile_image_url": "../../wp-content/uploads/2024/09/Leo-Trainer-scaled.jpg",
+      "asset_note": null,
+      "overview_excerpt": "",
+      "original_profile_text": "Mitarbeiter",
+      "original_profile_paragraphs": [
+        "Mitarbeiter"
+      ],
+      "recommended_object_position": "50% 65%"
+    },
+    {
+      "name": "Kevin",
+      "role": "Mitarbeiter",
+      "slug": "kevin",
+      "category": "mitarbeiter",
+      "source_page": "staff-member/kevin/index.html",
+      "asset": {
+        "path": "wp-content/uploads/2024/09/Kevin-Trainer-scaled.jpg",
+        "absolute_path": "original-download/wp-content/uploads/2024/09/Kevin-Trainer-scaled.jpg",
+        "exists": true,
+        "bytes": 497967,
+        "width": 2416,
+        "height": 2560,
+        "mode": "RGB"
+      },
+      "original_profile_image_url": "../../wp-content/uploads/2024/09/Kevin-Trainer-scaled.jpg",
+      "asset_note": null,
+      "overview_excerpt": "",
+      "original_profile_text": "Mitarbeiter",
+      "original_profile_paragraphs": [
+        "Mitarbeiter"
+      ],
+      "recommended_object_position": "50% 65%"
+    },
+    {
+      "name": "Jannik",
+      "role": "Mitarbeiter",
+      "slug": "jannik",
+      "category": "mitarbeiter",
+      "source_page": "staff-member/jannik/index.html",
+      "asset": {
+        "path": "wp-content/uploads/2024/09/Jannik-Trainer-scaled.jpg",
+        "absolute_path": "original-download/wp-content/uploads/2024/09/Jannik-Trainer-scaled.jpg",
+        "exists": true,
+        "bytes": 328036,
+        "width": 2416,
+        "height": 2560,
+        "mode": "RGB"
+      },
+      "original_profile_image_url": "../../wp-content/uploads/2024/09/Jannik-Trainer-scaled.jpg",
+      "asset_note": null,
+      "overview_excerpt": "",
+      "original_profile_text": "Mitarbeiter",
+      "original_profile_paragraphs": [
+        "Mitarbeiter"
+      ],
+      "recommended_object_position": "50% 65%"
+    },
+    {
+      "name": "Thomas",
+      "role": "Mitarbeiter",
+      "slug": "thomas",
+      "category": "mitarbeiter",
+      "source_page": "staff-member/thomas/index.html",
+      "asset": {
+        "path": "wp-content/uploads/2024/09/Thomas-Trainer-scaled.jpg",
+        "absolute_path": "original-download/wp-content/uploads/2024/09/Thomas-Trainer-scaled.jpg",
+        "exists": true,
+        "bytes": 476665,
+        "width": 2416,
+        "height": 2560,
+        "mode": "RGB"
+      },
+      "original_profile_image_url": "../../wp-content/uploads/2024/09/Thomas-Trainer-scaled.jpg",
+      "asset_note": null,
+      "overview_excerpt": "",
+      "original_profile_text": "Mitarbeiter",
+      "original_profile_paragraphs": [
+        "Mitarbeiter"
+      ],
+      "recommended_object_position": "50% 65%"
+    },
+    {
+      "name": "Florian",
+      "role": "Mitarbeiter",
+      "slug": "florian",
+      "category": "mitarbeiter",
+      "source_page": "staff-member/florian/index.html",
+      "asset": {
+        "path": "wp-content/uploads/2024/09/Florian-Trainer-scaled.jpg",
+        "absolute_path": "original-download/wp-content/uploads/2024/09/Florian-Trainer-scaled.jpg",
+        "exists": true,
+        "bytes": 326478,
+        "width": 2416,
+        "height": 2560,
+        "mode": "RGB"
+      },
+      "original_profile_image_url": "../../wp-content/uploads/2024/09/Florian-Trainer-scaled.jpg",
+      "asset_note": null,
+      "overview_excerpt": "",
+      "original_profile_text": "Mitarbeiter",
+      "original_profile_paragraphs": [
+        "Mitarbeiter"
+      ],
+      "recommended_object_position": "50% 65%"
+    },
+    {
+      "name": "Maike",
+      "role": "Mitarbeiterin",
+      "slug": "maike",
+      "category": "mitarbeiter",
+      "source_page": "staff-member/maike/index.html",
+      "asset": {
+        "path": "wp-content/uploads/2024/09/Maike-Trainer-scaled.jpg",
+        "absolute_path": "original-download/wp-content/uploads/2024/09/Maike-Trainer-scaled.jpg",
+        "exists": true,
+        "bytes": 317287,
+        "width": 2416,
+        "height": 2560,
+        "mode": "RGB"
+      },
+      "original_profile_image_url": "../../wp-content/uploads/2024/09/Maike-Trainer-scaled.jpg",
+      "asset_note": null,
+      "overview_excerpt": "",
+      "original_profile_text": "Mitarbeiterin",
+      "original_profile_paragraphs": [
+        "Mitarbeiterin"
+      ],
+      "recommended_object_position": "50% 65%"
+    },
+    {
+      "name": "Umut",
+      "role": "Mitarbeiter",
+      "slug": "umut",
+      "category": "mitarbeiter",
+      "source_page": "staff-member/umut/index.html",
+      "asset": {
+        "path": "wp-content/uploads/2024/09/Umut-Trainer-scaled.jpg",
+        "absolute_path": "original-download/wp-content/uploads/2024/09/Umut-Trainer-scaled.jpg",
+        "exists": true,
+        "bytes": 466976,
+        "width": 2416,
+        "height": 2560,
+        "mode": "RGB"
+      },
+      "original_profile_image_url": "../../wp-content/uploads/2024/09/Umut-Trainer-scaled.jpg",
+      "asset_note": null,
+      "overview_excerpt": "",
+      "original_profile_text": "Mitarbeiter",
+      "original_profile_paragraphs": [
+        "Mitarbeiter"
+      ],
+      "recommended_object_position": "50% 65%"
+    },
+    {
+      "name": "Nick",
+      "role": "Mitarbeiter",
+      "slug": "nick",
+      "category": "mitarbeiter",
+      "source_page": "staff-member/nick/index.html",
+      "asset": {
+        "path": "wp-content/uploads/2024/09/Nick-Trainer-scaled.jpg",
+        "absolute_path": "original-download/wp-content/uploads/2024/09/Nick-Trainer-scaled.jpg",
+        "exists": true,
+        "bytes": 295500,
+        "width": 2416,
+        "height": 2560,
+        "mode": "RGB"
+      },
+      "original_profile_image_url": "../../wp-content/uploads/2024/09/Nick-Trainer-scaled.jpg",
+      "asset_note": null,
+      "overview_excerpt": "",
+      "original_profile_text": "Mitarbeiter",
+      "original_profile_paragraphs": [
+        "Mitarbeiter"
+      ],
+      "recommended_object_position": "50% 65%"
+    },
+    {
+      "name": "Calogero",
+      "role": "Mitarbeiter",
+      "slug": "calogero",
+      "category": "mitarbeiter",
+      "source_page": "staff-member/calogero/index.html",
+      "asset": {
+        "path": "wp-content/uploads/2024/09/Calogero-Trainer-scaled.jpg",
+        "absolute_path": "original-download/wp-content/uploads/2024/09/Calogero-Trainer-scaled.jpg",
+        "exists": true,
+        "bytes": 314696,
+        "width": 2416,
+        "height": 2560,
+        "mode": "RGB"
+      },
+      "original_profile_image_url": "../../wp-content/uploads/2024/09/Calogero-Trainer-scaled.jpg",
+      "asset_note": null,
+      "overview_excerpt": "",
+      "original_profile_text": "Mitarbeiter",
+      "original_profile_paragraphs": [
+        "Mitarbeiter"
+      ],
+      "recommended_object_position": "50% 65%"
+    },
+    {
+      "name": "Emerson",
+      "role": "Mitarbeiter",
+      "slug": "emerson",
+      "category": "mitarbeiter",
+      "source_page": "staff-member/emerson/index.html",
+      "asset": {
+        "path": "wp-content/uploads/2024/09/Emerson-Trainer-scaled.jpg",
+        "absolute_path": "original-download/wp-content/uploads/2024/09/Emerson-Trainer-scaled.jpg",
+        "exists": true,
+        "bytes": 329730,
+        "width": 2416,
+        "height": 2560,
+        "mode": "RGB"
+      },
+      "original_profile_image_url": "../../wp-content/uploads/2024/09/Emerson-Trainer-scaled.jpg",
+      "asset_note": null,
+      "overview_excerpt": "",
+      "original_profile_text": "Mitarbeiter",
+      "original_profile_paragraphs": [
+        "Mitarbeiter"
+      ],
+      "recommended_object_position": "50% 65%"
+    },
+    {
+      "name": "Aron",
+      "role": "Mitarbeiter",
+      "slug": "aron",
+      "category": "mitarbeiter",
+      "source_page": "staff-member/aron/index.html",
+      "asset": {
+        "path": "wp-content/uploads/2024/09/Aron-Trainer-scaled.jpg",
+        "absolute_path": "original-download/wp-content/uploads/2024/09/Aron-Trainer-scaled.jpg",
+        "exists": true,
+        "bytes": 305440,
+        "width": 2416,
+        "height": 2560,
+        "mode": "RGB"
+      },
+      "original_profile_image_url": "../../wp-content/uploads/2024/09/Aron-Trainer-scaled.jpg",
+      "asset_note": null,
+      "overview_excerpt": "",
+      "original_profile_text": "Mitarbeiter",
+      "original_profile_paragraphs": [
+        "Mitarbeiter"
+      ],
+      "recommended_object_position": "50% 65%"
+    }
+  ],
+  "logos": [
+    {
+      "path": "wp-content/uploads/2018/06/logo-pg17-gelb.png",
+      "absolute_path": "original-download/wp-content/uploads/2018/06/logo-pg17-gelb.png",
+      "exists": true,
+      "bytes": 8470,
+      "width": 209,
+      "height": 70,
+      "mode": "RGBA",
+      "purpose": "Primäres horizontales Markenlogo, gelb; passt auf dunklen Header/Footer."
+    },
+    {
+      "path": "wp-content/uploads/2024/06/cropped-LOGO-17-7b-192x192.png",
+      "absolute_path": "original-download/wp-content/uploads/2024/06/cropped-LOGO-17-7b-192x192.png",
+      "exists": true,
+      "bytes": 6044,
+      "width": 192,
+      "height": 192,
+      "mode": "RGBA",
+      "purpose": "Quadratisches Markenicon/Favicon/Touch-Marke"
+    },
+    {
+      "path": "wp-content/uploads/2024/06/cropped-LOGO-17-7b-180x180.png",
+      "absolute_path": "original-download/wp-content/uploads/2024/06/cropped-LOGO-17-7b-180x180.png",
+      "exists": true,
+      "bytes": 5583,
+      "width": 180,
+      "height": 180,
+      "mode": "RGBA",
+      "purpose": "Apple Touch Icon"
+    },
+    {
+      "path": "wp-content/uploads/2024/06/cropped-LOGO-17-7b-32x32.png",
+      "absolute_path": "original-download/wp-content/uploads/2024/06/cropped-LOGO-17-7b-32x32.png",
+      "exists": true,
+      "bytes": 781,
+      "width": 32,
+      "height": 32,
+      "mode": "P",
+      "purpose": "Favicon"
+    }
+  ],
+  "fonts": {
+    "recommended_body": {
+      "family": "Lato",
+      "weight": 400,
+      "style": "normal",
+      "path": "wp-content/uploads/sgf-css/S6uyw4BMUTPHjx4wXiWtFCc.woff2",
+      "absolute_path": "original-download/wp-content/uploads/sgf-css/S6uyw4BMUTPHjx4wXiWtFCc.woff2",
+      "exists": true,
+      "bytes": 13944
+    },
+    "lato_700": {
+      "family": "Lato",
+      "weight": 700,
+      "style": "normal",
+      "path": "wp-content/uploads/sgf-css/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2",
+      "absolute_path": "original-download/wp-content/uploads/sgf-css/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2",
+      "exists": true,
+      "bytes": 14076
+    },
+    "lato_900": {
+      "family": "Lato",
+      "weight": 900,
+      "style": "normal",
+      "path": "wp-content/uploads/sgf-css/S6u9w4BMUTPHh50XSwiPGQ3q5d0.woff2",
+      "absolute_path": "original-download/wp-content/uploads/sgf-css/S6u9w4BMUTPHh50XSwiPGQ3q5d0.woff2",
+      "exists": true,
+      "bytes": 13604
+    },
+    "oswald_400": {
+      "family": "Oswald",
+      "weight": 400,
+      "style": "normal",
+      "path": "wp-content/uploads/sgf-css/TK3iWkUHHAIjg752GT8Gl-1PKw.woff2",
+      "absolute_path": "original-download/wp-content/uploads/sgf-css/TK3iWkUHHAIjg752GT8Gl-1PKw.woff2",
+      "exists": true,
+      "bytes": 9324
+    },
+    "oswald_500": {
+      "family": "Oswald",
+      "weight": 500,
+      "style": "normal",
+      "path": "wp-content/uploads/sgf-css/TK3hWkUHHAIjg75-6hwTus9CAZek1w.woff2",
+      "absolute_path": "original-download/wp-content/uploads/sgf-css/TK3hWkUHHAIjg75-6hwTus9CAZek1w.woff2",
+      "exists": true,
+      "bytes": 9584
+    },
+    "oswald_600": {
+      "family": "Oswald",
+      "weight": 600,
+      "style": "normal",
+      "path": "wp-content/uploads/sgf-css/TK3hWkUHHAIjg75-xhsTus9CAZek1w.woff2",
+      "absolute_path": "original-download/wp-content/uploads/sgf-css/TK3hWkUHHAIjg75-xhsTus9CAZek1w.woff2",
+      "exists": true,
+      "bytes": 9576
+    },
+    "oswald_700": {
+      "family": "Oswald",
+      "weight": 700,
+      "style": "normal",
+      "path": "wp-content/uploads/sgf-css/TK3hWkUHHAIjg75-ohoTus9CAZek1w.woff2",
+      "absolute_path": "original-download/wp-content/uploads/sgf-css/TK3hWkUHHAIjg75-ohoTus9CAZek1w.woff2",
+      "exists": true,
+      "bytes": 9644
+    },
+    "alternative_sans": {
+      "family": "Open Sans",
+      "weight": 400,
+      "style": "normal",
+      "path": "wp-content/uploads/sgf-css/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2",
+      "absolute_path": "original-download/wp-content/uploads/sgf-css/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2",
+      "exists": true,
+      "bytes": 8892
+    }
+  },
+  "notes": [
+    "17 Teammitglieder exakt aus Übersicht übernommen; Rollen wörtlich aus Original.",
+    "Leere Originalprofiltexte bleiben leer; overview_excerpt ist eine getrennte, belegte Kurzbeschreibung.",
+    "Oliver Franzen benötigt lokalen Testimonialbild-Ersatz; dieser ist klein und für große Profil-Hero-Fläche ungeeignet.",
+    "Keine Stock-/Theme-Hintergründe (form-bg, gym.jpg, energy-global-header) als Beleg des echten Studios verwenden.",
+    "Keine Rezeption als Haupt-Hero empfohlen; 03_17-7.jpg ist hierfür weniger passend.",
+    "Keine Bilder generiert oder Originaldateien geändert."
+  ]
+}

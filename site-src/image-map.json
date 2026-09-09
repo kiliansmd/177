@@ -1,0 +1,830 @@
+{
+  "wp-content/uploads/2015/02/47323779_315996819126371_157073014213574656_o-282x226.jpg": {
+    "path": "assets/images/47323779_315996819126371_15707301421-311884cefd-282.webp",
+    "width": 282,
+    "height": 226,
+    "variants": [
+      {
+        "path": "assets/images/47323779_315996819126371_15707301421-311884cefd-282.webp",
+        "width": 282,
+        "height": 226,
+        "bytes": 12388
+      }
+    ],
+    "original_bytes": 20359
+  },
+  "wp-content/uploads/2015/02/47373525_315991562460230_2917574045836771328_o-150x150.jpg": {
+    "path": "assets/images/47373525_315991562460230_29175740458-477588d178-150.webp",
+    "width": 150,
+    "height": 150,
+    "variants": [
+      {
+        "path": "assets/images/47373525_315991562460230_29175740458-477588d178-150.webp",
+        "width": 150,
+        "height": 150,
+        "bytes": 6924
+      }
+    ],
+    "original_bytes": 11654
+  },
+  "wp-content/uploads/2015/02/47373525_315991562460230_2917574045836771328_o-282x226.jpg": {
+    "path": "assets/images/47373525_315991562460230_29175740458-455972ba8c-282.webp",
+    "width": 282,
+    "height": 226,
+    "variants": [
+      {
+        "path": "assets/images/47373525_315991562460230_29175740458-455972ba8c-282.webp",
+        "width": 282,
+        "height": 226,
+        "bytes": 14946
+      }
+    ],
+    "original_bytes": 22757
+  },
+  "wp-content/uploads/2015/02/47377785_315996752459711_4040813241914359808_o-150x150.jpg": {
+    "path": "assets/images/47377785_315996752459711_40408132419-f2a9217aee-150.webp",
+    "width": 150,
+    "height": 150,
+    "variants": [
+      {
+        "path": "assets/images/47377785_315996752459711_40408132419-f2a9217aee-150.webp",
+        "width": 150,
+        "height": 150,
+        "bytes": 6346
+      }
+    ],
+    "original_bytes": 10969
+  },
+  "wp-content/uploads/2015/02/47377785_315996752459711_4040813241914359808_o-282x226.jpg": {
+    "path": "assets/images/47377785_315996752459711_40408132419-2d993976f0-282.webp",
+    "width": 282,
+    "height": 226,
+    "variants": [
+      {
+        "path": "assets/images/47377785_315996752459711_40408132419-2d993976f0-282.webp",
+        "width": 282,
+        "height": 226,
+        "bytes": 12418
+      }
+    ],
+    "original_bytes": 19943
+  },
+  "wp-content/uploads/2015/02/47579153_315991489126904_8472920711986413568_o-282x226.jpg": {
+    "path": "assets/images/47579153_315991489126904_84729207119-565f4d3f4a-282.webp",
+    "width": 282,
+    "height": 226,
+    "variants": [
+      {
+        "path": "assets/images/47579153_315991489126904_84729207119-565f4d3f4a-282.webp",
+        "width": 282,
+        "height": 226,
+        "bytes": 12460
+      }
+    ],
+    "original_bytes": 19983
+  },
+  "wp-content/uploads/2015/02/53905656_361087967950589_6660474814068686848_o-150x150.jpg": {
+    "path": "assets/images/53905656_361087967950589_66604748140-86749bb4d2-150.webp",
+    "width": 150,
+    "height": 150,
+    "variants": [
+      {
+        "path": "assets/images/53905656_361087967950589_66604748140-86749bb4d2-150.webp",
+        "width": 150,
+        "height": 150,
+        "bytes": 5804
+      }
+    ],
+    "original_bytes": 10466
+  },
+  "wp-content/uploads/2015/02/53905656_361087967950589_6660474814068686848_o-282x226.jpg": {
+    "path": "assets/images/53905656_361087967950589_66604748140-9883da1ead-282.webp",
+    "width": 282,
+    "height": 226,
+    "variants": [
+      {
+        "path": "assets/images/53905656_361087967950589_66604748140-9883da1ead-282.webp",
+        "width": 282,
+        "height": 226,
+        "bytes": 12814
+      }
+    ],
+    "original_bytes": 20570
+  },
+  "wp-content/uploads/2015/02/61031077_397987577593961_8835939963548729344_o-1024x819.jpg": {
+    "path": "assets/images/61031077_397987577593961_88359399635-e9c3881a90-1000.webp",
+    "width": 1000,
+    "height": 800,
+    "variants": [
+      {
+        "path": "assets/images/61031077_397987577593961_88359399635-e9c3881a90-480.webp",
+        "width": 480,
+        "height": 384,
+        "bytes": 33514
+      },
+      {
+        "path": "assets/images/61031077_397987577593961_88359399635-e9c3881a90-1000.webp",
+        "width": 1000,
+        "height": 800,
+        "bytes": 80336
+      }
+    ],
+    "original_bytes": 141524
+  },
+  "wp-content/uploads/2015/02/61031077_397987577593961_8835939963548729344_o-282x226.jpg": {
+    "path": "assets/images/61031077_397987577593961_88359399635-9f4671f2d7-282.webp",
+    "width": 282,
+    "height": 226,
+    "variants": [
+      {
+        "path": "assets/images/61031077_397987577593961_88359399635-9f4671f2d7-282.webp",
+        "width": 282,
+        "height": 226,
+        "bytes": 15528
+      }
+    ],
+    "original_bytes": 23849
+  },
+  "wp-content/uploads/2015/02/61537754_397987660927286_5671588585921314816_o-150x150.jpg": {
+    "path": "assets/images/61537754_397987660927286_56715885859-2be8c5b9bd-150.webp",
+    "width": 150,
+    "height": 150,
+    "variants": [
+      {
+        "path": "assets/images/61537754_397987660927286_56715885859-2be8c5b9bd-150.webp",
+        "width": 150,
+        "height": 150,
+        "bytes": 4518
+      }
+    ],
+    "original_bytes": 9416
+  },
+  "wp-content/uploads/2015/02/61537754_397987660927286_5671588585921314816_o-282x226.jpg": {
+    "path": "assets/images/61537754_397987660927286_56715885859-0db2d5d954-282.webp",
+    "width": 282,
+    "height": 226,
+    "variants": [
+      {
+        "path": "assets/images/61537754_397987660927286_56715885859-0db2d5d954-282.webp",
+        "width": 282,
+        "height": 226,
+        "bytes": 8742
+      }
+    ],
+    "original_bytes": 16088
+  },
+  "wp-content/uploads/2015/02/61690091_397986867594032_2945585393044553728_o-282x226.jpg": {
+    "path": "assets/images/61690091_397986867594032_29455853930-32a8102b64-282.webp",
+    "width": 282,
+    "height": 226,
+    "variants": [
+      {
+        "path": "assets/images/61690091_397986867594032_29455853930-32a8102b64-282.webp",
+        "width": 282,
+        "height": 226,
+        "bytes": 14190
+      }
+    ],
+    "original_bytes": 21326
+  },
+  "wp-content/uploads/2018/06/Trainer-Franzen.png": {
+    "path": "assets/images/Trainer-Franzen-fb1e30dc9b-270.webp",
+    "width": 270,
+    "height": 270,
+    "variants": [
+      {
+        "path": "assets/images/Trainer-Franzen-fb1e30dc9b-270.webp",
+        "width": 270,
+        "height": 270,
+        "bytes": 5964
+      }
+    ],
+    "original_bytes": 95269
+  },
+  "wp-content/uploads/2019/08/06_17-7-1024x768.jpg": {
+    "path": "assets/images/06_17-7-1024x768-38485a7eda-1000.webp",
+    "width": 1000,
+    "height": 750,
+    "variants": [
+      {
+        "path": "assets/images/06_17-7-1024x768-38485a7eda-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 34748
+      },
+      {
+        "path": "assets/images/06_17-7-1024x768-38485a7eda-1000.webp",
+        "width": 1000,
+        "height": 750,
+        "bytes": 90766
+      }
+    ],
+    "original_bytes": 143292
+  },
+  "wp-content/uploads/2019/08/08_17-7-1024x768.jpg": {
+    "path": "assets/images/08_17-7-1024x768-c37dccac6a-1000.webp",
+    "width": 1000,
+    "height": 750,
+    "variants": [
+      {
+        "path": "assets/images/08_17-7-1024x768-c37dccac6a-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 33574
+      },
+      {
+        "path": "assets/images/08_17-7-1024x768-c37dccac6a-1000.webp",
+        "width": 1000,
+        "height": 750,
+        "bytes": 94148
+      }
+    ],
+    "original_bytes": 147231
+  },
+  "wp-content/uploads/2019/08/09_17-7-1024x768.jpg": {
+    "path": "assets/images/09_17-7-1024x768-ba2a660e7e-1000.webp",
+    "width": 1000,
+    "height": 750,
+    "variants": [
+      {
+        "path": "assets/images/09_17-7-1024x768-ba2a660e7e-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 32362
+      },
+      {
+        "path": "assets/images/09_17-7-1024x768-ba2a660e7e-1000.webp",
+        "width": 1000,
+        "height": 750,
+        "bytes": 81418
+      }
+    ],
+    "original_bytes": 136832
+  },
+  "wp-content/uploads/2019/08/14_17-7-1024x768.jpg": {
+    "path": "assets/images/14_17-7-1024x768-7b4ed3db25-1000.webp",
+    "width": 1000,
+    "height": 750,
+    "variants": [
+      {
+        "path": "assets/images/14_17-7-1024x768-7b4ed3db25-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 28696
+      },
+      {
+        "path": "assets/images/14_17-7-1024x768-7b4ed3db25-1000.webp",
+        "width": 1000,
+        "height": 750,
+        "bytes": 72186
+      }
+    ],
+    "original_bytes": 121301
+  },
+  "wp-content/uploads/2019/08/16_17-7-1024x768.jpg": {
+    "path": "assets/images/16_17-7-1024x768-46e602f983-1000.webp",
+    "width": 1000,
+    "height": 750,
+    "variants": [
+      {
+        "path": "assets/images/16_17-7-1024x768-46e602f983-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 24098
+      },
+      {
+        "path": "assets/images/16_17-7-1024x768-46e602f983-1000.webp",
+        "width": 1000,
+        "height": 750,
+        "bytes": 64990
+      }
+    ],
+    "original_bytes": 115059
+  },
+  "wp-content/uploads/2019/08/61380776_397990110927041_2523208117198520320_o-1024x819.jpg": {
+    "path": "assets/images/61380776_397990110927041_25232081171-69c955a9e8-1000.webp",
+    "width": 1000,
+    "height": 800,
+    "variants": [
+      {
+        "path": "assets/images/61380776_397990110927041_25232081171-69c955a9e8-480.webp",
+        "width": 480,
+        "height": 384,
+        "bytes": 22870
+      },
+      {
+        "path": "assets/images/61380776_397990110927041_25232081171-69c955a9e8-1000.webp",
+        "width": 1000,
+        "height": 800,
+        "bytes": 53722
+      }
+    ],
+    "original_bytes": 109187
+  },
+  "wp-content/uploads/2019/08/61380776_397990110927041_2523208117198520320_o-282x226.jpg": {
+    "path": "assets/images/61380776_397990110927041_25232081171-ddecd13e47-282.webp",
+    "width": 282,
+    "height": 226,
+    "variants": [
+      {
+        "path": "assets/images/61380776_397990110927041_25232081171-ddecd13e47-282.webp",
+        "width": 282,
+        "height": 226,
+        "bytes": 11170
+      }
+    ],
+    "original_bytes": 19440
+  },
+  "wp-content/uploads/2019/08/61690091_397986867594032_2945585393044553728_o-282x226.jpg": {
+    "path": "assets/images/61690091_397986867594032_29455853930-293dd05456-282.webp",
+    "width": 282,
+    "height": 226,
+    "variants": [
+      {
+        "path": "assets/images/61690091_397986867594032_29455853930-293dd05456-282.webp",
+        "width": 282,
+        "height": 226,
+        "bytes": 14190
+      }
+    ],
+    "original_bytes": 21326
+  },
+  "wp-content/uploads/2019/08/61795831_397986574260728_7264553138093293568_o-1024x819.jpg": {
+    "path": "assets/images/61795831_397986574260728_72645531380-87bbba9dda-1000.webp",
+    "width": 1000,
+    "height": 800,
+    "variants": [
+      {
+        "path": "assets/images/61795831_397986574260728_72645531380-87bbba9dda-480.webp",
+        "width": 480,
+        "height": 384,
+        "bytes": 30588
+      },
+      {
+        "path": "assets/images/61795831_397986574260728_72645531380-87bbba9dda-1000.webp",
+        "width": 1000,
+        "height": 800,
+        "bytes": 72862
+      }
+    ],
+    "original_bytes": 134678
+  },
+  "wp-content/uploads/2019/08/61795831_397986574260728_7264553138093293568_o-150x150.jpg": {
+    "path": "assets/images/61795831_397986574260728_72645531380-6846502bad-150.webp",
+    "width": 150,
+    "height": 150,
+    "variants": [
+      {
+        "path": "assets/images/61795831_397986574260728_72645531380-6846502bad-150.webp",
+        "width": 150,
+        "height": 150,
+        "bytes": 6952
+      }
+    ],
+    "original_bytes": 11407
+  },
+  "wp-content/uploads/2019/08/61795831_397986574260728_7264553138093293568_o-282x226.jpg": {
+    "path": "assets/images/61795831_397986574260728_72645531380-6ee01965c2-282.webp",
+    "width": 282,
+    "height": 226,
+    "variants": [
+      {
+        "path": "assets/images/61795831_397986574260728_72645531380-6ee01965c2-282.webp",
+        "width": 282,
+        "height": 226,
+        "bytes": 14484
+      }
+    ],
+    "original_bytes": 22028
+  },
+  "wp-content/uploads/2019/08/62098544_397987930927259_6587964680801615872_o-282x226.jpg": {
+    "path": "assets/images/62098544_397987930927259_65879646808-5c28257368-282.webp",
+    "width": 282,
+    "height": 226,
+    "variants": [
+      {
+        "path": "assets/images/62098544_397987930927259_65879646808-5c28257368-282.webp",
+        "width": 282,
+        "height": 226,
+        "bytes": 13104
+      }
+    ],
+    "original_bytes": 21094
+  },
+  "wp-content/uploads/2019/08/62241083_397987734260612_1640594262015868928_o-150x150.jpg": {
+    "path": "assets/images/62241083_397987734260612_16405942620-1ce7a19704-150.webp",
+    "width": 150,
+    "height": 150,
+    "variants": [
+      {
+        "path": "assets/images/62241083_397987734260612_16405942620-1ce7a19704-150.webp",
+        "width": 150,
+        "height": 150,
+        "bytes": 5992
+      }
+    ],
+    "original_bytes": 10929
+  },
+  "wp-content/uploads/2019/08/Bild_1-1024x678.jpg": {
+    "path": "assets/images/Bild_1-1024x678-81e28b3c85-1000.webp",
+    "width": 1000,
+    "height": 662,
+    "variants": [
+      {
+        "path": "assets/images/Bild_1-1024x678-81e28b3c85-480.webp",
+        "width": 480,
+        "height": 318,
+        "bytes": 20792
+      },
+      {
+        "path": "assets/images/Bild_1-1024x678-81e28b3c85-1000.webp",
+        "width": 1000,
+        "height": 662,
+        "bytes": 66192
+      }
+    ],
+    "original_bytes": 137830
+  },
+  "wp-content/uploads/2019/08/DSC00938-1024x683.jpg": {
+    "path": "assets/images/DSC00938-1024x683-b9d3367362-1000.webp",
+    "width": 1000,
+    "height": 667,
+    "variants": [
+      {
+        "path": "assets/images/DSC00938-1024x683-b9d3367362-480.webp",
+        "width": 480,
+        "height": 320,
+        "bytes": 29138
+      },
+      {
+        "path": "assets/images/DSC00938-1024x683-b9d3367362-1000.webp",
+        "width": 1000,
+        "height": 667,
+        "bytes": 81082
+      }
+    ],
+    "original_bytes": 173837
+  },
+  "wp-content/uploads/2019/08/DSC00938-150x150.jpg": {
+    "path": "assets/images/DSC00938-150x150-8beeba57f9-150.webp",
+    "width": 150,
+    "height": 150,
+    "variants": [
+      {
+        "path": "assets/images/DSC00938-150x150-8beeba57f9-150.webp",
+        "width": 150,
+        "height": 150,
+        "bytes": 5754
+      }
+    ],
+    "original_bytes": 38515
+  },
+  "wp-content/uploads/2019/08/DSC00977-150x150.jpg": {
+    "path": "assets/images/DSC00977-150x150-9ba7076670-150.webp",
+    "width": 150,
+    "height": 150,
+    "variants": [
+      {
+        "path": "assets/images/DSC00977-150x150-9ba7076670-150.webp",
+        "width": 150,
+        "height": 150,
+        "bytes": 5596
+      }
+    ],
+    "original_bytes": 38770
+  },
+  "wp-content/uploads/2019/08/DSC00977-282x226.jpg": {
+    "path": "assets/images/DSC00977-282x226-4165a5f184-282.webp",
+    "width": 282,
+    "height": 226,
+    "variants": [
+      {
+        "path": "assets/images/DSC00977-282x226-4165a5f184-282.webp",
+        "width": 282,
+        "height": 226,
+        "bytes": 12256
+      }
+    ],
+    "original_bytes": 49601
+  },
+  "wp-content/uploads/2020/10/Bea-e1602021371986.jpg": {
+    "path": "assets/images/Bea-e1602021371986-43311a4004-1000.webp",
+    "width": 1000,
+    "height": 690,
+    "variants": [
+      {
+        "path": "assets/images/Bea-e1602021371986-43311a4004-480.webp",
+        "width": 480,
+        "height": 331,
+        "bytes": 12032
+      },
+      {
+        "path": "assets/images/Bea-e1602021371986-43311a4004-1000.webp",
+        "width": 1000,
+        "height": 690,
+        "bytes": 30824
+      }
+    ],
+    "original_bytes": 238931
+  },
+  "wp-content/uploads/2020/10/Toto-Trainer-scaled.jpg": {
+    "path": "assets/images/Toto-Trainer-scaled-38738a3ca8-1000.webp",
+    "width": 1000,
+    "height": 1060,
+    "variants": [
+      {
+        "path": "assets/images/Toto-Trainer-scaled-38738a3ca8-480.webp",
+        "width": 480,
+        "height": 509,
+        "bytes": 15402
+      },
+      {
+        "path": "assets/images/Toto-Trainer-scaled-38738a3ca8-1000.webp",
+        "width": 1000,
+        "height": 1060,
+        "bytes": 37088
+      }
+    ],
+    "original_bytes": 346243
+  },
+  "wp-content/uploads/2024/09/Aron-Trainer-scaled.jpg": {
+    "path": "assets/images/Aron-Trainer-scaled-ef05f7d6af-1000.webp",
+    "width": 1000,
+    "height": 1060,
+    "variants": [
+      {
+        "path": "assets/images/Aron-Trainer-scaled-ef05f7d6af-480.webp",
+        "width": 480,
+        "height": 509,
+        "bytes": 13184
+      },
+      {
+        "path": "assets/images/Aron-Trainer-scaled-ef05f7d6af-1000.webp",
+        "width": 1000,
+        "height": 1060,
+        "bytes": 31406
+      }
+    ],
+    "original_bytes": 305440
+  },
+  "wp-content/uploads/2024/09/Calogero-Trainer-scaled.jpg": {
+    "path": "assets/images/Calogero-Trainer-scaled-80e7b5ae55-1000.webp",
+    "width": 1000,
+    "height": 1060,
+    "variants": [
+      {
+        "path": "assets/images/Calogero-Trainer-scaled-80e7b5ae55-480.webp",
+        "width": 480,
+        "height": 509,
+        "bytes": 13846
+      },
+      {
+        "path": "assets/images/Calogero-Trainer-scaled-80e7b5ae55-1000.webp",
+        "width": 1000,
+        "height": 1060,
+        "bytes": 33000
+      }
+    ],
+    "original_bytes": 314696
+  },
+  "wp-content/uploads/2024/09/Emerson-Trainer-scaled.jpg": {
+    "path": "assets/images/Emerson-Trainer-scaled-b3330ee969-1000.webp",
+    "width": 1000,
+    "height": 1060,
+    "variants": [
+      {
+        "path": "assets/images/Emerson-Trainer-scaled-b3330ee969-480.webp",
+        "width": 480,
+        "height": 509,
+        "bytes": 13668
+      },
+      {
+        "path": "assets/images/Emerson-Trainer-scaled-b3330ee969-1000.webp",
+        "width": 1000,
+        "height": 1060,
+        "bytes": 32808
+      }
+    ],
+    "original_bytes": 329730
+  },
+  "wp-content/uploads/2024/09/Florian-Trainer-scaled.jpg": {
+    "path": "assets/images/Florian-Trainer-scaled-01c1034d2d-1000.webp",
+    "width": 1000,
+    "height": 1060,
+    "variants": [
+      {
+        "path": "assets/images/Florian-Trainer-scaled-01c1034d2d-480.webp",
+        "width": 480,
+        "height": 509,
+        "bytes": 13610
+      },
+      {
+        "path": "assets/images/Florian-Trainer-scaled-01c1034d2d-1000.webp",
+        "width": 1000,
+        "height": 1060,
+        "bytes": 32666
+      }
+    ],
+    "original_bytes": 326478
+  },
+  "wp-content/uploads/2024/09/Guido-Studioleiter-scaled.jpg": {
+    "path": "assets/images/Guido-Studioleiter-scaled-4b3ce21c55-1000.webp",
+    "width": 1000,
+    "height": 1060,
+    "variants": [
+      {
+        "path": "assets/images/Guido-Studioleiter-scaled-4b3ce21c55-480.webp",
+        "width": 480,
+        "height": 509,
+        "bytes": 13484
+      },
+      {
+        "path": "assets/images/Guido-Studioleiter-scaled-4b3ce21c55-1000.webp",
+        "width": 1000,
+        "height": 1060,
+        "bytes": 30868
+      }
+    ],
+    "original_bytes": 312348
+  },
+  "wp-content/uploads/2024/09/Jan-Trainer-scaled.jpg": {
+    "path": "assets/images/Jan-Trainer-scaled-e25b58a27c-1000.webp",
+    "width": 1000,
+    "height": 1060,
+    "variants": [
+      {
+        "path": "assets/images/Jan-Trainer-scaled-e25b58a27c-480.webp",
+        "width": 480,
+        "height": 509,
+        "bytes": 13924
+      },
+      {
+        "path": "assets/images/Jan-Trainer-scaled-e25b58a27c-1000.webp",
+        "width": 1000,
+        "height": 1060,
+        "bytes": 34110
+      }
+    ],
+    "original_bytes": 321187
+  },
+  "wp-content/uploads/2024/09/Jannik-Trainer-scaled.jpg": {
+    "path": "assets/images/Jannik-Trainer-scaled-cc64dc804b-1000.webp",
+    "width": 1000,
+    "height": 1060,
+    "variants": [
+      {
+        "path": "assets/images/Jannik-Trainer-scaled-cc64dc804b-480.webp",
+        "width": 480,
+        "height": 509,
+        "bytes": 13612
+      },
+      {
+        "path": "assets/images/Jannik-Trainer-scaled-cc64dc804b-1000.webp",
+        "width": 1000,
+        "height": 1060,
+        "bytes": 32984
+      }
+    ],
+    "original_bytes": 328036
+  },
+  "wp-content/uploads/2024/09/Kevin-Trainer-scaled.jpg": {
+    "path": "assets/images/Kevin-Trainer-scaled-a9f1a7896f-1000.webp",
+    "width": 1000,
+    "height": 1060,
+    "variants": [
+      {
+        "path": "assets/images/Kevin-Trainer-scaled-a9f1a7896f-480.webp",
+        "width": 480,
+        "height": 509,
+        "bytes": 15202
+      },
+      {
+        "path": "assets/images/Kevin-Trainer-scaled-a9f1a7896f-1000.webp",
+        "width": 1000,
+        "height": 1060,
+        "bytes": 40728
+      }
+    ],
+    "original_bytes": 497967
+  },
+  "wp-content/uploads/2024/09/Leo-Trainer-scaled.jpg": {
+    "path": "assets/images/Leo-Trainer-scaled-10feb43754-1000.webp",
+    "width": 1000,
+    "height": 1060,
+    "variants": [
+      {
+        "path": "assets/images/Leo-Trainer-scaled-10feb43754-480.webp",
+        "width": 480,
+        "height": 509,
+        "bytes": 13234
+      },
+      {
+        "path": "assets/images/Leo-Trainer-scaled-10feb43754-1000.webp",
+        "width": 1000,
+        "height": 1060,
+        "bytes": 31640
+      }
+    ],
+    "original_bytes": 316840
+  },
+  "wp-content/uploads/2024/09/Maike-Trainer-scaled.jpg": {
+    "path": "assets/images/Maike-Trainer-scaled-ed08243741-1000.webp",
+    "width": 1000,
+    "height": 1060,
+    "variants": [
+      {
+        "path": "assets/images/Maike-Trainer-scaled-ed08243741-480.webp",
+        "width": 480,
+        "height": 509,
+        "bytes": 14064
+      },
+      {
+        "path": "assets/images/Maike-Trainer-scaled-ed08243741-1000.webp",
+        "width": 1000,
+        "height": 1060,
+        "bytes": 34544
+      }
+    ],
+    "original_bytes": 317287
+  },
+  "wp-content/uploads/2024/09/Nick-Trainer-scaled.jpg": {
+    "path": "assets/images/Nick-Trainer-scaled-2f3d0ef2c4-1000.webp",
+    "width": 1000,
+    "height": 1060,
+    "variants": [
+      {
+        "path": "assets/images/Nick-Trainer-scaled-2f3d0ef2c4-480.webp",
+        "width": 480,
+        "height": 509,
+        "bytes": 12724
+      },
+      {
+        "path": "assets/images/Nick-Trainer-scaled-2f3d0ef2c4-1000.webp",
+        "width": 1000,
+        "height": 1060,
+        "bytes": 29634
+      }
+    ],
+    "original_bytes": 295500
+  },
+  "wp-content/uploads/2024/09/Thomas-Trainer-scaled.jpg": {
+    "path": "assets/images/Thomas-Trainer-scaled-26216e22ec-1000.webp",
+    "width": 1000,
+    "height": 1060,
+    "variants": [
+      {
+        "path": "assets/images/Thomas-Trainer-scaled-26216e22ec-480.webp",
+        "width": 480,
+        "height": 509,
+        "bytes": 13994
+      },
+      {
+        "path": "assets/images/Thomas-Trainer-scaled-26216e22ec-1000.webp",
+        "width": 1000,
+        "height": 1060,
+        "bytes": 39142
+      }
+    ],
+    "original_bytes": 476665
+  },
+  "wp-content/uploads/2024/09/Umut-Trainer-scaled.jpg": {
+    "path": "assets/images/Umut-Trainer-scaled-e0d5942225-1000.webp",
+    "width": 1000,
+    "height": 1060,
+    "variants": [
+      {
+        "path": "assets/images/Umut-Trainer-scaled-e0d5942225-480.webp",
+        "width": 480,
+        "height": 509,
+        "bytes": 13832
+      },
+      {
+        "path": "assets/images/Umut-Trainer-scaled-e0d5942225-1000.webp",
+        "width": 1000,
+        "height": 1060,
+        "bytes": 38064
+      }
+    ],
+    "original_bytes": 466976
+  },
+  "wp-content/uploads/2024/09/Willi-GF-scaled.jpg": {
+    "path": "assets/images/Willi-GF-scaled-17d26314da-1000.webp",
+    "width": 1000,
+    "height": 1060,
+    "variants": [
+      {
+        "path": "assets/images/Willi-GF-scaled-17d26314da-480.webp",
+        "width": 480,
+        "height": 509,
+        "bytes": 13618
+      },
+      {
+        "path": "assets/images/Willi-GF-scaled-17d26314da-1000.webp",
+        "width": 1000,
+        "height": 1060,
+        "bytes": 34342
+      }
+    ],
+    "original_bytes": 332088
+  }
+}

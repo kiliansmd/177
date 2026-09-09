@@ -1,0 +1,14 @@
+.vercel/
+public/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+*.sqlite*
+*.key
+*.eml
+.DS_Store
+.venv/
+.vercel
+.env*

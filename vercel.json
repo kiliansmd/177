@@ -1,0 +1,123 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "python3 site-src/export_vercel.py",
+  "outputDirectory": "public",
+  "regions": [
+    "fra1"
+  ],
+  "functions": {
+    "api/membership.py": {
+      "maxDuration": 30,
+      "excludeFiles": "{public/**,assets/**,wp-content/**,**/index.html,site-src/test_*.py,site-src/original-audit.json}"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "headers": {
+        "X-Robots-Tag": "noindex, nofollow, noarchive",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Frame-Options": "SAMEORIGIN"
+      },
+      "continue": true
+    },
+    {
+      "src": "/gallery/gallerie(?:/index\\.html|/)?",
+      "headers": {
+        "Location": "/studio/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/preise(?:/index\\.html|/)?",
+      "headers": {
+        "Location": "/preise-aktionen/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/kontakt(?:/index\\.html|/)?",
+      "headers": {
+        "Location": "/contact/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/team(?:/index\\.html|/)?",
+      "headers": {
+        "Location": "/unser-team/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/gallery/etiam-nec-scelerisque(?:/index\\.html|/)?",
+      "headers": {
+        "Location": "/studio/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/gallery/lorem-ipsum(?:/index\\.html|/)?",
+      "headers": {
+        "Location": "/studio/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/gallery/morbi-non-pellentesque(?:/index\\.html|/)?",
+      "headers": {
+        "Location": "/studio/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/gallery/nam-ac-ante-vitae(?:/index\\.html|/)?",
+      "headers": {
+        "Location": "/studio/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/gallery/nullam-interdum(?:/index\\.html|/)?",
+      "headers": {
+        "Location": "/studio/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/gallery/nullam-varius-dui(?:/index\\.html|/)?",
+      "headers": {
+        "Location": "/studio/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/gallery/proin-molestie-dui(?:/index\\.html|/)?",
+      "headers": {
+        "Location": "/studio/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/gallery/proin-nulla-augue(?:/index\\.html|/)?",
+      "headers": {
+        "Location": "/studio/"
+      },
+      "status": 301
+    },
+    {
+      "src": "/api/membership/(.*)",
+      "dest": "/api/membership?action=$1"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/404.html",
+      "status": 404
+    }
+  ]
+}

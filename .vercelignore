@@ -1,0 +1,9 @@
+.git/
+.vercel/
+public/
+.env*
+**/__pycache__/
+**/*.pyc
+**/*.sqlite*
+**/*.key
+**/*.eml

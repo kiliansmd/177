@@ -16,11 +16,21 @@ PAGES={}
 # Register before the first render; deferred scripts may miss pagereveal.
 # https://developer.chrome.com/docs/web-platform/view-transitions/cross-document
 NAVIGATION_TRANSITIONS='''<script>(() => {
+  let skippedRevealAt = -Infinity;
   const watch = event => event.viewTransition?.ready.catch(error => {
     if (error?.name !== 'AbortError') throw error;
   });
   window.addEventListener('pageswap', watch);
-  window.addEventListener('pagereveal', watch);
+  window.addEventListener('pagereveal', event => {
+    skippedRevealAt = event.viewTransition ? -Infinity : performance.now();
+    watch(event);
+  });
+  // Chrome can reject a skipped incoming transition without exposing its object.
+  window.addEventListener('unhandledrejection', event => {
+    const error = event.reason;
+    if (performance.now() - skippedRevealAt < 1000 && error instanceof DOMException &&
+        error.name === 'AbortError' && error.message === 'Transition was skipped') event.preventDefault();
+  });
 })();</script>'''
 IMAGE_MAP=json.loads((DATA/'image-map.json').read_text()) if (DATA/'image-map.json').exists() else {}
 def asset_url(a):

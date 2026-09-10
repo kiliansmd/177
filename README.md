@@ -91,7 +91,7 @@ Mitgliedschaftslinks führen direkt zu `#anmeldung`; nach einer Tarifauswahl ble
 
 Diese Optimierung verändert keine Vertragslogik und aktiviert keine echten Verträge. Es werden keine zusätzlichen Schriften, Analyse-Dienste oder Animationsbibliotheken geladen. Die vorhandenen Animationen, Scrollgrenzen, Metadaten und Nichtindexierungsregeln bleiben erhalten. Aussagen zur tatsächlichen Conversion-Steigerung erfordern reale Nutzungsdaten und einen geeigneten Vorher-/Nachher-Vergleich.
 
-Ein kleiner früher Inline-Listener behandelt den erwartbaren `AbortError` übersprungener nativer Seitenübergänge. Er wird vor dem ersten Rendering registriert, verändert keine Navigation und deaktiviert keine Animation. Andere Fehler werden weitergegeben. Hintergrund: [Chrome-Dokumentation zu dokumentübergreifenden View Transitions](https://developer.chrome.com/docs/web-platform/view-transitions/cross-document).
+Ein kleiner früher Inline-Listener behandelt den erwartbaren `AbortError` übersprungener nativer Seitenübergänge. Er wird vor dem ersten Rendering registriert, verändert keine Navigation und deaktiviert keine Animation. Chrome kann einen eingehenden Übergang bereits vor `pagereveal` verwerfen und dabei kein Transition-Objekt übergeben. Ausschließlich die native `DOMException` mit `AbortError` und dem exakten Text `Transition was skipped` wird in der ersten Sekunde nach einem solchen Ereignis behandelt. Andere Fehler bleiben sichtbar. Hintergrund: [Chrome-Dokumentation zu dokumentübergreifenden View Transitions](https://developer.chrome.com/docs/web-platform/view-transitions/cross-document).
 
 ## Social-Vorschau und Metadaten
 

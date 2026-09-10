@@ -39,7 +39,7 @@
     '.feature-photo', '.feature-copy', '.step', '.visit-photo', '.visit-info',
     '.gallery-item', '.offer-panel', '.profile-portrait', '.profile-copy',
     '.profile-bio', '.contact-layout > div', '.contact-form', '.media-placeholder',
-    '.footer-grid > div'
+    '.footer-grid > div', '.hero-panel', '.section-jump'
   ].join(',');
   // Avoid two animations on nested elements, including cards within a section.
   const candidates = [...document.querySelectorAll(selector)];
@@ -71,7 +71,7 @@
 
   const navigation = performance.getEntriesByType('navigation')[0];
   if (scrollY < 48 && !location.hash && navigation?.type !== 'back_forward') {
-    const intro = document.querySelector('.hero-copy, .page-head .wrap');
+    const intro = document.querySelector('.hero-copy, .page-head-copy');
     if (intro) [...intro.children].forEach((element, index) => reveal(element, Math.min(index, 4) * 65, true));
     const photo = document.querySelector('.hero-photo');
     if (photo) animate(photo, [{ transform: 'scale(1.035)' }, { transform: 'scale(1)' }], { duration: 1050 });

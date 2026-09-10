@@ -1,6 +1,6 @@
 # 17/7 Performance Gym – optimierte Website
 
-Stand: 9. September 2026.
+Stand: 10. September 2026.
 
 ## GitHub und Vercel
 
@@ -44,7 +44,7 @@ Der lokale Server liefert echte 301-Weiterleitungen, eine eigene 404-Seite und e
 - `site-src/social-card.html`: reproduzierbare 1200 × 630 px große Social-Karte mit unverändertem Originallogo und Originalfoto. Die fertige PNG-Datei liegt unter `assets/social/`.
 - `assets/site.css`: grundlegendes Design, Typografie und Animationen.
 - `assets/responsive.css`: Viewport-Höhen, mobile und Tablet-Layouts sowie Querformat-Anpassungen.
-- `assets/ux.css`: abschließende Typografie, Interaktionsdetails, Anmeldeeinstieg und mobile Kostenübersicht; wird zuletzt eingebunden.
+- `assets/ux.css`: abschließendes Premium-Design mit gerahmten Bildflächen, präziser Typografie, Tarifkarten, Hero-Aktionen, Interaktionsdetails und mobiler Kostenübersicht; wird zuletzt eingebunden.
 - `assets/site.js`: Menü, Teamfilter, Galerie, externe Medien und E-Mail-Vorbereitung.
 - `assets/motion.js`: progressive Lade-, Scroll- und Filteranimationen ohne externe Bibliothek.
 - `assets/scroll.js`: sanfte Positionskorrektur nahe Abschnittsanfängen nach beendeten Touch-/Mausradgesten, ohne Eingaben abzufangen.
@@ -80,6 +80,16 @@ Die Scrollregeln einschließlich Touch, Abbruch, Verlauf und Browser-Fallback la
 - Verfeinerte lokale Typografie: Oswald 700 für Haupttitel, Oswald 600 für Zwischenüberschriften und Namen, Lato 400/700 für Lesetext und Bedienung. Hauptschriften werden vorgeladen.
 - Gestaffelte Einstiege, einmalige Scroll-Reveals, Bild- und Karteninteraktionen sowie native Seitenübergänge in unterstützenden Browsern. Es gibt keine JavaScript-Scrollschleife, keinen künstlichen Ladebildschirm und keine verzögert abgefangenen Links.
 - Auf ausdrücklichen Wunsch sind sämtliche Reduced-Motion-Bedingungen entfernt. Ohne die Skripte bleiben die Inhalte sichtbar und die Seiten über gewöhnliche Links erreichbar.
+
+## Conversion und Premium-Design
+
+Die Informationsseiten für Training, Studio, Tarife, Team, Probetraining und Kontakt bieten einen konkreten primären Einstieg und einen passenden zweiten Weg. Echte Studiofotos stehen auf großen Bildschirmen in eigenständigen gerahmten Flächen; auf kleinen Bildschirmen bleiben sie als abgedunkelte, responsive Hintergründe erhalten. Der Startseiten-Hero schließt weiterhin einschließlich gelber Faktenleiste am ersten Viewport ab.
+
+Die Tarifübersicht zeigt die beiden regulären Einzelmitgliedschaften schon im Einstieg; auf mobilen Hochformaten erscheint ein kompakter Standard-Preishinweis einschließlich der einmaligen E-Band-Gebühr. Die vollständigen Karten stehen unter `#tarife`, einzelne Tarife unter `#standard` und `#starter`. Standard wird durch eine helle Karte hervorgehoben, ohne eine unbelegte Beliebtheits- oder Knappheitsbehauptung. Preise und Konditionen stammen weiterhin aus den vorhandenen geprüften Daten.
+
+Mitgliedschaftslinks führen direkt zu `#anmeldung`; nach einer Tarifauswahl bleibt die jeweilige `tarif`-Angabe erhalten. Trainingsbereiche sind über eine eigene Sprungnavigation erreichbar. Personal-Trainer- und Profilkontakte springen direkt zur passenden gefilterten Teamansicht beziehungsweise zur vorbereiteten Kontaktanfrage. Die gemeinsame Abschlussfläche bietet Anmeldung, Tarifvergleich und einen persönlichen Telefonkontakt in klarer Abstufung.
+
+Diese Optimierung verändert keine Vertragslogik und aktiviert keine echten Verträge. Es werden keine zusätzlichen Schriften, Analyse-Dienste oder Animationsbibliotheken geladen. Die vorhandenen Animationen, Scrollgrenzen, Metadaten und Nichtindexierungsregeln bleiben erhalten. Aussagen zur tatsächlichen Conversion-Steigerung erfordern reale Nutzungsdaten und einen geeigneten Vorher-/Nachher-Vergleich.
 
 ## Social-Vorschau und Metadaten
 

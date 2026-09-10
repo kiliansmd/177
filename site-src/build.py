@@ -13,6 +13,15 @@ ORIGINAL=Path(os.environ.get('ORIGINAL_SITE_PATH',ASSETS['source_root']))
 DOMAIN=os.environ.get('SITE_URL','https://177.meindigitalerbetrieb.de').rstrip('/')
 from metadata import metadata
 PAGES={}
+# Register before the first render; deferred scripts may miss pagereveal.
+# https://developer.chrome.com/docs/web-platform/view-transitions/cross-document
+NAVIGATION_TRANSITIONS='''<script>(() => {
+  const watch = event => event.viewTransition?.ready.catch(error => {
+    if (error?.name !== 'AbortError') throw error;
+  });
+  window.addEventListener('pageswap', watch);
+  window.addEventListener('pagereveal', watch);
+})();</script>'''
 IMAGE_MAP=json.loads((DATA/'image-map.json').read_text()) if (DATA/'image-map.json').exists() else {}
 def asset_url(a):
     rel=a['path'] if isinstance(a,dict) else a
@@ -65,6 +74,7 @@ def page(route,title,description,body,active=None,mobile=True):
     canonical=DOMAIN+route
     meta=metadata(route,title,description,body,DOMAIN,ASSETS,IMAGE_MAP)
     html=f'''<!doctype html><html lang="de" prefix="og: https://ogp.me/ns#"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{E(title)}</title><meta name="description" content="{E(description)}"><link rel="canonical" href="{E(canonical)}"><meta name="robots" content="noindex, nofollow, noarchive"><meta name="theme-color" content="#161715"><meta property="og:type" content="website"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(description)}"><meta property="og:url" content="{E(canonical)}"><meta property="og:locale" content="de_DE"><link rel="icon" href="{ICON}" type="image/png" sizes="32x32"><link rel="preload" href="/wp-content/uploads/sgf-css/TK3hWkUHHAIjg75-ohoTus9CAZek1w.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/wp-content/uploads/sgf-css/S6uyw4BMUTPHjx4wXiWtFCc.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/site.css"><script src="/assets/site.js" defer></script><script src="/assets/motion.js" defer></script><script src="/assets/scroll.js" defer></script>{meta}</head><body id="top" class="{'no-mobile-action' if not mobile else ''}">{header(active or route)}<main id="main" tabindex="-1">{body}</main>{footer(mobile)}<noscript><p class="no-js-note">Alle Seiten sind ohne JavaScript erreichbar. Das Menü findest du auch im Seitenfuß; für Anfragen nutze Telefon oder E-Mail.</p></noscript></body></html>'''
+    html=html.replace('<meta charset="utf-8">','<meta charset="utf-8">'+NAVIGATION_TRANSITIONS)
     if route in ['/mitglied-werden/','/kuendigen/','/widerrufen/']:
         html=html.replace('</head>','<link rel="stylesheet" href="/assets/membership.css"><script src="/assets/membership.js" defer></script></head>')
     if route == '/':

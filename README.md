@@ -91,6 +91,8 @@ Mitgliedschaftslinks führen direkt zu `#anmeldung`; nach einer Tarifauswahl ble
 
 Diese Optimierung verändert keine Vertragslogik und aktiviert keine echten Verträge. Es werden keine zusätzlichen Schriften, Analyse-Dienste oder Animationsbibliotheken geladen. Die vorhandenen Animationen, Scrollgrenzen, Metadaten und Nichtindexierungsregeln bleiben erhalten. Aussagen zur tatsächlichen Conversion-Steigerung erfordern reale Nutzungsdaten und einen geeigneten Vorher-/Nachher-Vergleich.
 
+Ein kleiner früher Inline-Listener behandelt den erwartbaren `AbortError` übersprungener nativer Seitenübergänge. Er wird vor dem ersten Rendering registriert, verändert keine Navigation und deaktiviert keine Animation. Andere Fehler werden weitergegeben. Hintergrund: [Chrome-Dokumentation zu dokumentübergreifenden View Transitions](https://developer.chrome.com/docs/web-platform/view-transitions/cross-document).
+
 ## Social-Vorschau und Metadaten
 
 Alle 34 Inhaltsseiten haben individuelle Titel und Beschreibungen, konsistente Canonicals, Open-Graph-Daten einschließlich Bildtyp, Bildmaßen und Alternativtext sowie `summary_large_image`-Cards. Die Social-Grafik wird nur von Vorschau-Crawlern geladen und erzeugt keine zusätzliche Bildanforderung beim gewöhnlichen Seitenbesuch. Ihre HTML/CSS-Quelle verwendet die lokalen Markenschriften, das unveränderte horizontale PNG-Logo und das vorhandene Studiofoto. Die bereitgestellte PNG-Datei ist 1200 × 630 px groß; ein normaler Website-Build muss sie nicht neu rendern. Bei grafischen Änderungen die Quelle im Browser mit exakt 1200 × 630 px öffnen, das Laden der lokalen Schriften und Bilder abwarten und einen Viewport-Screenshot als neue versionierte PNG-Datei exportieren. Den Dateipfad anschließend in `metadata.py` aktualisieren.

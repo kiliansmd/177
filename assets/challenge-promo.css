@@ -1,0 +1,44 @@
+/* Shared discovery surfaces. The interactive dialog is loaded only on its own page. */
+.hero-note .challenge-hero-link{display:inline-flex;align-items:center;gap:10px;color:var(--yellow);text-underline-offset:5px;font-size:12px;line-height:1.5;padding-block:4px}
+.challenge-hero-link::before{content:'';width:5px;height:5px;background:currentColor;flex:none}
+.challenge-hero-link:hover{text-decoration:underline}
+.challenge-promo{padding-block:clamp(52px,6vw,90px);background:#1d201a;border-block:1px solid var(--rule)}
+.challenge-promo>.wrap{display:grid;grid-template-columns:.72fr 1.28fr;gap:clamp(40px,8vw,110px);align-items:center}
+.challenge-promo-mark{border-right:1px solid var(--rule);padding-right:clamp(35px,6vw,85px)}
+.challenge-promo-mark>span{display:block;font:600 clamp(108px,13vw,180px)/.92 var(--display);letter-spacing:-.055em;color:var(--yellow)}
+.challenge-promo-mark>small{display:block;font-size:10px;letter-spacing:.15em;margin-top:22px;color:var(--muted)}
+.challenge-days{display:grid;grid-template-columns:repeat(10,1fr);gap:8px;margin-top:25px;max-width:240px}
+.challenge-days i{display:block;aspect-ratio:1;border:1px solid #686d58;max-width:14px;transition:background .25s}
+.challenge-days i:nth-child(-n+7){background:var(--yellow);border-color:var(--yellow)}
+.challenge-promo-copy h2{font-size:clamp(38px,4.3vw,62px);font-weight:600;line-height:1.1;letter-spacing:-.02em}
+.challenge-promo-copy>p:not(.eyebrow){font-size:16px;line-height:1.75;color:var(--muted);margin-top:24px;max-width:56ch}
+.challenge-promo .actions{align-items:center;gap:20px 26px}
+.challenge-promo .btn{font-size:13px}
+.challenge-micro{font-size:12px;line-height:1.65;color:var(--muted)}
+.challenge-promo.is-compact{margin-block:0}
+.challenge-promo.is-compact .challenge-promo-mark>span{font-size:130px}
+.challenge-promo.is-compact .challenge-days{display:none}
+.challenge-promo.is-compact .challenge-promo-copy h2{font-size:clamp(36px,4vw,53px)}
+@media(min-width:951px){.main-nav{gap:clamp(15px,1.6vw,25px)}.main-nav>a{font-size:13px}.main-nav .nav-cta{padding:14px 17px}.brand-context{display:none}}
+@media(min-width:1400px){.brand-context{display:block}.main-nav>a{font-size:14px}}
+@media(max-width:950px){.challenge-promo>.wrap{grid-template-columns:.6fr 1.4fr;gap:35px}.challenge-promo-mark{padding-right:30px}.challenge-days{gap:5px}.challenge-promo .actions{align-items:flex-start;flex-direction:column;gap:14px}}
+@media(max-width:650px){
+ .hero-note .challenge-hero-link{font-size:11px;gap:8px}
+ .hero .hero-note:has(.challenge-hero-link){max-width:none;margin-top:8px}
+ .challenge-promo>.wrap{grid-template-columns:1fr;gap:29px}
+ .challenge-promo-mark{display:flex;gap:22px;align-items:flex-end;border:0;padding:0}
+ .challenge-promo-mark>span,.challenge-promo.is-compact .challenge-promo-mark>span{font-size:82px}
+ .challenge-promo-mark>small{max-width:80px;line-height:1.8;margin:0 0 3px}
+ .challenge-promo-mark .challenge-days{display:none}
+ .challenge-promo-copy h2,.challenge-promo.is-compact .challenge-promo-copy h2{font-size:40px}
+ .challenge-promo-copy .eyebrow{font-size:10px;margin-bottom:16px}
+ .challenge-promo-copy>p:not(.eyebrow){font-size:15px;margin-top:19px}
+ .challenge-promo .actions{margin-top:23px}
+ .challenge-promo .btn{min-height:50px;padding:14px 19px;font-size:12px}
+}
+
+@media(max-height:700px){.hero-note .challenge-hero-link{font-size:10px;padding-block:0}}
+
+/* Shared navigation and inquiry context for the need-led pages. */
+.growth-subnav{display:flex;flex-wrap:wrap;gap:0 22px;border-top:1px solid var(--rule);margin-top:30px;padding-top:15px}.growth-subnav a{display:flex;align-items:center;min-height:44px;font-size:12px;color:var(--muted)}.growth-subnav a:hover{color:var(--yellow)}
+#contact-context{font-size:13px;line-height:1.8;padding:16px 18px;border-left:2px solid #8a7613;background:#e5e9d9;color:#4b5540;margin-top:18px}

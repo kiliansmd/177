@@ -123,6 +123,16 @@
         $('#message').value = `Hallo Performance Gym,\n\nich habe eine Frage an ${incoming}:\n\n`;
       }
     }
+    const plannedTopics = new Set(['17/7 Run Club','17/7 Cycle Club','Mobility & Stretch','17/7 HIIT','30-Tage-Family-Challenge']);
+    const updateContext = () => {
+      const context = $('#contact-context');
+      if (!context) return;
+      context.hidden = !plannedTopics.has(topic.value);
+      context.textContent = context.hidden ? '' : 'Dieses Format ist in Planung. Teile uns dein Interesse mit; Starttermine, Teilnahme und Konditionen werden noch festgelegt. Deine Anfrage ist keine Buchung.';
+    };
+    updateContext(); topic.addEventListener('change', updateContext);
+    const invitation = params.get('einladung') || '';
+    if (/^[a-f0-9]{16}$/.test(invitation)) $('#message').value = `Hallo Performance Gym,\n\nich möchte einen gemeinsamen Besuch besprechen.\nEinladungsreferenz: ${invitation}\n\n`;
     let preparedText = '';
     form.addEventListener('input', () => {
       // A prepared email must never silently send an earlier version of edited fields.

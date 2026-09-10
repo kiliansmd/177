@@ -1,0 +1,4 @@
+# Logo artwork is deliberately stored as UTF-8 text for review/PR compatibility.
+assets/brand/*.svg text eol=lf
+site-src/brand/*.svg text eol=lf
+site-src/brand/*.b64 text eol=lf

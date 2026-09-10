@@ -4,7 +4,7 @@ from html.parser import HTMLParser
 import json
 
 SITE_NAME = '17/7 Performance Gym Rheinbach'
-SOCIAL_IMAGE = '/assets/social/performance-gym-rheinbach-v1.png'
+SOCIAL_IMAGE = '/assets/brand/social-v2.png'
 SOCIAL_ALT = '17/7 Performance Gym: Originallogo, Trainingshalle und der Schriftzug „Dein Training. Dein Gym.“ in Graphit und Gelb.'
 
 
@@ -107,8 +107,8 @@ def metadata(route, title, description, body, domain, assets, image_map):
         ('name', 'twitter:image:alt', SOCIAL_ALT),
     ]
     head = ''.join(f'<meta {kind}="{key}" content="{escape(value, quote=True)}">' for kind, key, value in tags)
-    head += '<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/uploads/2024/06/cropped-LOGO-17-7b-180x180.png">'
-    head += '<link rel="icon" type="image/png" sizes="192x192" href="/wp-content/uploads/2024/06/cropped-LOGO-17-7b-192x192.png">'
+    head += '<link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/icon-180-v2.png">'
+    head += '<link rel="icon" type="image/png" sizes="192x192" href="/assets/brand/icon-192-v2.png">'
     head += '<link rel="manifest" href="/site.webmanifest">'
     structured = json.dumps({'@context': 'https://schema.org', '@graph': graph}, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
     return head + '<script type="application/ld+json">' + structured + '</script>'

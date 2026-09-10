@@ -598,44 +598,37 @@
   ],
   "logos": [
     {
-      "path": "wp-content/uploads/2018/06/logo-pg17-gelb.png",
-      "absolute_path": "original-download/wp-content/uploads/2018/06/logo-pg17-gelb.png",
+      "path": "assets/brand/performance-gym-v2.svg",
       "exists": true,
-      "bytes": 8470,
-      "width": 209,
-      "height": 70,
+      "bytes": 131010,
+      "width": 836,
+      "height": 280,
       "mode": "RGBA",
-      "purpose": "Primäres horizontales Markenlogo, gelb; passt auf dunklen Header/Footer."
+      "purpose": "Aktualisiertes Nutzerlogo, als SVG-Text mit eingebetteten PNG-Pixeln; transparente Webvariante."
     },
     {
-      "path": "wp-content/uploads/2024/06/cropped-LOGO-17-7b-192x192.png",
-      "absolute_path": "original-download/wp-content/uploads/2024/06/cropped-LOGO-17-7b-192x192.png",
+      "path": "assets/brand/icon-192-v2.png",
       "exists": true,
-      "bytes": 6044,
       "width": 192,
       "height": 192,
-      "mode": "RGBA",
-      "purpose": "Quadratisches Markenicon/Favicon/Touch-Marke"
+      "mode": "RGB",
+      "purpose": "PNG-Antwort aus Base64-Textquelle, keine PNG-Datei."
     },
     {
-      "path": "wp-content/uploads/2024/06/cropped-LOGO-17-7b-180x180.png",
-      "absolute_path": "original-download/wp-content/uploads/2024/06/cropped-LOGO-17-7b-180x180.png",
+      "path": "assets/brand/icon-180-v2.png",
       "exists": true,
-      "bytes": 5583,
       "width": 180,
       "height": 180,
-      "mode": "RGBA",
-      "purpose": "Apple Touch Icon"
+      "mode": "RGB",
+      "purpose": "PNG-Antwort aus Base64-Textquelle, keine PNG-Datei."
     },
     {
-      "path": "wp-content/uploads/2024/06/cropped-LOGO-17-7b-32x32.png",
-      "absolute_path": "original-download/wp-content/uploads/2024/06/cropped-LOGO-17-7b-32x32.png",
+      "path": "assets/brand/icon-32-v2.png",
       "exists": true,
-      "bytes": 781,
       "width": 32,
       "height": 32,
-      "mode": "P",
-      "purpose": "Favicon"
+      "mode": "RGB",
+      "purpose": "PNG-Antwort aus Base64-Textquelle, keine PNG-Datei."
     }
   ],
   "fonts": {

@@ -3,7 +3,7 @@
   // Native scrolling stays in control. Only settle close to a section after a gesture.
   const root = document.documentElement;
   const main = document.querySelector('main');
-  if (!main || document.querySelector('.join-area, .service-wrap, .legal')) return;
+  if (!main || document.querySelector('.join-area, .service-wrap, .legal, .challenge-workspace, .growth-form-section')) return;
 
   const freeScroll = 'form, input, textarea, select, [contenteditable], [role="slider"], .main-nav, dialog, .prepared, [data-scroll-free]';
   let armed = false;

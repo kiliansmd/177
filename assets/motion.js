@@ -39,7 +39,10 @@
     '.feature-photo', '.feature-copy', '.step', '.visit-photo', '.visit-info',
     '.gallery-item', '.offer-panel', '.profile-portrait', '.profile-copy',
     '.profile-bio', '.contact-layout > div', '.contact-form', '.media-placeholder',
-    '.footer-grid > div', '.hero-panel', '.section-jump'
+    '.footer-grid > div', '.hero-panel', '.section-jump',
+    '.challenge-promo .wrap > div', '.challenge-hero-visual', '.challenge-how-grid article',
+    '.need-card', '.human-proof > div', '.human-card', '.training-mini', '.club-card',
+    '.family-banner > div', '.corporate-teaser > div', '.benefit-grid article', '.member-story'
   ].join(',');
   // Avoid two animations on nested elements, including cards within a section.
   const candidates = [...document.querySelectorAll(selector)];
@@ -71,7 +74,7 @@
 
   const navigation = performance.getEntriesByType('navigation')[0];
   if (scrollY < 48 && !location.hash && navigation?.type !== 'back_forward') {
-    const intro = document.querySelector('.hero-copy, .page-head-copy');
+    const intro = document.querySelector('.hero-copy, .page-head-copy, .challenge-hero-copy');
     if (intro) [...intro.children].forEach((element, index) => reveal(element, Math.min(index, 4) * 65, true));
     const photo = document.querySelector('.hero-photo');
     if (photo) animate(photo, [{ transform: 'scale(1.035)' }, { transform: 'scale(1)' }], { duration: 1050 });

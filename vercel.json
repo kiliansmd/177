@@ -10,6 +10,10 @@
     "api/membership.py": {
       "maxDuration": 30,
       "excludeFiles": "{public/**,assets/**,wp-content/**,**/index.html,site-src/test_*.py,site-src/original-audit.json}"
+    },
+    "api/brand.py": {
+      "maxDuration": 10,
+      "excludeFiles": "{public/**,assets/**,wp-content/**,**/index.html,site-src/test_*,site-src/original-audit.json}"
     }
   },
   "routes": [
@@ -110,6 +114,10 @@
     {
       "src": "/api/membership/(.*)",
       "dest": "/api/membership?action=$1"
+    },
+    {
+      "src": "/assets/brand/(social-v2|icon-(?:32|180|192|512)-v2)\\.png",
+      "dest": "/api/brand?name=$1.png"
     },
     {
       "handle": "filesystem"

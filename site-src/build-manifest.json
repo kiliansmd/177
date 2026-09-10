@@ -1,8 +1,8 @@
 {
   "pages": {
     "/": {
-      "title": "Performance Gym Rheinbach | Dein persönliches Warehouse Gym",
-      "description": "Krafttraining, Cardio und Functional Training im inhabergeführten Performance Gym Rheinbach. Probetraining ohne Termin. Standard ab 26,99 € pro Monat.",
+      "title": "Das persönliche Gym für Rheinbach | 17/7 Performance Gym",
+      "description": "Persönliches, inhabergeführtes Training in Rheinbach: fit und stark, gesund und beweglich, neu anfangen oder gemeinsam trainieren. Lerne 17/7 kennen.",
       "file": "index.html"
     },
     "/training/": {
@@ -164,6 +164,41 @@
       "title": "Vertrag widerrufen | Performance Gym Rheinbach",
       "description": "Erklärung zur Widerruf deiner Mitgliedschaft online abgeben und eine Eingangsbestätigung erhalten.",
       "file": "widerrufen/index.html"
+    },
+    "/whatsapp-challenge/": {
+      "title": "30-Tage-WhatsApp-Challenge | Performance Gym Rheinbach",
+      "description": "Richte deine 30-Tage-Challenge mit fünf kurzen Fragen zu Ziel, Erfahrung und Zeitbudget aus. Dein persönliches Startprofil für den Einstieg per WhatsApp.",
+      "file": "whatsapp-challenge/index.html"
+    },
+    "/gesund-beweglich/": {
+      "title": "Gesund & beweglich trainieren | 17/7 Rheinbach",
+      "description": "Kraft erhalten, Beweglichkeit entwickeln und bewusst einsteigen. Entdecke persönliches Training für deinen Alltag im Performance Gym Rheinbach.",
+      "file": "gesund-beweglich/index.html"
+    },
+    "/neu-anfangen/": {
+      "title": "Dein Einstieg ins Training | 17/7 Rheinbach",
+      "description": "Neu anfangen ohne Druck: Lerne das persönliche Gym in Rheinbach kennen, stelle deine Fragen und entdecke deinen Einstieg ins Training.",
+      "file": "neu-anfangen/index.html"
+    },
+    "/fit-stark/": {
+      "title": "Kraft, Ausdauer & Performance | 17/7 Rheinbach",
+      "description": "Für ambitioniertes Training in Rheinbach: freie Gewichte, Kraftgeräte, Cardio und Functional Training im persönlichen Warehouse Gym.",
+      "file": "fit-stark/index.html"
+    },
+    "/community/": {
+      "title": "Community, Clubs & Challenges | 17/7 Rheinbach",
+      "description": "Gemeinsam trainieren bei 17/7: WhatsApp-Challenge, Friends & Family und geplante Run-, Cycle-, Mobility- und HIIT-Formate in Rheinbach.",
+      "file": "community/index.html"
+    },
+    "/gemeinsam-starten/": {
+      "title": "Bring Mum, Dad & Friends | 17/7 Rheinbach",
+      "description": "Lade deine Mum, deinen Dad oder Freunde mit einem persönlichen Link ein, das Performance Gym Rheinbach kennenzulernen. Gemeinsam stärker starten.",
+      "file": "gemeinsam-starten/index.html"
+    },
+    "/firmenfitness/": {
+      "title": "Firmenfitness für Rheinbach | 17/7 Performance Gym",
+      "description": "Persönliche Firmenfitness in Rheinbach: Konditionen ab fünf Verträgen, Trainingsangebote fürs Team und individuelle Anfragen für gemeinsame Aktionen.",
+      "file": "firmenfitness/index.html"
     },
     "/404/": {
       "title": "Seite nicht gefunden | Performance Gym Rheinbach",

@@ -7,6 +7,7 @@ from urllib.parse import urlsplit, unquote
 from datetime import datetime, timezone
 import json, os, secrets
 from membership_api import Membership, Invalid
+from brand_assets import respond as brand_response, FILES as BRAND_FILES
 ROOT=Path(__file__).resolve().parent.parent
 APP=Membership()
 ORIGIN=os.environ.get('PUBLIC_ORIGIN','http://127.0.0.1:8766').rstrip('/')
@@ -51,6 +52,8 @@ class Preview(SimpleHTTPRequestHandler):
   except Exception:self.json(500,{'error':'Die Anfrage konnte nicht abgeschlossen werden. Bitte erneut versuchen. Eine bereits gespeicherte Anmeldung wird dabei nicht doppelt angelegt.'})
  def do_GET(self):
   request=urlsplit(self.path);route=unquote(request.path)
+  if route.startswith('/assets/brand/') and route.rsplit('/',1)[-1] in BRAND_FILES:
+   brand_response(self,route.rsplit('/',1)[-1]);return
   if route=='/api/membership/config':
    token,session=self.session();self.json(200,APP.public(session['csrf']),token);return
   if route.startswith('/api/membership/pdf/'):
@@ -75,6 +78,9 @@ class Preview(SimpleHTTPRequestHandler):
    body=(ROOT/'404.html').read_bytes();self.send_response(404);self.send_header('Content-Type','text/html; charset=utf-8');self.send_header('Content-Length',str(len(body)));self.end_headers();self.wfile.write(body);return
   super().do_GET()
  def do_HEAD(self):
+  route=urlsplit(self.path).path
+  if route.startswith('/assets/brand/') and route.rsplit('/',1)[-1] in BRAND_FILES:
+   brand_response(self,route.rsplit('/',1)[-1],head=True);return
   if self.path.startswith(('/api/','/site-src/')):self.send_error(405);return
   super().do_HEAD()
  def list_directory(self,path):self.send_error(404)

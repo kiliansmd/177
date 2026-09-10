@@ -22,7 +22,7 @@ python3 -m unittest -v test_public_preview test_membership.Logic
 Die Initialisierung des öffentlichen Endpunkts ignoriert `MEMBERSHIP_MODE=live` absichtlich; das Veröffentlichen allein kann keinen echten Vertragsschluss einschalten.
 
 ## Websiteumfang
- Website mit statischen Inhaltsseiten und lokalem Mitgliedschafts-Backend: 34 Inhaltsseiten und 12 Weiterleitungsadressen. Die ursprünglichen 36 Website-Adressen der lokalen SiteSucker-Kopie bleiben erreichbar. Die technischen Downloadseiten sind kein Bestandteil der Website.
+ Website mit statischen Inhaltsseiten und lokalem Mitgliedschafts-Backend: 41 Inhaltsseiten und 12 Weiterleitungsadressen. Die ursprünglichen 36 Website-Adressen der lokalen SiteSucker-Kopie bleiben erreichbar. Die technischen Downloadseiten sind kein Bestandteil der Website.
 
 ## Lokal ansehen
 
@@ -41,10 +41,10 @@ Der lokale Server liefert echte 301-Weiterleitungen, eine eigene 404-Seite und e
 
 - `site-src/build.py`: Seitenaufbau, deutsche Texte, Navigation und Tarife.
 - `site-src/metadata.py`: zentrale Open-Graph-/X-Cards- und JSON-LD-Metadaten aus den vorhandenen Studiofakten.
-- `site-src/social-card.html`: reproduzierbare 1200 × 630 px große Social-Karte mit unverändertem Originallogo und Originalfoto. Die fertige PNG-Datei liegt unter `assets/social/`.
+- `site-src/social-card.html`: reproduzierbare 1200 × 630 px große Social-Karte mit aktualisiertem Nutzerlogo und Originalfoto. `site-src/render-social.mjs` speichert die Grafik ausschließlich als Base64-Text; siehe `LOGO.md`.
 - `assets/site.css`: grundlegendes Design, Typografie und Animationen.
 - `assets/responsive.css`: Viewport-Höhen, mobile und Tablet-Layouts sowie Querformat-Anpassungen.
-- `assets/ux.css`: abschließendes Premium-Design mit gerahmten Bildflächen, präziser Typografie, Tarifkarten, Hero-Aktionen, Interaktionsdetails und mobiler Kostenübersicht; wird zuletzt eingebunden.
+- `assets/ux.css`: abschließendes Premium-Design mit gerahmten Bildflächen, präziser Typografie, Tarifkarten, Hero-Aktionen, Interaktionsdetails und mobiler Kostenübersicht.
 - `assets/site.js`: Menü, Teamfilter, Galerie, externe Medien und E-Mail-Vorbereitung.
 - `assets/motion.js`: progressive Lade-, Scroll- und Filteranimationen ohne externe Bibliothek.
 - `assets/scroll.js`: sanfte Positionskorrektur nahe Abschnittsanfängen nach beendeten Touch-/Mausradgesten, ohne Eingaben abzufangen.
@@ -75,7 +75,7 @@ Die Scrollregeln einschließlich Touch, Abbruch, Verlauf und Browser-Fallback la
 - Alle Hero-Bereiche füllen die verfügbare erste Bildschirmhöhe. Auf der Startseite gehören Hero und gelbe Faktenleiste zu einer gemeinsamen Fläche. Stabile mobile Viewport-Einheiten vermeiden Sprünge beim Ein-/Ausblenden der Browserleiste; bei vergrößertem Text darf der Inhalt natürlich weiterwachsen.
 - Die mobile Mitgliedschaftsleiste erscheint erst nach dem Hero. Unterseiten bieten einen direkten Sprung zum folgenden Inhalt; das mobile Menü bleibt auch im kurzen Querformat scrollbar.
 - Scrollgrenzen: natives `overscroll-behavior-y: none` verhindert elastisches Überziehen an den vertikalen Seitengrenzen in unterstützenden Browsern. Menü, Galerie und scrollbare Textfelder begrenzen die Weitergabe ihrer Scrollbewegungen.
-- Eine kleine Über-/Unterschreitung an Abschnittsanfängen wird nach Ende der Geste sanft korrigiert (je nach Bildschirmhöhe höchstens 20–42 px). Feine Bewegungen, das Verlassen eines Zielpunkts, Textauswahl, Tastatur, Zoom und direkte Sprunglinks bleiben frei. Checkout, Vertragsservice und Rechtstexte verwenden ausschließlich natives Scrollen. Neue Eingaben unterbrechen eine laufende Korrektur sofort.
+- Eine kleine Über-/Unterschreitung an Abschnittsanfängen wird nach Ende der Geste sanft korrigiert (je nach Bildschirmhöhe höchstens 20–42 px). Feine Bewegungen, das Verlassen eines Zielpunkts, Textauswahl, Tastatur, Zoom und direkte Sprunglinks bleiben frei. Checkout, Challenge-Dialog, Vertragsservice und Rechtstexte verwenden ausschließlich natives Scrollen. Neue Eingaben unterbrechen eine laufende Korrektur sofort.
 - Die Positionskorrektur verwendet `scrollend`; ältere Browser erhalten einen passiven 180-ms-Debounce. Keine eigene Scroll-Engine, keine dauerhaft laufende Animation und kein Verhindern von Wheel-/Touch-Events. Formularschritte berücksichtigen den Header-Abstand genau einmal.
 - Verfeinerte lokale Typografie: Oswald 700 für Haupttitel, Oswald 600 für Zwischenüberschriften und Namen, Lato 400/700 für Lesetext und Bedienung. Hauptschriften werden vorgeladen.
 - Gestaffelte Einstiege, einmalige Scroll-Reveals, Bild- und Karteninteraktionen sowie native Seitenübergänge in unterstützenden Browsern. Es gibt keine JavaScript-Scrollschleife, keinen künstlichen Ladebildschirm und keine verzögert abgefangenen Links.
@@ -95,9 +95,9 @@ Ein kleiner früher Inline-Listener behandelt den erwartbaren `AbortError` über
 
 ## Social-Vorschau und Metadaten
 
-Alle 34 Inhaltsseiten haben individuelle Titel und Beschreibungen, konsistente Canonicals, Open-Graph-Daten einschließlich Bildtyp, Bildmaßen und Alternativtext sowie `summary_large_image`-Cards. Die Social-Grafik wird nur von Vorschau-Crawlern geladen und erzeugt keine zusätzliche Bildanforderung beim gewöhnlichen Seitenbesuch. Ihre HTML/CSS-Quelle verwendet die lokalen Markenschriften, das unveränderte horizontale PNG-Logo und das vorhandene Studiofoto. Die bereitgestellte PNG-Datei ist 1200 × 630 px groß; ein normaler Website-Build muss sie nicht neu rendern. Bei grafischen Änderungen die Quelle im Browser mit exakt 1200 × 630 px öffnen, das Laden der lokalen Schriften und Bilder abwarten und einen Viewport-Screenshot als neue versionierte PNG-Datei exportieren. Den Dateipfad anschließend in `metadata.py` aktualisieren.
+Alle 41 Inhaltsseiten haben individuelle Titel und Beschreibungen, konsistente Canonicals, Open-Graph-Daten einschließlich Bildtyp, Bildmaßen und Alternativtext sowie `summary_large_image`-Cards. Die Social-Grafik wird nur von Vorschau-Crawlern geladen und erzeugt keine zusätzliche Bildanforderung beim gewöhnlichen Seitenbesuch. Ihre HTML/CSS-Quelle verwendet die lokalen Markenschriften, das aktualisierte Nutzerlogo und das vorhandene Studiofoto. Die 1200 × 630 px große PNG-Antwort wird aus `site-src/brand/social-v2.png.b64` ausschließlich im Arbeitsspeicher dekodiert; es wird keine neue binäre Bilddatei gespeichert. Zur Neugenerierung `node site-src/render-social.mjs` ausführen und bei Motivwechsel die versionierten Pfade aktualisieren. Details, Textquellen und Tests stehen in `LOGO.md`.
 
-JSON-LD verbindet `WebSite`, `ExerciseGym`, die jeweilige Seite, sichtbare Breadcrumbs und die Social-Grafik. Profilseiten enthalten die vorhandenen Namen, Rollen und Fotos als `Person`; Kontakt-, Studio-, Team- und Galerieseiten erhalten passende Seitentypen. Es werden keine Bewertungen, Koordinaten, Auszeichnungen oder zusätzlichen Geschäftsfakten erfunden. Öffnungszeiten enthalten den vorhandenen Feiertagshinweis. Originale Touch- und Browsericons sowie ein Manifest vervollständigen die Geräte-Metadaten.
+JSON-LD verbindet `WebSite`, `ExerciseGym`, die jeweilige Seite, sichtbare Breadcrumbs und die Social-Grafik. Profilseiten enthalten die vorhandenen Namen, Rollen und Fotos als `Person`; Kontakt-, Studio-, Team- und Galerieseiten erhalten passende Seitentypen. Es werden keine Bewertungen, Koordinaten, Auszeichnungen oder zusätzlichen Geschäftsfakten erfunden. Öffnungszeiten enthalten den vorhandenen Feiertagshinweis. Touch- und Browsericons aus dem aktualisierten 17/7-Schriftzug sowie ein Manifest vervollständigen die Geräte-Metadaten.
 
 Die Implementierung folgt dem [Open Graph Protocol](https://ogp.me/) und verwendet die dokumentierten [LocalBusiness-Daten](https://developers.google.com/search/docs/appearance/structured-data/local-business). **Noindex bleibt ausdrücklich aktiv:** Diese Metadaten ermöglichen saubere Linkvorschauen und bereiten die Seiten technisch vor; sie schalten keine Suchmaschinenindexierung frei.
 
@@ -107,7 +107,7 @@ Der Anmeldeeinstieg hat einen deutlich sichtbaren Tarif-Button. Mobil lassen sic
 
 Die Fassung ist für die öffentliche Vercel-Vorschau eingerichtet; der funktionale Status der Anmeldung ist oben beschrieben.
 
-Für einen Produktivserver werden die erzeugten HTML-Seiten, `assets/`, die verbliebenen Logo-/Schriftdateien in `wp-content/`, `robots.txt`, `sitemap.xml`, `site.webmanifest` und `404.html` benötigt. `site-src/` und diese Dokumentation müssen nicht öffentlich ausgeliefert werden. Die Weiterleitungen aus `redirects.json` auf dem gewählten Server als HTTP 301 konfigurieren; die mitgelieferten Weiterleitungs-HTML-Seiten dienen zusätzlich als statischer Fallback. Eine unbekannte Adresse soll HTTP 404 mit `404.html` liefern.
+Für einen Produktivserver werden die erzeugten HTML-Seiten, `assets/`, die verbliebenen Logo-/Schriftdateien in `wp-content/`, `robots.txt`, `sitemap.xml`, `site.webmanifest` und `404.html` benötigt. `site-src/` und diese Dokumentation dürfen nicht öffentlich ausgeliefert werden. Für die PNG-kompatiblen Brand-Routen werden serverseitig `api/brand.py`, `site-src/brand_assets.py` und die Textquellen unter `site-src/brand/` benötigt; die Vercel-Routen sind in `vercel.json` hinterlegt. Der lokale Server unterstützt dieselben Bild-URLs. Die Weiterleitungen aus `redirects.json` auf dem gewählten Server als HTTP 301 konfigurieren; die mitgelieferten Weiterleitungs-HTML-Seiten dienen zusätzlich als statischer Fallback. Eine unbekannte Adresse soll HTTP 404 mit `404.html` liefern.
 
 Die kanonische Domain ist `https://177.meindigitalerbetrieb.de`. Vercel übernimmt seine konfigurierte Produktionsdomain beim Export. Bei anderer Domain vor dem Build `SITE_URL` setzen. Noindex wird in dieser Veröffentlichung bewusst auch auf Vercel gesetzt.
 
@@ -126,3 +126,27 @@ Auf der Startseite ist das Elfsight-Widget `563dff4a-619d-4b7d-8355-b4e6426327b0
 Reservierte Flächen begrenzen Layoutsprünge; das echte Widget passt sich responsiv an. Bei ausbleibender Darstellung erscheint ein Hinweis, und der direkte Instagram-Link bleibt verfügbar. Die vom Anbieter geladenen Bibliotheken, Bilder und deren Antwortzeiten lassen sich durch den kleinen lokalen Loader nicht vollständig kontrollieren. Bei direktem Anspringen des Feed-Bereichs oder sehr langsamer Verbindung kann deshalb eine kurze Ladephase sichtbar bleiben.
 
 Grundlage: [Elfsight zur asynchronen Einbindung](https://help.elfsight.com/article/1101-how-to-improve-widgets-loading-speed). Die Datenschutzhinweise unterscheiden den automatisch nachgeladenen Feed von den weiterhin erst nach Klick geladenen YouTube- und 360°-Inhalten.
+
+
+## 30-Tage-WhatsApp-Challenge
+
+Die neue Seite `/whatsapp-challenge/` bietet einen kurzen, adaptiven Dialog zu Ziel, Erfahrung, Zeit und Häufigkeit sowie eine passende Folgefrage. Einstiege stehen auf der Startseite, in der Hauptnavigation, auf Training und Probetraining und im Footer. Das Startprofil lässt sich prüfen, bearbeiten und zurücksetzen. Es wird nur für diesen Tab gespeichert.
+
+Die Übergabe erzeugt einen vorbereiteten WhatsApp-Link und einen lokal berechneten QR-Code. Die QR-Bibliothek wird erst gegen Ende des Dialogs geladen; Marketingseiten laden weder diese Bibliothek noch die Dialoglogik. Der Besucher öffnet den Link und sendet seine Nachricht selbst. Es gibt keine Behauptung eines automatisch bestätigten Starts oder eines eingerichteten täglichen Nachrichtenversands.
+
+**Einrichtung noch offen:** Die tatsächliche WhatsApp-Zielnummer bzw. die vorhandene Bot-Anbindung wurde noch nicht angegeben. `site-src/challenge-config.json` enthält deshalb bewusst keine Nummer. Die lokale Fassung zeigt mit `demo_enabled: true` nach dem Quiz einen Demo-QR, eine dreistufige Ablaufbeschreibung und eine personalisierte Chat-Vorschau für die kostenlose 30-Tage-Challenge. Es wird keine Nachricht versendet oder Anmeldung ausgelöst. Der Beispielcode enthält nur einen allgemeinen Demo-Hinweis, keine Antworten. Der echte WhatsApp-Modus bleibt bis zur ausdrücklichen Umstellung deaktiviert. Es wurde keine bestehende Festnetznummer übernommen und keine Testnummer in die Website-Konfiguration eingetragen. Die Challenge bleibt auch nach Veröffentlichung eine ausdrücklich gekennzeichnete Demo.
+
+Konfiguration, Datenfluss, Tests und Integrationsgrenze sind in `WHATSAPP-CHALLENGE.md` beschrieben. Prüfung der vollständigen Entscheidungslogik: `node --test site-src/test_challenge.mjs`.
+
+
+## Zielorientierte Positionierung und Community
+
+Die Startseite führt von vier Trainingsmotiven über echte Menschen und Trainingsmöglichkeiten zu Community, Family, Studio und erst danach zu den Tarifen. Der Startseiten-Hero zeigt die originale Trainingsfläche mit Freihanteln und Kraftgeräten. Beatrice bleibt mit ihrem Originalstatement im persönlichen Einstiegsbereich sichtbar; der Bereich „Gesund & beweglich“ zeigt Guido als Studioleiter.
+
+Neue Seiten: `/fit-stark/`, `/gesund-beweglich/`, `/neu-anfangen/`, `/community/`, `/gemeinsam-starten/` und `/firmenfitness/`. Navigation, Footer, Kontaktanfragen und der Trainingseinstieg verweisen konsistent auf diese Wege. Die Family-Seite erstellt persönliche Einladungslinks mit einer zufälligen Referenz, nativer Teilen-Funktion, WhatsApp-Teilen und lokalem QR-Code. Das Firmenformular erstellt eine prüfbare E-Mail-Anfrage und verwirft veraltete Vorschauen bei Änderungen.
+
+Run Club, Cycle Club, Mobility & Stretch, HIIT und die begleitete Family-Challenge sind ausdrücklich als in Planung gekennzeichnet. Die vorhandenen Firmenkonditionen bleiben transparent. Neue Unternehmenscodes, Aktionsbedingungen und automatische Firmenanmeldungen sind nicht freigeschaltet. Die öffentliche Mitgliedschaft bleibt eine Demo.
+
+`site-src/growth_pages.py` enthält Seiten und Komponenten, `growth-content.json` die freigabepflichtigen Inhaltsfelder. Es sind keine erfundenen Mitgliederstimmen, Altersangaben oder Mitgliederzahlen eingetragen. `assets/growth.css` wird nur auf den acht relevanten Seiten geladen; `growth.js` und das Modell nur auf Family und Firmenfitness. Die QR-Bibliothek wird auf Family erst beim Aufklappen angefordert.
+
+Umsetzungsmatrix, Bildbedarf und offene Betreiberangaben: `POSITIONIERUNG.md`. Tests: `node --test site-src/test_growth.mjs`; Inhaltsvalidierung: `python3 -m unittest discover -s site-src -p test_growth_content.py`. Der aktuelle Veröffentlichungsstand ist über die mit `main` verbundenen Vercel-Deployments nachvollziehbar.

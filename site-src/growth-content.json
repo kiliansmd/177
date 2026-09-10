@@ -1,0 +1,12 @@
+{
+  "member_count": null,
+  "member_count_source": "",
+  "testimonials": [],
+  "family": {"status": "planned"},
+  "clubs": [
+    {"id":"run-club","name":"17/7 Run Club","headline":"Gemeinsam Kilometer sammeln.","description":"Eine gemeinsame Runde, ein klarer Treffpunkt und Motivation unterwegs. Für alle, die lieber zusammen loslaufen.","focus":"Laufen · Ausdauer · Gemeinsam draußen","status":"planned"},
+    {"id":"cycle-club","name":"17/7 Cycle Club","headline":"Ausdauer. Tempo. Gemeinsam fahren.","description":"Zusammen in Bewegung kommen und Ausdauer zum gemeinsamen Ziel machen. Das Format für alle, die gerne in die Pedale treten.","focus":"Radfahren · Rhythmus · Gemeinsam aktiv","status":"planned"},
+    {"id":"mobility-stretch","name":"Mobility & Stretch","headline":"Beweglicher werden und bleiben.","description":"Bewusste Bewegung, Mobilität und Dehnen als gemeinsamer Ausgleich zum Training und Alltag.","focus":"Beweglichkeit · Mobilität · Ausgleich","status":"planned"},
+    {"id":"hiit","name":"17/7 HIIT","headline":"Kurze Einheiten. Hohe Intensität.","description":"Ein gemeinsamer Trainingsimpuls mit intensiven Intervallen. Sprich mit dem Team darüber, ob dieses Format zu deinem Trainingsstand passt.","focus":"Intervalle · Intensität · Gemeinsam trainieren","status":"planned"}
+  ]
+}

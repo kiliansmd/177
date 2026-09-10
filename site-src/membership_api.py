@@ -18,6 +18,8 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, Tabl
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.colors import HexColor, white
 from reportlab.lib.enums import TA_LEFT
+from reportlab.lib.utils import ImageReader
+from brand_assets import logo_png
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from cryptography.fernet import Fernet
@@ -148,7 +150,8 @@ CREATE TABLE IF NOT EXISTS outbox(id INTEGER PRIMARY KEY, record_id TEXT, channe
    t=Table([[para(a,'small'),para(b)] for a,b in rows],colWidths=[158,341],hAlign='LEFT')
    t.setStyle(TableStyle([('VALIGN',(0,0),(-1,-1),'TOP'),('BACKGROUND',(0,0),(-1,-1),HexColor('#f3f2ea')),('LINEBELOW',(0,0),(-1,-1),.5,HexColor('#d7d8d1')),('TOPPADDING',(0,0),(-1,-1),5),('BOTTOMPADDING',(0,0),(-1,-1),5),('LEFTPADDING',(0,0),(-1,-1),10)]));return t
   def decorate(c,doc):
-   c.setFillColor(HexColor('#161715'));c.rect(0,770,595.28,72,fill=1,stroke=0);c.setFillColor(HexColor('#f3dd16'));c.setFont('GymBold',17);c.drawString(48,798,'17/7 PERFORMANCE GYM')
+   c.setFillColor(HexColor('#161715'));c.rect(0,770,595.28,72,fill=1,stroke=0)
+   c.drawImage(ImageReader(BytesIO(logo_png())),48,780,width=160,height=160*726/2167,mask='auto')
    c.setFillColor(HexColor('#666666'));c.setFont('Gym',7);c.drawString(48,30,record_id+'  |  '+('VORSCHAU - KEIN VERTRAG' if not self.live or draft else 'Vertragsunterlagen'));c.drawRightString(547,30,str(doc.page))
   preview=not self.live or draft
   title=('Vertragsvorschau' if preview else 'Deine Mitgliedschaft') if kind=='membership' else ('Kündigung' if kind=='cancellation' else 'Widerruf')+' - Eingangsbestätigung'

@@ -222,3 +222,14 @@ h1,h2,h3{text-wrap:balance}
 
 .hero-price-note{display:none}
 @media(max-width:950px) and (min-height:501px){.hero-price-note{display:block;font-size:12px;line-height:1.65;margin-top:20px}.hero-price-note strong{font-weight:700;color:var(--text)}.hero-price-note span{display:block;color:var(--muted)}}
+
+/* Fit content to narrow screens instead of clipping horizontal overflow. */
+@media(max-width:650px){
+ .two-grid{grid-template-columns:minmax(0,1fr)}
+ .offer-panel{min-width:0;max-width:100%}
+ .summary-breakdown>summary{padding-right:10px;min-width:0}
+ .offer-panel h3,.legal h2,.legal h3{overflow-wrap:anywhere;hyphens:auto}
+ .legal p,.legal li{overflow-wrap:anywhere}
+ .team-grid:not(.home-team) .person-meta h3{max-width:100%;min-width:0;overflow-wrap:anywhere;hyphens:auto}
+ .team-grid:not(.home-team) .person-meta p{overflow-wrap:anywhere;hyphens:auto}
+}

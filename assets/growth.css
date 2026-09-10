@@ -167,3 +167,7 @@
 @media(max-width:650px){.need-card>p{font-size:13px}.need-card>strong{font-size:14px}.growth-home-hero .hero-photo>img{object-position:42% 57%;opacity:.43}}
 @media(max-height:600px) and (max-width:650px){.growth-head.page-head{padding-block:16px}.growth-head.page-head .breadcrumb{margin-bottom:13px}.growth-head .hero-actions{margin-top:15px}}
 @media(max-height:350px) and (min-width:560px){.growth-home-hero .hero-copy{padding-block:5px}}
+
+@media(max-width:650px){
+ .growth-trust .fact strong{font-size:clamp(18px,5.1vw,20px);max-width:100%}
+}

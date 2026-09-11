@@ -266,3 +266,16 @@ h1,h2,h3{text-wrap:balance}
  body:has(.main-nav.is-open) .mobile-action{opacity:0;visibility:hidden;transform:translateY(100%);pointer-events:none}
 }
 @keyframes nav-link-enter{from{opacity:.3;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+
+/* A lightweight, always reachable link to the studio's Instagram section. */
+.header-inner{gap:20px}
+.header-controls{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.header-instagram{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;flex:none;color:var(--yellow);border:1px solid var(--rule);border-radius:12px;background:rgba(255,255,255,.025);touch-action:manipulation;transition:color .2s ease,background .2s ease,border-color .2s ease,transform .25s var(--ease-out)}
+.header-instagram svg{flex:none;transition:transform .25s var(--ease-out)}
+.header-instagram:focus-visible{outline:2px solid var(--yellow);outline-offset:4px}
+.header-instagram:active{transform:scale(.95)}
+@media(hover:hover){.header-instagram:hover{color:var(--ink);background:var(--yellow);border-color:var(--yellow)}.header-instagram:hover svg{transform:scale(1.06)}}
+@media(min-width:951px){.header-inner>.main-nav{margin-left:auto}}
+@media(min-width:951px) and (max-width:1199px){.header-inner{gap:16px}.header-inner>.main-nav{gap:16px}}
+@media(max-width:950px){.header-controls{margin-left:auto}}
+@media(max-width:360px){.header-inner{gap:12px}.header-controls{gap:8px}}

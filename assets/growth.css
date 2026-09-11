@@ -171,3 +171,9 @@
 @media(max-width:650px){
  .growth-trust .fact strong{font-size:clamp(18px,5.1vw,20px);max-width:100%}
 }
+
+@media(max-width:650px){
+ .growth-final .actions{align-items:stretch;flex-direction:column}
+ .growth-final .actions>.btn{justify-content:space-between;white-space:normal}
+ .growth-final .actions>.text-link{align-self:flex-start}
+}

@@ -55,7 +55,7 @@ main,section,.intro-grid>*,.feature-row>*,.contact-layout>*,.visit-box>*,.price-
 .profile-bio{margin-top:0}
 .empty-page{min-height:var(--hero-space)}
 .main-nav.is-open{max-height:calc(var(--screen) - var(--header-h));overflow-y:auto;overscroll-behavior:contain}
-.mobile-action.is-hidden{display:none}
+.mobile-action.is-hidden{opacity:0;visibility:hidden;transform:translateY(100%);pointer-events:none}
 .join-main,.join-success{scroll-margin-top:0}
 .join-summary{top:calc(var(--header-h) + 24px)}
 @media(min-width:651px) and (max-width:1100px){

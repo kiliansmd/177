@@ -21,7 +21,7 @@
 .prepared .btn.secondary:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
 
 /* Keep the real studio visible in the first mobile viewport. */
-@media(max-width:650px){.hero{isolation:isolate}.hero-copy{padding-top:42px;padding-bottom:48px}.hero-photo{position:absolute;inset:0;height:100%;z-index:0}.hero-photo img{opacity:.38;object-position:54% 50%}.hero-photo::after{background:linear-gradient(90deg,#10140dd9,#10140d45),linear-gradient(0deg,#10140dbc,transparent 65%)}.hero .image-note{display:none}.hero h1{font-size:clamp(62px,17vw,79px)}.hero .actions{align-items:flex-start;flex-direction:column;gap:13px}.hero .btn.secondary{padding:8px 0;min-height:38px;border:0;border-bottom:1px solid #a9b099}.topline .wrap,.eyebrow,.image-note,.fact span{font-size:12px}.mobile-action.is-hidden{display:none}}
+@media(max-width:650px){.hero{isolation:isolate}.hero-copy{padding-top:42px;padding-bottom:48px}.hero-photo{position:absolute;inset:0;height:100%;z-index:0}.hero-photo img{opacity:.38;object-position:54% 50%}.hero-photo::after{background:linear-gradient(90deg,#10140dd9,#10140d45),linear-gradient(0deg,#10140dbc,transparent 65%)}.hero .image-note{display:none}.hero h1{font-size:clamp(62px,17vw,79px)}.hero .actions{align-items:flex-start;flex-direction:column;gap:13px}.hero .btn.secondary{padding:8px 0;min-height:38px;border:0;border-bottom:1px solid #a9b099}.topline .wrap,.eyebrow,.image-note,.fact span{font-size:12px}.mobile-action.is-hidden{opacity:0;visibility:hidden;transform:translateY(100%);pointer-events:none}}
 
 /* Refinement: the original palette stays unchanged. */
 :root {
@@ -149,8 +149,8 @@ p { text-wrap: pretty; }
   }
   .site-header { view-transition-name: gym-header; }
   ::view-transition-group(gym-header) { animation-duration: .18s; }
-  ::view-transition-old(gym-header) { animation: none; opacity: 0; }
-  ::view-transition-new(gym-header) { animation: none; }
+  ::view-transition-old(gym-header) { animation: header-leave .18s ease-out both; }
+  ::view-transition-new(gym-header) { animation: header-enter .22s ease-out both; }
   .photo-dialog[open] { animation: panel-arrive .25s var(--ease-out); }
   .photo-dialog[open]::backdrop { animation: backdrop-arrive .2s ease-out; }
   .faq-list details[open] > p { animation: answer-arrive .28s var(--ease-out); }
@@ -255,3 +255,6 @@ p { text-wrap: pretty; }
 .instagram-feed-note{font-size:12px;color:var(--muted);line-height:1.7;margin-top:20px}
 .instagram-feed-note a{text-decoration:underline;text-underline-offset:3px}
 @media(max-width:650px){.instagram-feed-frame{padding:18px;min-height:581px}.instagram-feed-placeholder{inset:18px;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.instagram-section .section-head{align-items:flex-start;gap:24px}.instagram-section h2{font-size:38px}.instagram-section .text-link{font-size:13px}}
+
+@keyframes header-leave { to { opacity: 0; } }
+@keyframes header-enter { from { opacity: .7; } to { opacity: 1; } }

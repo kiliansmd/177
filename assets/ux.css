@@ -233,3 +233,36 @@ h1,h2,h3{text-wrap:balance}
  .team-grid:not(.home-team) .person-meta h3{max-width:100%;min-width:0;overflow-wrap:anywhere;hyphens:auto}
  .team-grid:not(.home-team) .person-meta p{overflow-wrap:anywhere;hyphens:auto}
 }
+
+/* Deliberate interaction: clear hierarchy, tactile feedback and section orientation. */
+.btn,.nav-cta{transition:background .22s ease,border-color .22s ease,color .22s ease,transform .28s var(--ease-out),box-shadow .28s ease}
+.btn:focus-visible,.nav-cta:focus-visible{outline-offset:5px}
+.section-jump a{position:relative;transition:background .24s ease,color .24s ease;min-width:0}
+.section-jump a[aria-current="location"]{background:var(--surface);color:var(--yellow);box-shadow:inset 0 -2px var(--yellow)}
+.section-jump a span{transition:color .24s ease}
+.section-jump a[aria-current="location"] span{color:var(--yellow)}
+.need-card,.human-card,.club-card{transition:background .25s ease,border-color .25s ease,box-shadow .3s ease}
+.human-card:focus-within,.club-card:focus-within{border-color:var(--yellow)}
+.field:focus-within>label,.join-field:focus-within>label{font-weight:700}
+.field input,.field select,.field textarea{transition:border-color .2s ease,box-shadow .2s ease}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#81730c;box-shadow:0 0 0 3px rgba(129,115,12,.1)}
+.faq-list summary{transition:color .22s ease,background .22s ease}
+.faq-list summary:hover,.faq-list summary:focus-visible{color:var(--yellow)}
+.growth-final{position:relative;border-left:2px solid var(--yellow);padding-left:clamp(22px,3vw,42px)}
+@media(hover:hover) and (pointer:fine){
+ .btn:not(.secondary):not(:disabled):hover,.nav-cta:hover{box-shadow:inset 0 1px 0 #ffffff26,0 8px 22px -14px #0009;transform:translateY(-2px)}
+ .human-card:hover{border-color:#798162;box-shadow:0 16px 32px -26px #000b}
+}
+.btn:not(:disabled):active,.nav-cta:active{transform:translateY(0) scale(.98)}
+@media(max-width:950px){
+ .main-nav.is-open>a{animation:nav-link-enter .32s var(--ease-out) both}
+ .main-nav.is-open>a:nth-child(2){animation-delay:25ms}
+ .main-nav.is-open>a:nth-child(3){animation-delay:50ms}
+ .main-nav.is-open>a:nth-child(4){animation-delay:75ms}
+ .main-nav.is-open>a:nth-child(n+5){animation-delay:100ms}
+}
+@media(max-width:650px){
+ .mobile-action{transition:opacity .22s ease,transform .32s var(--ease-out),visibility .32s}
+ body:has(.main-nav.is-open) .mobile-action{opacity:0;visibility:hidden;transform:translateY(100%);pointer-events:none}
+}
+@keyframes nav-link-enter{from{opacity:.3;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}

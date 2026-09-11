@@ -45,6 +45,30 @@
     if ('ResizeObserver' in window) new ResizeObserver(observeHero).observe($('.site-header'));
   }
 
+  // Highlight the section currently being read; normal anchor navigation stays intact.
+  const sectionLinks = $$('.section-jump a[href^="#"]');
+  const sections = sectionLinks.map(link => ({link, target:document.getElementById(decodeURIComponent(link.hash.slice(1)))})).filter(item => item.target);
+  if (sections.length && 'IntersectionObserver' in window) {
+    let sectionObserver;
+    const visible = new Set();
+    const highlight = target => sections.forEach(item => {
+      if (item.target === target) item.link.setAttribute('aria-current', 'location');
+      else item.link.removeAttribute('aria-current');
+    });
+    const observeSections = () => {
+      sectionObserver?.disconnect(); visible.clear();
+      const inset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+      sectionObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => entry.isIntersecting ? visible.add(entry.target) : visible.delete(entry.target));
+        const current = sections.find(item => visible.has(item.target));
+        highlight(current?.target);
+      }, {rootMargin:`-${inset}px 0px -${Math.round(innerHeight * .45)}px 0px`, threshold:0});
+      sections.forEach(item => sectionObserver.observe(item.target));
+    };
+    observeSections();
+    window.addEventListener('resize', observeSections, {passive:true});
+  }
+
   const filterButtons = $$('[data-filter]');
   const teamCards = $$('[data-team-grid] .person-card');
   const setFilter = (value) => {
